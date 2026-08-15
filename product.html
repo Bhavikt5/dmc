@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DMC Nuts — Premium Mamra Almonds</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --espresso:#2B1810; --walnut:#6B4529; --gold:#C89B4C;
+    --green:#5C7A52; --green-dark:#3F5636; --green-pale:#E7EEE1;
+    --cream:#FBF7EF; --cream-2:#F1E6D3; --magenta:#93314F;
+    --ink:#241309; --line:rgba(43,24,16,.12); --maxw:1240px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:#fff;}
+  h1,h2,h3{font-family:'Playfair Display',serif;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
+  button{font-family:inherit;cursor:pointer;border:none;}
+  .ph{background:linear-gradient(135deg,var(--cream-2),#dfcda9);display:flex;align-items:center;justify-content:center;color:rgba(43,24,16,.4);font-size:12px;letter-spacing:.05em;text-transform:uppercase;font-weight:600;text-align:center;padding:8px;}
+
+  header{background:#fff;border-bottom:1px solid var(--line);}
+  .navrow{display:flex;align-items:center;justify-content:space-between;padding:20px 0;}
+  .logo{font-size:24px;font-weight:800;}
+  .logo span{color:var(--walnut);}
+  nav.mainnav{display:flex;gap:32px;}
+  nav.mainnav a{font-weight:600;font-size:14px;}
+  .navicons{display:flex;gap:18px;align-items:center;}
+  .navicons svg{width:19px;height:19px;stroke:var(--ink);}
+
+  .crumb{font-size:12.5px;color:rgba(43,24,16,.55);padding:20px 0 0;}
+  .crumb a{color:var(--walnut);font-weight:600;}
+
+  .pdp{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;padding:26px 0 70px;}
+  .gallery-main{border-radius:4px;overflow:hidden;}
+  .gallery-main .ph{height:460px;}
+  .gallery-thumbs{display:flex;gap:12px;margin-top:14px;}
+  .gallery-thumbs .ph{height:78px;width:78px;border-radius:3px;border:1.5px solid var(--line);flex-shrink:0;font-size:9px;}
+  .gallery-thumbs .ph.active{border-color:var(--espresso);}
+
+  .pinfo .badge{display:inline-block;background:var(--green-pale);color:var(--green-dark);font-size:11.5px;font-weight:700;padding:5px 11px;border-radius:2px;margin-bottom:14px;}
+  .pinfo h1{font-size:30px;margin:0 0 10px;}
+  .ratingrow{display:flex;align-items:center;gap:10px;margin-bottom:18px;}
+  .ratingrow .stars{color:var(--gold);font-size:14px;}
+  .ratingrow .rlink{font-size:12.5px;color:rgba(43,24,16,.55);border-bottom:1px solid rgba(43,24,16,.3);}
+  .priceblock{display:flex;align-items:baseline;gap:12px;margin-bottom:6px;}
+  .priceblock .now{font-size:28px;font-weight:700;}
+  .priceblock .old{font-size:15px;text-decoration:line-through;color:rgba(43,24,16,.4);}
+  .priceblock .save{background:var(--magenta);color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:2px;}
+  .taxnote{font-size:12px;color:rgba(43,24,16,.5);margin-bottom:24px;}
+
+  .optlabel{font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin:0 0 10px;color:rgba(43,24,16,.7);}
+  .weightopts{display:flex;gap:10px;margin-bottom:22px;}
+  .wopt{border:1.5px solid var(--line);padding:10px 18px;border-radius:3px;font-size:13.5px;font-weight:700;text-align:center;}
+  .wopt small{display:block;font-weight:500;font-size:11px;color:rgba(43,24,16,.55);margin-top:2px;}
+  .wopt.active{border-color:var(--espresso);background:var(--espresso);color:#fff;}
+  .wopt.active small{color:rgba(246,238,225,.7);}
+
+  .subscribe-row{border:1px solid var(--line);border-radius:4px;padding:16px 18px;margin-bottom:22px;}
+  .subscribe-row label{display:flex;align-items:center;gap:10px;font-size:13.5px;font-weight:700;margin-bottom:6px;}
+  .subscribe-row p{font-size:12px;color:rgba(43,24,16,.55);margin:0 0 0 26px;}
+
+  .buyrow{display:flex;gap:14px;margin-bottom:26px;}
+  .qty{display:flex;align-items:center;border:1.5px solid var(--line);border-radius:3px;}
+  .qty button{width:38px;height:48px;font-size:16px;background:none;}
+  .qty span{width:36px;text-align:center;font-weight:700;}
+  .btn{padding:0 26px;height:48px;font-size:14.5px;font-weight:700;border-radius:3px;flex:1;}
+  .btn-outline{border:1.5px solid var(--espresso);color:var(--espresso);background:#fff;}
+  .btn-dark{background:var(--espresso);color:#fff;}
+
+  .trustmini{display:flex;gap:22px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px;}
+  .trustmini .item{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:rgba(43,24,16,.7);}
+  .trustmini svg{width:17px;height:17px;stroke:var(--walnut);}
+
+  /* tabs */
+  .tabs{padding:20px 0 70px;}
+  .tabnav{display:flex;gap:36px;border-bottom:1px solid var(--line);margin-bottom:34px;}
+  .tabnav .t{font-size:14px;font-weight:700;padding-bottom:16px;color:rgba(43,24,16,.5);}
+  .tabnav .t.active{color:var(--espresso);border-bottom:2px solid var(--espresso);}
+  .tabcontent{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;}
+  .tabcontent p{font-size:14.5px;line-height:1.75;color:rgba(43,24,16,.72);margin:0 0 16px;}
+  .tabcontent ul{padding-left:20px;margin:0;}
+  .tabcontent li{font-size:14px;line-height:1.9;color:rgba(43,24,16,.7);}
+
+  .nutritable{width:100%;border-collapse:collapse;font-size:13.5px;}
+  .nutritable td{padding:11px 4px;border-bottom:1px solid var(--line);}
+  .nutritable td:last-child{text-align:right;font-weight:700;}
+  .nutritable tr:first-child td{font-weight:700;font-size:15px;padding-bottom:14px;}
+
+  .certgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:10px;}
+  .certgrid .cert{border:1px solid var(--line);border-radius:3px;padding:18px 12px;text-align:center;}
+  .certgrid svg{width:26px;height:26px;stroke:var(--green-dark);margin:0 auto 10px;}
+  .certgrid .cert div{font-size:12.5px;font-weight:700;}
+
+  /* reviews tab */
+  .revsummary{display:flex;gap:40px;align-items:center;margin-bottom:34px;}
+  .revsummary .big{font-family:'Playfair Display',serif;font-size:48px;font-weight:700;}
+  .revsummary .stars{color:var(--gold);font-size:15px;margin:6px 0;}
+  .bars{flex:1;}
+  .barrow{display:flex;align-items:center;gap:10px;font-size:12px;margin-bottom:6px;}
+  .barrow .track{flex:1;height:6px;background:var(--cream-2);border-radius:3px;overflow:hidden;}
+  .barrow .fill{height:100%;background:var(--gold);}
+  .revlist{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  .revitem{border:1px solid var(--line);border-radius:4px;padding:20px;}
+  .revitem .stars{color:var(--gold);font-size:12.5px;margin-bottom:8px;}
+  .revitem h5{font-size:13.5px;margin:0 0 8px;}
+  .revitem p{font-size:13px;color:rgba(43,24,16,.68);margin:0 0 10px;}
+  .revitem .who{font-size:11.5px;color:rgba(43,24,16,.5);font-weight:600;}
+
+  /* cross-sell */
+  .crosssell{background:var(--cream);padding:60px 0;}
+  .crosssell h3{text-align:center;font-size:26px;margin:0 0 34px;}
+  .cs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  .cs-card{display:block;background:#fff;border-radius:3px;overflow:hidden;}
+  .cs-card .ph{height:150px;}
+  .cs-body{padding:14px;}
+  .cs-body h4{font-size:13.5px;margin:0 0 4px;}
+  .cs-body .price{font-size:14px;font-weight:700;}
+
+  footer{background:var(--espresso);color:rgba(246,238,225,.65);padding:34px 0;font-size:12.5px;}
+  footer .wrap{display:flex;justify-content:space-between;}
+
+  @media(max-width:940px){
+    .pdp,.tabcontent{grid-template-columns:1fr;}
+    .revlist,.cs-grid{grid-template-columns:1fr 1fr;}
+    nav.mainnav{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap navrow">
+    <a class="logo" href="homepage-variant-a.html">DMC <span>Nuts</span></a>
+    <nav class="mainnav"><a href="shop.html">Shop</a><a href="#">About</a><a href="blog.html">Health Blog</a><a href="#">Wholesale</a></nav>
+    <div class="navicons">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M20 21a8 8 0 10-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+      <a href="shop.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 2l1 5h10l1-5"/><path d="M3 7h18l-1.6 11.2A2 2 0 0117.4 20H6.6a2 2 0 01-2-1.8L3 7z"/></svg></a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap crumb"><a href="homepage-variant-a.html">Home</a> / <a href="shop.html">Shop</a> / <a href="shop.html">Almonds</a> / Premium Mamra Almonds</div>
+
+<div class="wrap pdp">
+  <div>
+    <div class="gallery-main"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=700&h=560&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div></div>
+    <div class="gallery-thumbs">
+      <div class="ph active" style="background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=700&h=560&fit=crop&auto=format&q=80&sat=-10');background-size:cover;background-position:center;"></div>
+      <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=700&h=560&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div>
+      <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=700&h=560&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div>
+      <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=700&h=560&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div>
+    </div>
+  </div>
+  <div class="pinfo">
+    <span class="badge">Bestseller · Farm-Sourced</span>
+    <h1>Premium Mamra Almonds</h1>
+    <div class="ratingrow"><div class="stars">★★★★★</div><a class="rlink" href="#reviews">412 reviews</a></div>
+    <div class="priceblock"><div class="now">₹549</div><div class="old">₹649</div><span class="save">Save 15%</span></div>
+    <div class="taxnote">Inclusive of all taxes · Free shipping on orders above ₹999</div>
+
+    <div class="optlabel">Pack Size</div>
+    <div class="weightopts">
+      <div class="wopt">250g<small>₹549</small></div>
+      <div class="wopt active">500g<small>₹999</small></div>
+      <div class="wopt">1kg<small>₹1,849</small></div>
+    </div>
+
+    <div class="subscribe-row">
+      <label><input type="checkbox"> Subscribe & save 12%</label>
+      <p>Auto-delivered every 30 days · pause or cancel anytime</p>
+    </div>
+
+    <div class="buyrow">
+      <div class="qty"><button>–</button><span>1</span><button>+</button></div>
+      <button class="btn btn-outline">Add to Cart</button>
+      <button class="btn btn-dark">Buy Now</button>
+    </div>
+
+    <div class="trustmini">
+      <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"/></svg>FSSAI Certified</div>
+      <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg>100% Organic</div>
+      <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 6h13v9H3zM16 9h4l2 3v3h-6z"/><circle cx="7" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg>COD Available</div>
+      <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 4v16h16M4 14l4-4 4 3 6-7"/></svg>7-Day Returns</div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap tabs">
+  <div class="tabnav">
+    <div class="t active">Description</div>
+    <div class="t">Nutrition Info</div>
+    <div class="t">Certifications</div>
+    <div class="t" id="reviews">Reviews (412)</div>
+  </div>
+  <div class="tabcontent">
+    <div>
+      <p>Sourced from the Mamra orchards of Kashmir, these almonds are known for their dense, oily texture and rich flavour — a variety prized far above ordinary Californian almonds for both taste and nutrition.</p>
+      <p>Every batch is hand-sorted for size and moisture, then vacuum-sealed within 72 hours of hulling to lock in freshness. No bleaching, no polishing, no additives.</p>
+      <ul>
+        <li>Single-origin, Kashmir Mamra variety</li>
+        <li>Hand-sorted, machine-graded for uniform size</li>
+        <li>Vacuum-sealed for extended shelf life</li>
+        <li>Zero additives or preservatives</li>
+      </ul>
+    </div>
+    <div>
+      <table class="nutritable">
+        <tr><td>Nutrition Facts</td><td>per 30g serving</td></tr>
+        <tr><td>Energy</td><td>174 kcal</td></tr>
+        <tr><td>Protein</td><td>6.4 g</td></tr>
+        <tr><td>Total Fat</td><td>15.2 g</td></tr>
+        <tr><td>Dietary Fibre</td><td>3.6 g</td></tr>
+        <tr><td>Vitamin E</td><td>7.8 mg (52% DV)</td></tr>
+        <tr><td>Magnesium</td><td>77 mg (18% DV)</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="wrap" style="padding-bottom:70px;">
+  <h3 style="font-size:24px;margin-bottom:6px;">Certifications</h3>
+  <p style="color:rgba(43,24,16,.6);font-size:14px;margin:0 0 10px;">Every batch is tested and certified before it reaches your cart.</p>
+  <div class="certgrid">
+    <div class="cert"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"/></svg><div>FSSAI Registered</div></div>
+    <div class="cert"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg><div>ISO 22000:2018</div></div>
+    <div class="cert"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg><div>Organic Certified</div></div>
+  </div>
+</div>
+
+<div class="wrap" style="padding-bottom:70px;">
+  <div class="revsummary">
+    <div>
+      <div class="big">4.8</div>
+      <div class="stars">★★★★★</div>
+      <div style="font-size:12px;color:rgba(43,24,16,.55)">412 ratings</div>
+    </div>
+    <div class="bars">
+      <div class="barrow"><span>5★</span><div class="track"><div class="fill" style="width:78%"></div></div><span>78%</span></div>
+      <div class="barrow"><span>4★</span><div class="track"><div class="fill" style="width:15%"></div></div><span>15%</span></div>
+      <div class="barrow"><span>3★</span><div class="track"><div class="fill" style="width:4%"></div></div><span>4%</span></div>
+      <div class="barrow"><span>2★</span><div class="track"><div class="fill" style="width:2%"></div></div><span>2%</span></div>
+      <div class="barrow"><span>1★</span><div class="track"><div class="fill" style="width:1%"></div></div><span>1%</span></div>
+    </div>
+  </div>
+  <div class="revlist">
+    <div class="revitem"><div class="stars">★★★★★</div><h5>Genuinely different from store-bought</h5><p>The texture is richer and they taste fresher than anything I've bought at a supermarket. Will reorder in 1kg next time.</p><div class="who">Aditi R. · Verified Buyer</div></div>
+    <div class="revitem"><div class="stars">★★★★★</div><h5>Perfect size, perfect freshness</h5><p>Consistent grading — every almond in the pack is roughly the same size. Packaging kept them crisp for two months.</p><div class="who">Karan M. · Verified Buyer</div></div>
+    <div class="revitem"><div class="stars">★★★★☆</div><h5>Great taste, slightly pricey</h5><p>Quality is excellent but I wish the 1kg pack had a small discount for repeat subscribers.</p><div class="who">Priya S. · Verified Buyer</div></div>
+    <div class="revitem"><div class="stars">★★★★★</div><h5>Kids love it as a snack box filler</h5><p>Switched from a mass-market brand and the difference in crunch and taste is obvious immediately.</p><div class="who">Rohan T. · Verified Buyer</div></div>
+  </div>
+</div>
+
+<div class="crosssell">
+  <div class="wrap">
+    <h3>Complete your order</h3>
+    <div class="cs-grid">
+      <a class="cs-card" href="shop.html"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1723466998040-78d7e2ef6d72?w=700&h=560&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div><div class="cs-body"><h4>Whole W240 Cashews</h4><div class="price">₹499</div></div></a>
+      <a class="cs-card" href="shop.html"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1610137512859-aa919f651a05?w=700&h=560&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div><div class="cs-body"><h4>Salted Pistachios</h4><div class="price">₹729</div></div></a>
+      <a class="cs-card" href="shop.html"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1645291784298-8ef1f29d25f7?w=700&h=560&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div><div class="cs-body"><h4>Diwali Gift Box</h4><div class="price">₹1,299</div></div></a>
+      <a class="cs-card" href="shop.html"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1629738601425-494c3d6ba3e2?w=700&h=560&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div><div class="cs-body"><h4>Almond & Raisin Mix</h4><div class="price">₹349</div></div></a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap"><div>© 2026 DMC Nuts. All rights reserved. · <a href="homepage-variant-a.html" style="color:rgba(246,238,225,.65);text-decoration:underline;">Home</a> · <a href="shop.html" style="color:rgba(246,238,225,.65);text-decoration:underline;">Shop</a></div><div>Payments: UPI · Cards · COD · Razorpay</div></div>
+</footer>
+
+</body>
+</html>

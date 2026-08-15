@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DMC Nuts — Homepage (Variant A: Espresso Luxe)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --espresso:#2B1810; --espresso-2:#3B2418; --walnut:#6B4529;
+    --gold:#C89B4C; --gold-light:#E8C77E; --green:#5C7A52; --green-dark:#3F5636;
+    --cream:#F6EEE1; --cream-2:#EFE0C6; --magenta:#93314F;
+    --ink:#241309; --line:rgba(246,238,225,.14); --line-dark:rgba(43,24,16,.12);
+    --maxw:1240px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--cream);}
+  h1,h2,h3,.display{font-family:'Playfair Display',serif;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
+  button{font-family:inherit;cursor:pointer;border:none;}
+
+  /* placeholder image blocks */
+  .ph{background:linear-gradient(135deg,var(--walnut),var(--espresso-2));display:flex;align-items:center;justify-content:center;color:rgba(246,238,225,.55);font-size:13px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;text-align:center;padding:12px;}
+  .ph.light{background:linear-gradient(135deg,var(--cream-2),#ddc9a3);color:rgba(43,24,16,.45);}
+
+  /* announcement bar */
+  .announce{background:var(--espresso);color:var(--gold-light);font-size:13px;text-align:center;padding:9px 20px;letter-spacing:.02em;}
+  .announce b{color:var(--cream);}
+
+  /* header */
+  header{background:var(--cream);border-bottom:1px solid var(--line-dark);position:relative;z-index:40;}
+  .navrow{display:flex;align-items:center;justify-content:space-between;padding:18px 0;}
+  .logo{font-size:26px;font-weight:800;letter-spacing:.01em;}
+  .logo span{color:var(--walnut);}
+  nav.mainnav{display:flex;gap:34px;align-items:center;}
+  nav.mainnav>div{position:relative;padding:6px 0;}
+  nav.mainnav a.top{font-weight:600;font-size:14.5px;letter-spacing:.02em;}
+  .navicons{display:flex;gap:20px;align-items:center;}
+  .navicons svg{width:20px;height:20px;stroke:var(--ink);}
+  .cartcount{background:var(--magenta);color:#fff;font-size:10px;border-radius:50%;width:16px;height:16px;display:flex;align-items:center;justify-content:center;position:relative;top:-9px;left:-8px;font-weight:700;}
+  .megamenu{display:none;position:absolute;top:100%;left:-40px;background:#fff;box-shadow:0 18px 40px rgba(43,24,16,.16);padding:26px;border-radius:2px;width:520px;gap:30px;grid-template-columns:repeat(3,1fr);}
+  nav.mainnav>div:hover .megamenu{display:grid;}
+  .megamenu h4{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--walnut);margin:0 0 10px;font-weight:700;}
+  .megamenu a{display:block;font-size:14px;padding:5px 0;color:var(--ink);opacity:.85;}
+  .megamenu a:hover{color:var(--magenta);opacity:1;}
+
+  /* hero */
+  .hero{background:radial-gradient(ellipse at 75% 30%, #4a2c1a 0%, var(--espresso) 60%);color:var(--cream);position:relative;overflow:hidden;}
+  .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding-top:76px;padding-bottom:70px;}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-light);font-weight:700;margin-bottom:22px;}
+  .eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold-light);}
+  .hero h1{font-size:52px;line-height:1.08;margin:0 0 22px;font-weight:700;}
+  .hero h1 em{font-style:italic;color:var(--gold-light);}
+  .hero p.lead{font-size:17px;line-height:1.65;color:rgba(246,238,225,.78);max-width:460px;margin:0 0 32px;}
+  .herobtns{display:flex;gap:16px;margin-bottom:44px;}
+  .btn{padding:15px 30px;font-size:14.5px;font-weight:700;letter-spacing:.02em;border-radius:2px;display:inline-flex;align-items:center;gap:8px;}
+  .btn-gold{background:var(--gold);color:var(--espresso);}
+  .btn-outline{border:1.5px solid rgba(246,238,225,.4);color:var(--cream);background:transparent;}
+  .trustrow{display:flex;gap:30px;flex-wrap:wrap;}
+  .trustrow .item{display:flex;align-items:center;gap:9px;font-size:12.5px;color:rgba(246,238,225,.7);font-weight:600;}
+  .trustrow svg{width:18px;height:18px;stroke:var(--gold-light);flex-shrink:0;}
+  .hero-visual{position:relative;}
+  .hero-visual .ph{height:460px;border-radius:3px;border:1px solid rgba(246,238,225,.14);}
+  .hero-shellcard{position:absolute;bottom:-26px;left:-30px;background:var(--cream);color:var(--ink);padding:16px 20px;border-radius:2px;box-shadow:0 18px 34px rgba(0,0,0,.28);display:flex;gap:12px;align-items:center;width:230px;}
+  .hero-shellcard .num{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--walnut);}
+  .hero-shellcard .txt{font-size:11.5px;line-height:1.3;color:rgba(43,24,16,.65);font-weight:600;}
+
+  /* signature shell-crack divider */
+  .shellcrack{height:64px;background:var(--espresso);position:relative;overflow:hidden;}
+  .shellcrack svg{position:absolute;bottom:-1px;left:0;width:100%;height:70px;}
+
+  /* promise strip */
+  .promise{background:var(--gold);padding:14px 0;}
+  .promise .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;}
+  .promise .item{font-size:13px;font-weight:700;color:var(--espresso);display:flex;align-items:center;gap:8px;}
+  .promise .item svg{width:16px;height:16px;stroke:var(--espresso);}
+  .promise .countdown{background:var(--espresso);color:var(--cream);font-size:12.5px;font-weight:700;padding:7px 16px;border-radius:2px;display:flex;gap:6px;letter-spacing:.03em;}
+
+  section{padding:84px 0;}
+  .sectionhead{text-align:center;max-width:600px;margin:0 auto 52px;}
+  .sectionhead .eyebrow{color:var(--walnut);justify-content:center;display:flex;}
+  .sectionhead .eyebrow::before{background:var(--walnut);}
+  .sectionhead h2{font-size:36px;margin:0 0 12px;color:var(--espresso);}
+  .sectionhead p{font-size:15px;color:rgba(43,24,16,.62);line-height:1.6;}
+
+  /* categories */
+  .cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+  .cat-card{display:block;background:#fff;border-radius:3px;overflow:hidden;box-shadow:0 4px 18px rgba(43,24,16,.06);transition:transform .2s;}
+  .cat-card:hover{transform:translateY(-5px);}
+  .cat-card .ph.light{height:180px;}
+  .cat-card .cat-body{padding:20px 20px 24px;}
+  .cat-card h3{font-size:19px;margin:0 0 6px;}
+  .cat-card p{font-size:13px;color:rgba(43,24,16,.6);margin:0 0 14px;}
+  .cat-card .link{font-size:13px;font-weight:700;color:var(--walnut);display:inline-flex;align-items:center;gap:6px;}
+
+  /* best sellers */
+  .best{background:var(--cream-2);}
+  .prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+  .prod-card{background:#fff;border-radius:3px;overflow:hidden;position:relative;}
+  .prod-card .badge{position:absolute;top:12px;left:12px;background:var(--magenta);color:#fff;font-size:10.5px;font-weight:700;padding:4px 9px;border-radius:2px;letter-spacing:.03em;}
+  .prod-card .wish{position:absolute;top:10px;right:10px;background:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;}
+  .prod-card .wish svg{width:15px;height:15px;stroke:var(--espresso);}
+  .prod-card .ph.light{height:200px;}
+  .prod-body{padding:18px 18px 20px;}
+  .prod-body .stars{color:var(--gold);font-size:12px;margin-bottom:6px;}
+  .prod-body h4{font-size:15.5px;margin:0 0 4px;font-weight:700;}
+  .prod-body .wt{font-size:12px;color:rgba(43,24,16,.55);margin-bottom:10px;}
+  .prod-body .pricerow{display:flex;justify-content:space-between;align-items:center;}
+  .prod-body .price{font-weight:700;font-size:16px;}
+  .prod-body .price .old{font-size:12px;color:rgba(43,24,16,.4);text-decoration:line-through;font-weight:500;margin-right:6px;}
+  .addbtn{background:var(--espresso);color:var(--cream);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;}
+  .addbtn svg{width:16px;height:16px;stroke:var(--cream);}
+
+  /* benefits */
+  .benefits-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;}
+  .benefit{text-align:center;}
+  .benefit .icon{width:64px;height:64px;border-radius:50%;background:var(--cream-2);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;}
+  .benefit .icon svg{width:28px;height:28px;stroke:var(--green-dark);}
+  .benefit h4{font-size:15.5px;margin:0 0 6px;}
+  .benefit p{font-size:12.5px;color:rgba(43,24,16,.58);line-height:1.5;margin:0;}
+
+  /* story */
+  .story{background:var(--espresso);color:var(--cream);}
+  .story .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:60px;align-items:center;}
+  .story .ph{height:420px;border-radius:3px;}
+  .story .eyebrow{color:var(--gold-light);}
+  .story h2{font-size:34px;margin:0 0 18px;}
+  .story p{font-size:15px;line-height:1.7;color:rgba(246,238,225,.75);margin:0 0 26px;}
+  .certrow{display:flex;gap:14px;}
+  .cert{background:rgba(246,238,225,.08);border:1px solid rgba(246,238,225,.18);padding:12px 16px;border-radius:2px;display:flex;align-items:center;gap:9px;font-size:12px;font-weight:700;}
+  .cert svg{width:17px;height:17px;stroke:var(--gold-light);}
+
+  /* reviews */
+  .rev-top{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:44px;flex-wrap:wrap;gap:20px;}
+  .rev-agg{display:flex;align-items:center;gap:14px;}
+  .rev-agg .score{font-family:'Playfair Display',serif;font-size:44px;font-weight:700;color:var(--espresso);}
+  .rev-agg .stars{color:var(--gold);font-size:15px;}
+  .rev-agg .sub{font-size:12px;color:rgba(43,24,16,.55);}
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .rev-card{background:#fff;padding:26px;border-radius:3px;box-shadow:0 4px 18px rgba(43,24,16,.05);}
+  .rev-card .stars{color:var(--gold);font-size:13px;margin-bottom:12px;}
+  .rev-card p{font-size:14px;line-height:1.6;color:rgba(43,24,16,.75);margin:0 0 16px;}
+  .rev-who{display:flex;align-items:center;gap:10px;}
+  .rev-who .av{width:34px;height:34px;border-radius:50%;background:var(--cream-2);}
+  .rev-who .name{font-size:13px;font-weight:700;}
+  .rev-who .loc{font-size:11.5px;color:rgba(43,24,16,.5);}
+
+  /* subscribe upsell */
+  .upsell{background:linear-gradient(120deg,var(--green-dark),var(--green));color:#fff;border-radius:4px;padding:44px 50px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;margin:0 auto;max-width:var(--maxw);}
+  .upsell h3{font-size:26px;margin:0 0 8px;}
+  .upsell p{font-size:14px;color:rgba(255,255,255,.82);margin:0;max-width:420px;}
+  .btn-cream{background:var(--cream);color:var(--espresso);}
+
+  /* footer */
+  footer{background:var(--espresso);color:rgba(246,238,225,.7);padding-top:70px;}
+  .foot-news{background:var(--gold-light);color:var(--espresso);text-align:center;padding:36px 20px;margin-bottom:60px;}
+  .foot-news h3{font-size:24px;margin:0 0 8px;}
+  .foot-news p{font-size:13.5px;margin:0 0 20px;}
+  .foot-form{display:flex;justify-content:center;gap:10px;max-width:420px;margin:0 auto;}
+  .foot-form input{flex:1;padding:13px 16px;border:none;border-radius:2px;font-family:inherit;font-size:14px;}
+  .foot-cols{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:40px;padding-bottom:50px;}
+  .foot-cols h5{color:var(--cream);font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 18px;}
+  .foot-cols a{display:block;font-size:13.5px;padding:6px 0;color:rgba(246,238,225,.65);}
+  .foot-bottom{border-top:1px solid var(--line);padding:22px 0;display:flex;justify-content:space-between;font-size:12.5px;color:rgba(246,238,225,.5);}
+
+  /* whatsapp widget */
+  .wa{position:fixed;bottom:26px;right:26px;width:56px;height:56px;border-radius:50%;background:#3F5636;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(0,0,0,.28);z-index:50;}
+  .wa svg{width:26px;height:26px;stroke:#fff;fill:none;}
+
+  /* ---- Minimal motion system ---- */
+  @media (prefers-reduced-motion: no-preference){
+    .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1);}
+    .reveal.visible{opacity:1;transform:translateY(0);}
+    .cat-grid .reveal:nth-child(2),.prod-grid .reveal:nth-child(2),.benefits-grid .reveal:nth-child(2),.rev-grid .reveal:nth-child(2){transition-delay:.08s;}
+    .cat-grid .reveal:nth-child(3),.prod-grid .reveal:nth-child(3),.benefits-grid .reveal:nth-child(3),.rev-grid .reveal:nth-child(3){transition-delay:.16s;}
+    .cat-grid .reveal:nth-child(4),.prod-grid .reveal:nth-child(4),.benefits-grid .reveal:nth-child(4){transition-delay:.24s;}
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+    .hero-fade-1{animation:fadeUp .8s ease both;}
+    .hero-fade-2{animation:fadeUp .8s ease .12s both;}
+    .hero-fade-3{animation:fadeUp .8s ease .24s both;}
+    .hero-fade-4{animation:fadeUp .8s ease .36s both;}
+    .hero-fade-5{animation:fadeUp .9s ease .3s both;}
+
+    .btn{transition:transform .2s ease,box-shadow .2s ease,opacity .2s ease;}
+    .btn:hover{transform:translateY(-2px);}
+    .btn-gold:hover{box-shadow:0 10px 22px rgba(200,155,76,.35);}
+    .btn-cream:hover{box-shadow:0 10px 22px rgba(0,0,0,.18);}
+    .prod-card{transition:transform .25s ease,box-shadow .25s ease;}
+    .prod-card:hover{transform:translateY(-5px);box-shadow:0 16px 30px rgba(43,24,16,.12);}
+    .addbtn{transition:transform .2s ease,background .2s ease;}
+    .addbtn:hover{transform:scale(1.08);background:var(--walnut);}
+    .cat-card .link{transition:gap .2s ease;}
+    .cat-card:hover .link{gap:10px;}
+    .rev-card{transition:transform .25s ease,box-shadow .25s ease;}
+    .rev-card:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(43,24,16,.08);}
+    .benefit .icon{transition:transform .25s ease,background .25s ease;}
+    .benefit:hover .icon{transform:scale(1.08);background:var(--gold);}
+    .benefit:hover .icon svg{stroke:var(--espresso);}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1;transform:none;}
+  }
+
+  @media(max-width:980px){
+    .hero .wrap,.story .wrap{grid-template-columns:1fr;}
+    .cat-grid,.prod-grid,.benefits-grid{grid-template-columns:repeat(2,1fr);}
+    .rev-grid{grid-template-columns:1fr;}
+    .foot-cols{grid-template-columns:1fr 1fr;}
+    nav.mainnav{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<div style="background:#1a0f08;color:rgba(246,238,225,.55);font-size:11.5px;text-align:center;padding:6px 20px;">Design demo — Variant A: Espresso Luxe · <a href="homepage-variant-b.html" style="color:#E8C77E;font-weight:700;">View Variant B →</a></div>
+<div class="announce">🎁 Festive Gift Boxes now live — <b>Free shipping above ₹999</b> across India</div>
+
+<header>
+  <div class="wrap navrow">
+    <a class="logo" href="homepage-variant-a.html">DMC <span>Nuts</span></a>
+    <nav class="mainnav">
+      <div><a class="top" href="shop.html">Shop</a>
+        <div class="megamenu">
+          <div><h4>By Nut</h4><a href="shop.html">Almonds</a><a href="shop.html">Cashews</a><a href="shop.html">Pistachios</a><a href="shop.html">Walnuts</a></div>
+          <div><h4>By Purpose</h4><a href="shop.html">Everyday Packs</a><a href="shop.html">Gift Boxes</a><a href="#">Wholesale / B2B</a></div>
+          <div><h4>Trending</h4><a href="shop.html">Best Sellers</a><a href="shop.html">Festive Collection</a><a href="shop.html">New Arrivals</a></div>
+        </div>
+      </div>
+      <a class="top" href="#">About</a>
+      <a class="top" href="blog.html">Health Blog</a>
+      <a class="top" href="#">Wholesale</a>
+    </nav>
+    <div class="navicons">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M20 21a8 8 0 10-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+      <a style="position:relative" href="shop.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 2l1 5h10l1-5"/><path d="M3 7h18l-1.6 11.2A2 2 0 0117.4 20H6.6a2 2 0 01-2-1.8L3 7z"/></svg><span class="cartcount">3</span></a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:0;">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow hero-fade-1">Farm to Pack · Since 1994</div>
+      <h1 class="hero-fade-2">Premium nuts,<br><em>packed</em> with purpose.</h1>
+      <p class="lead hero-fade-3">Hand-sorted almonds, cashews and pistachios sourced directly from India's finest orchards — no additives, no shortcuts, just the nut as nature intended.</p>
+      <div class="herobtns hero-fade-4">
+        <a class="btn btn-gold" href="shop.html">Shop Bestsellers
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn btn-outline" href="#">Our Story</a>
+      </div>
+      <div class="trustrow hero-fade-4">
+        <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"/></svg>FSSAI Certified</div>
+        <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg>ISO 22000</div>
+        <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg>100% Organic</div>
+      </div>
+    </div>
+    <div class="hero-visual hero-fade-5">
+      <div class="ph" style="height:460px;background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=1000&amp;h=920&amp;fit=crop&amp;auto=format&amp;q=80');background-size:cover;background-position:center;"></div>
+      <div class="hero-shellcard">
+        <div class="num">30+</div>
+        <div class="txt">Years sourcing directly from Indian orchards</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="shellcrack">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C240,90 380,0 620,30 C860,60 1000,10 1200,40 C1320,55 1400,35 1440,40 L1440,80 L0,80 Z" fill="#F6EEE1"/></svg>
+</div>
+
+<div class="promise">
+  <div class="wrap">
+    <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>Free shipping over ₹999</div>
+    <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>Bulk pricing on 1kg+ packs</div>
+    <div class="countdown">⏱ Diwali Gift Sale ends in 02d : 14h : 08m</div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="sectionhead reveal">
+      <div class="eyebrow">Shop by Category</div>
+      <h2>Every nut, at its peak</h2>
+      <p>Four core ranges, sorted and graded for size, moisture and taste consistency in every batch.</p>
+    </div>
+    <div class="cat-grid">
+      <a class="cat-card reveal" href="shop.html">
+        <div class="ph light" style="height:180px;background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&amp;h=360&amp;fit=crop&amp;auto=format&amp;q=80');background-size:cover;background-position:center;"></div>
+        <div class="cat-body"><h3>Almonds</h3><p>Mamra & Californian, whole or split</p><span class="link">Shop Almonds →</span></div>
+      </a>
+      <a class="cat-card reveal" href="shop.html">
+        <div class="ph light" style="height:180px;background-image:url('https://images.unsplash.com/photo-1723466998040-78d7e2ef6d72?w=500&amp;h=360&amp;fit=crop&amp;auto=format&amp;q=80');background-size:cover;background-position:center;"></div>
+        <div class="cat-body"><h3>Cashews</h3><p>W180, W240 grades, roasted & raw</p><span class="link">Shop Cashews →</span></div>
+      </a>
+      <a class="cat-card reveal" href="shop.html">
+        <div class="ph light" style="height:180px;background-image:url('https://images.unsplash.com/photo-1610137512859-aa919f651a05?w=500&amp;h=360&amp;fit=crop&amp;auto=format&amp;q=80');background-size:cover;background-position:center;"></div>
+        <div class="cat-body"><h3>Pistachios</h3><p>Iranian & Californian, salted options</p><span class="link">Shop Pistachios →</span></div>
+      </a>
+      <a class="cat-card reveal" href="shop.html">
+        <div class="ph light" style="height:180px;background-image:url('https://images.unsplash.com/photo-1645291784298-8ef1f29d25f7?w=500&amp;h=360&amp;fit=crop&amp;auto=format&amp;q=80');background-size:cover;background-position:center;"></div>
+        <div class="cat-body"><h3>Gift Packs</h3><p>Curated boxes for festivals & corporates</p><span class="link">Shop Gift Packs →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="best">
+  <div class="wrap">
+    <div class="sectionhead reveal">
+      <div class="eyebrow">Most Loved</div>
+      <h2>Our bestsellers</h2>
+      <p>The packs our customers reorder most — rated 4.7★ and above.</p>
+    </div>
+    <div class="prod-grid">
+      <div class="prod-card reveal">
+        <span class="badge">Bestseller</span><div class="wish"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div>
+        <a href="product.html"><div class="ph light" style="height:200px;background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&amp;h=400&amp;fit=crop&amp;auto=format&amp;q=80');background-size:cover;background-position:center;"></div></a>
+        <div class="prod-body"><div class="stars">★★★★★</div><a href="product.html"><h4>Premium Mamra Almonds</h4></a><div class="wt">250g · 500g · 1kg</div>
+        <div class="pricerow"><div class="price"><span class="old">₹649</span>₹549</div><a class="addbtn" href="product.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></a></div></div>
+      </div>
+      <div class="prod-card reveal">
+        <div class="wish"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div>
+        <a href="product.html"><div class="ph light" style="height:200px;background-image:url('https://images.unsplash.com/photo-1723466998040-78d7e2ef6d72?w=500&amp;h=400&amp;fit=crop&amp;auto=format&amp;q=80');background-size:cover;background-position:center;"></div></a>
+        <div class="prod-body"><div class="stars">★★★★★</div><a href="product.html"><h4>Whole W240 Cashews</h4></a><div class="wt">250g · 500g · 1kg</div>
+        <div class="pricerow"><div class="price">₹499</div><a class="addbtn" href="product.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></a></div></div>
+      </div>
+      <div class="prod-card reveal">
+        <span class="badge" style="background:var(--green-dark)">New</span><div class="wish"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div>
+        <a href="product.html"><div class="ph light" style="height:200px;background-image:url('https://images.unsplash.com/photo-1610137512859-aa919f651a05?w=500&amp;h=400&amp;fit=crop&amp;auto=format&amp;q=80');background-size:cover;background-position:center;"></div></a>
+        <div class="prod-body"><div class="stars">★★★★☆</div><a href="product.html"><h4>Roasted & Salted Pistachios</h4></a><div class="wt">250g · 500g</div>
+        <div class="pricerow"><div class="price">₹729</div><a class="addbtn" href="product.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></a></div></div>
+      </div>
+      <div class="prod-card reveal">
+        <div class="wish"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div>
+        <a href="product.html"><div class="ph light" style="height:200px;background-image:url('https://images.unsplash.com/photo-1645291784298-8ef1f29d25f7?w=500&amp;h=400&amp;fit=crop&amp;auto=format&amp;q=80');background-size:cover;background-position:center;"></div></a>
+        <div class="prod-body"><div class="stars">★★★★★</div><a href="product.html"><h4>Diwali Assorted Gift Box</h4></a><div class="wt">1kg mixed</div>
+        <div class="pricerow"><div class="price">₹1,299</div><a class="addbtn" href="product.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></a></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sectionhead reveal">
+      <div class="eyebrow">Why Nuts, Daily</div>
+      <h2>Small handful, real benefits</h2>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 10-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 000-7.8z"/></svg></div><h4>Heart Health</h4><p>Rich in monounsaturated fats that support cardiovascular wellness</p></div>
+      <div class="benefit reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div><h4>Sustained Energy</h4><p>A steady source of fuel for long workdays and workouts</p></div>
+      <div class="benefit reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg></div><h4>Immunity Support</h4><p>Vitamin E and zinc that help the body stay resilient</p></div>
+      <div class="benefit reveal"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h4>Protein-Rich</h4><p>A natural, plant-based protein boost in every serving</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <div class="ph reveal" style="height:420px;background-image:url('https://images.unsplash.com/photo-1757270828839-9b9d252d5627?w=900&amp;h=840&amp;fit=crop&amp;auto=format&amp;q=80');background-size:cover;background-position:center;"></div>
+    <div class="reveal">
+      <div class="eyebrow">Our Story</div>
+      <h2>From Rajasthan's orchards to your kitchen shelf</h2>
+      <p>For three decades, DMC Nuts has worked directly with growers across Rajasthan and Kashmir — sorting, grading and packing every batch within days of harvest, so what reaches you is as close to fresh-picked as a nut can be.</p>
+      <div class="certrow">
+        <div class="cert"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"/></svg>FSSAI</div>
+        <div class="cert"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/></svg>ISO 22000</div>
+        <div class="cert"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12l2.5 2.5L16 9"/></svg>Organic Certified</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="rev-top reveal">
+      <div>
+        <div class="eyebrow">Customer Love</div>
+        <h2 style="font-size:32px;margin:0;">What our customers say</h2>
+      </div>
+      <div class="rev-agg">
+        <div class="score">4.8</div>
+        <div><div class="stars">★★★★★</div><div class="sub">from 3,240+ Google reviews</div></div>
+      </div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-card reveal"><div class="stars">★★★★★</div><p>"The Mamra almonds taste nothing like what I get in stores — genuinely fresh, and the packaging keeps them crisp for months."</p><div class="rev-who"><div class="av"></div><div><div class="name">Aditi R.</div><div class="loc">Mumbai</div></div></div></div>
+      <div class="rev-card reveal"><div class="stars">★★★★★</div><p>"Ordered a gift box for Diwali and every recipient asked where it was from. Premium look, premium taste."</p><div class="rev-who"><div class="av"></div><div><div class="name">Karan M.</div><div class="loc">Delhi</div></div></div></div>
+      <div class="rev-card reveal"><div class="stars">★★★★☆</div><p>"Been buying cashews here for two years — consistent size grading every single time. That's rare."</p><div class="rev-who"><div class="av"></div><div><div class="name">Priya S.</div><div class="loc">Bengaluru</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="upsell reveal">
+    <div><h3>Never run out again</h3><p>Subscribe to your favourite pack and save 12% on every delivery, with free rescheduling anytime.</p></div>
+    <a class="btn btn-cream" href="shop.html">Build a Subscription</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-news reveal">
+      <h3>Get ₹100 off your first order</h3>
+      <p>Join our list for early access to festive drops and orchard stories.</p>
+      <div class="foot-form"><input type="email" placeholder="Enter your email"><button class="btn btn-gold" style="padding:13px 22px;">Subscribe</button></div>
+    </div>
+    <div class="foot-cols">
+      <div><a class="logo" style="color:var(--cream);margin-bottom:14px;display:inline-block;" href="homepage-variant-a.html">DMC <span style="color:var(--gold-light)">Nuts</span></a><p style="font-size:13px;line-height:1.6;max-width:260px;">Premium dry fruits, sourced direct from Indian orchards since 1994.</p></div>
+      <div><h5>Shop</h5><a href="shop.html">Almonds</a><a href="shop.html">Cashews</a><a href="shop.html">Pistachios</a><a href="shop.html">Gift Packs</a></div>
+      <div><h5>Company</h5><a href="#">Our Story</a><a href="#">Wholesale</a><a href="blog.html">Health Blog</a><a href="#">Contact</a></div>
+      <div><h5>Support</h5><a href="#">Shipping Policy</a><a href="#">Returns</a><a href="#">FAQ</a><a href="#">Track Order</a></div>
+    </div>
+    <div class="foot-bottom"><div>© 2026 DMC Nuts. All rights reserved.</div><div>Payments: UPI · Cards · COD · Razorpay</div></div>
+  </div>
+</footer>
+
+<div class="wa"><svg viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path d="M3 21l1.6-4.8A8.5 8.5 0 1112 20.5a8.4 8.4 0 01-4.3-1.2L3 21z"/></svg></div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    els.forEach(function(el){ el.classList.add('visible'); });
+    return;
+  }
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if (entry.isIntersecting){
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function(el){ obs.observe(el); });
+})();
+</script>
+
+</body>
+</html>

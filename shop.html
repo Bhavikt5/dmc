@@ -1,207 +1,870 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>DMC Nuts — Shop</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --espresso:#2B1810; --walnut:#6B4529; --gold:#C89B4C;
-    --green:#5C7A52; --green-dark:#3F5636; --green-pale:#E7EEE1;
-    --cream:#FBF7EF; --cream-2:#F1E6D3; --magenta:#93314F;
-    --ink:#241309; --line:rgba(43,24,16,.12); --maxw:1240px;
-  }
-  *{box-sizing:border-box;}
-  body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:#fff;}
-  h1,h2,h3{font-family:'Playfair Display',serif;}
-  a{color:inherit;text-decoration:none;}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
-  button{font-family:inherit;cursor:pointer;border:none;}
-  .ph{background:linear-gradient(135deg,var(--cream-2),#dfcda9);display:flex;align-items:center;justify-content:center;color:rgba(43,24,16,.4);font-size:12px;letter-spacing:.05em;text-transform:uppercase;font-weight:600;text-align:center;padding:8px;}
-  .prod-card>a{display:block;}
+  <head>
+    <meta charset="UTF-8" />
+    <title>DMC Nuts — Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --espresso: #2b1810;
+        --walnut: #6b4529;
+        --gold: #c89b4c;
+        --green: #5c7a52;
+        --green-dark: #3f5636;
+        --green-pale: #e7eee1;
+        --cream: #fbf7ef;
+        --cream-2: #f1e6d3;
+        --magenta: #93314f;
+        --ink: #241309;
+        --line: rgba(43, 24, 16, 0.12);
+        --maxw: 1240px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "DM Sans", sans-serif;
+        color: var(--ink);
+        background: #fff;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .wrap {
+        max-width: var(--maxw);
+        margin: 0 auto;
+        padding: 0 32px;
+      }
+      button {
+        font-family: inherit;
+        cursor: pointer;
+        border: none;
+      }
+      .ph {
+        background: linear-gradient(135deg, var(--cream-2), #dfcda9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(43, 24, 16, 0.4);
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: center;
+        padding: 8px;
+      }
+      .prod-card > a {
+        display: block;
+      }
 
-  header{background:#fff;border-bottom:1px solid var(--line);}
-  .navrow{display:flex;align-items:center;justify-content:space-between;padding:20px 0;}
-  .logo{font-size:24px;font-weight:800;}
-  .logo span{color:var(--walnut);}
-  nav.mainnav{display:flex;gap:32px;}
-  nav.mainnav a{font-weight:600;font-size:14px;}
-  .navicons{display:flex;gap:18px;align-items:center;}
-  .navicons svg{width:19px;height:19px;stroke:var(--ink);}
+      header {
+        background: #fff;
+        border-bottom: 1px solid var(--line);
+      }
+      .navrow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+      }
+      .logo {
+        font-size: 24px;
+        font-weight: 800;
+      }
+      .logo span {
+        color: var(--walnut);
+      }
+      nav.mainnav {
+        display: flex;
+        gap: 32px;
+      }
+      nav.mainnav a {
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .navicons {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+      }
+      .navicons svg {
+        width: 19px;
+        height: 19px;
+        stroke: var(--ink);
+      }
 
-  .pagehead{background:var(--cream);padding:34px 0;}
-  .crumb{font-size:12.5px;color:rgba(43,24,16,.55);margin-bottom:8px;}
-  .crumb a{color:var(--walnut);font-weight:600;}
-  .pagehead h1{font-size:32px;margin:0;}
-  .pagehead p{font-size:13.5px;color:rgba(43,24,16,.6);margin:6px 0 0;}
+      .pagehead {
+        background: var(--cream);
+        padding: 34px 0;
+      }
+      .crumb {
+        font-size: 12.5px;
+        color: rgba(43, 24, 16, 0.55);
+        margin-bottom: 8px;
+      }
+      .crumb a {
+        color: var(--walnut);
+        font-weight: 600;
+      }
+      .pagehead h1 {
+        font-size: 32px;
+        margin: 0;
+      }
+      .pagehead p {
+        font-size: 13.5px;
+        color: rgba(43, 24, 16, 0.6);
+        margin: 6px 0 0;
+      }
 
-  .shopgrid{display:grid;grid-template-columns:250px 1fr;gap:44px;padding:44px 0 80px;}
+      .shopgrid {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        gap: 44px;
+        padding: 44px 0 80px;
+      }
 
-  /* filters */
-  .filterbox{border:1px solid var(--line);border-radius:4px;padding:22px;margin-bottom:18px;}
-  .filterbox h4{font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;margin:0 0 16px;color:var(--walnut);}
-  .filteropt{display:flex;align-items:center;gap:10px;font-size:13.5px;padding:7px 0;color:rgba(43,24,16,.75);}
-  .filteropt input{accent-color:var(--walnut);}
-  .filteropt .cnt{margin-left:auto;color:rgba(43,24,16,.4);font-size:12px;}
-  .pricebar{height:4px;background:var(--cream-2);border-radius:2px;position:relative;margin:16px 0 10px;}
-  .pricebar .fill{position:absolute;left:15%;right:35%;top:0;bottom:0;background:var(--gold);border-radius:2px;}
-  .pricebar .knob{width:14px;height:14px;background:#fff;border:2px solid var(--gold);border-radius:50%;position:absolute;top:-5px;}
-  .pricelabels{display:flex;justify-content:space-between;font-size:12px;color:rgba(43,24,16,.55);}
-  .weightpills{display:flex;flex-wrap:wrap;gap:8px;}
-  .pill{border:1px solid var(--line);padding:6px 13px;border-radius:20px;font-size:12.5px;font-weight:600;}
-  .pill.active{background:var(--espresso);color:#fff;border-color:var(--espresso);}
-  .clearbtn{font-size:12.5px;font-weight:700;color:var(--magenta);width:100%;text-align:left;padding:4px 0;}
+      /* filters */
+      .filterbox {
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        padding: 22px;
+        margin-bottom: 18px;
+      }
+      .filterbox h4 {
+        font-size: 12.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin: 0 0 16px;
+        color: var(--walnut);
+      }
+      .filteropt {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13.5px;
+        padding: 7px 0;
+        color: rgba(43, 24, 16, 0.75);
+      }
+      .filteropt input {
+        accent-color: var(--walnut);
+      }
+      .filteropt .cnt {
+        margin-left: auto;
+        color: rgba(43, 24, 16, 0.4);
+        font-size: 12px;
+      }
+      .pricebar {
+        height: 4px;
+        background: var(--cream-2);
+        border-radius: 2px;
+        position: relative;
+        margin: 16px 0 10px;
+      }
+      .pricebar .fill {
+        position: absolute;
+        left: 15%;
+        right: 35%;
+        top: 0;
+        bottom: 0;
+        background: var(--gold);
+        border-radius: 2px;
+      }
+      .pricebar .knob {
+        width: 14px;
+        height: 14px;
+        background: #fff;
+        border: 2px solid var(--gold);
+        border-radius: 50%;
+        position: absolute;
+        top: -5px;
+      }
+      .pricelabels {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        color: rgba(43, 24, 16, 0.55);
+      }
+      .weightpills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .pill {
+        border: 1px solid var(--line);
+        padding: 6px 13px;
+        border-radius: 20px;
+        font-size: 12.5px;
+        font-weight: 600;
+      }
+      .pill.active {
+        background: var(--espresso);
+        color: #fff;
+        border-color: var(--espresso);
+      }
+      .clearbtn {
+        font-size: 12.5px;
+        font-weight: 700;
+        color: var(--magenta);
+        width: 100%;
+        text-align: left;
+        padding: 4px 0;
+      }
 
-  /* toolbar */
-  .toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px;flex-wrap:wrap;gap:14px;}
-  .toolbar .count{font-size:13.5px;color:rgba(43,24,16,.6);}
-  .toolbar .sortwrap{display:flex;align-items:center;gap:10px;font-size:13px;}
-  .toolbar select{border:1px solid var(--line);padding:9px 14px;border-radius:2px;font-family:inherit;font-size:13px;background:#fff;}
-  .activefilters{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;}
-  .chip{background:var(--cream-2);font-size:12px;font-weight:600;padding:6px 12px;border-radius:20px;display:flex;align-items:center;gap:6px;}
+      /* toolbar */
+      .toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 26px;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+      .toolbar .count {
+        font-size: 13.5px;
+        color: rgba(43, 24, 16, 0.6);
+      }
+      .toolbar .sortwrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+      }
+      .toolbar select {
+        border: 1px solid var(--line);
+        padding: 9px 14px;
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: 13px;
+        background: #fff;
+      }
+      .activefilters {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+      .chip {
+        background: var(--cream-2);
+        font-size: 12px;
+        font-weight: 600;
+        padding: 6px 12px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
 
-  .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
-  .prod-card{border:1px solid var(--line);border-radius:4px;overflow:hidden;position:relative;transition:box-shadow .2s;}
-  .prod-card:hover{box-shadow:0 14px 30px rgba(43,24,16,.1);}
-  .prod-card .badge{position:absolute;top:12px;left:12px;background:var(--magenta);color:#fff;font-size:10.5px;font-weight:700;padding:4px 9px;border-radius:2px;z-index:2;}
-  .prod-card .wish{position:absolute;top:10px;right:10px;background:#fff;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:2;}
-  .prod-card .wish svg{width:14px;height:14px;stroke:var(--espresso);}
-  .prod-card .ph{height:210px;}
-  .prod-body{padding:18px;}
-  .prod-body .stars{color:var(--gold);font-size:12px;margin-bottom:6px;}
-  .prod-body h4{font-size:15.5px;margin:0 0 4px;font-weight:700;}
-  .prod-body .wt{font-size:12px;color:rgba(43,24,16,.55);margin-bottom:12px;}
-  .prod-body .pricerow{display:flex;justify-content:space-between;align-items:center;}
-  .prod-body .price{font-weight:700;font-size:16px;}
-  .prod-body .price .old{font-size:12px;color:rgba(43,24,16,.4);text-decoration:line-through;font-weight:500;margin-right:6px;}
-  .addbtn{background:var(--espresso);color:#fff;font-size:12px;font-weight:700;padding:9px 16px;border-radius:2px;}
+      .prod-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+      .prod-card {
+        border: 1px solid var(--line);
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+        transition: box-shadow 0.2s;
+      }
+      .prod-card:hover {
+        box-shadow: 0 14px 30px rgba(43, 24, 16, 0.1);
+      }
+      .prod-card .badge {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background: var(--magenta);
+        color: #fff;
+        font-size: 10.5px;
+        font-weight: 700;
+        padding: 4px 9px;
+        border-radius: 2px;
+        z-index: 2;
+      }
+      .prod-card .wish {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+      }
+      .prod-card .wish svg {
+        width: 14px;
+        height: 14px;
+        stroke: var(--espresso);
+      }
+      .prod-card .ph {
+        height: 210px;
+      }
+      .prod-body {
+        padding: 18px;
+      }
+      .prod-body .stars {
+        color: var(--gold);
+        font-size: 12px;
+        margin-bottom: 6px;
+      }
+      .prod-body h4 {
+        font-size: 15.5px;
+        margin: 0 0 4px;
+        font-weight: 700;
+      }
+      .prod-body .wt {
+        font-size: 12px;
+        color: rgba(43, 24, 16, 0.55);
+        margin-bottom: 12px;
+      }
+      .prod-body .pricerow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .prod-body .price {
+        font-weight: 700;
+        font-size: 16px;
+      }
+      .prod-body .price .old {
+        font-size: 12px;
+        color: rgba(43, 24, 16, 0.4);
+        text-decoration: line-through;
+        font-weight: 500;
+        margin-right: 6px;
+      }
+      .addbtn {
+        background: var(--espresso);
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 9px 16px;
+        border-radius: 2px;
+      }
 
-  .pagination{display:flex;justify-content:center;gap:8px;margin-top:50px;}
-  .pagination a{width:36px;height:36px;border:1px solid var(--line);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;}
-  .pagination a.active{background:var(--espresso);color:#fff;border-color:var(--espresso);}
+      .pagination {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 50px;
+      }
+      .pagination a {
+        width: 36px;
+        height: 36px;
+        border: 1px solid var(--line);
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .pagination a.active {
+        background: var(--espresso);
+        color: #fff;
+        border-color: var(--espresso);
+      }
 
-  .trustfoot{background:var(--cream);padding:30px 0;border-top:1px solid var(--line);}
-  .trustfoot .wrap{display:flex;justify-content:space-around;flex-wrap:wrap;gap:20px;}
-  .trustfoot .item{display:flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;}
-  .trustfoot svg{width:20px;height:20px;stroke:var(--walnut);}
+      .trustfoot {
+        background: var(--cream);
+        padding: 30px 0;
+        border-top: 1px solid var(--line);
+      }
+      .trustfoot .wrap {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .trustfoot .item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 12.5px;
+        font-weight: 700;
+      }
+      .trustfoot svg {
+        width: 20px;
+        height: 20px;
+        stroke: var(--walnut);
+      }
 
-  footer{background:var(--espresso);color:rgba(246,238,225,.65);padding:40px 0;font-size:12.5px;}
-  footer .wrap{display:flex;justify-content:space-between;}
+      footer {
+        background: var(--espresso);
+        color: rgba(246, 238, 225, 0.65);
+        padding: 40px 0;
+        font-size: 12.5px;
+      }
+      footer .wrap {
+        display: flex;
+        justify-content: space-between;
+      }
 
-  @media(max-width:900px){
-    .shopgrid{grid-template-columns:1fr;}
-    .prod-grid{grid-template-columns:repeat(2,1fr);}
-    nav.mainnav{display:none;}
-  }
-</style>
-</head>
-<body>
+      @media (max-width: 900px) {
+        .shopgrid {
+          grid-template-columns: 1fr;
+        }
+        .prod-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        nav.mainnav {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap navrow">
+        <a class="logo" href="index.html">DMC <span>Nuts</span></a>
+        <nav class="mainnav">
+          <a href="shop.html">Shop</a><a href="#">About</a
+          ><a href="blog.html">Health Blog</a><a href="#">Wholesale</a>
+        </nav>
+        <div class="navicons">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4.3-4.3" />
+          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
+            <path d="M20 21a8 8 0 10-16 0" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <a href="#"
+            ><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
+              <path d="M6 2l1 5h10l1-5" />
+              <path
+                d="M3 7h18l-1.6 11.2A2 2 0 0117.4 20H6.6a2 2 0 01-2-1.8L3 7z"
+              /></svg
+          ></a>
+        </div>
+      </div>
+    </header>
 
-<header>
-  <div class="wrap navrow">
-    <a class="logo" href="homepage-variant-a.html">DMC <span>Nuts</span></a>
-    <nav class="mainnav">
-      <a href="shop.html">Shop</a><a href="#">About</a><a href="blog.html">Health Blog</a><a href="#">Wholesale</a>
-    </nav>
-    <div class="navicons">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M20 21a8 8 0 10-16 0"/><circle cx="12" cy="7" r="4"/></svg>
-      <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 2l1 5h10l1-5"/><path d="M3 7h18l-1.6 11.2A2 2 0 0117.4 20H6.6a2 2 0 01-2-1.8L3 7z"/></svg></a>
-    </div>
-  </div>
-</header>
-
-<div class="pagehead">
-  <div class="wrap">
-    <div class="crumb"><a href="homepage-variant-a.html">Home</a> / Shop</div>
-    <h1>Shop All Products</h1>
-    <p>42 products across almonds, cashews, pistachios and curated gift packs</p>
-  </div>
-</div>
-
-<div class="wrap shopgrid">
-  <aside>
-    <div class="filterbox">
-      <h4>Category</h4>
-      <label class="filteropt"><input type="checkbox" checked> Almonds <span class="cnt">14</span></label>
-      <label class="filteropt"><input type="checkbox"> Cashews <span class="cnt">11</span></label>
-      <label class="filteropt"><input type="checkbox"> Pistachios <span class="cnt">8</span></label>
-      <label class="filteropt"><input type="checkbox"> Walnuts <span class="cnt">5</span></label>
-      <label class="filteropt"><input type="checkbox"> Gift Packs <span class="cnt">9</span></label>
-      <label class="filteropt"><input type="checkbox"> Dried Berries <span class="cnt">4</span></label>
-    </div>
-    <div class="filterbox">
-      <h4>Price Range</h4>
-      <div class="pricebar"><div class="fill"></div><div class="knob" style="left:12%"></div><div class="knob" style="left:65%"></div></div>
-      <div class="pricelabels"><span>₹199</span><span>₹2,499</span></div>
-    </div>
-    <div class="filterbox">
-      <h4>Pack Size</h4>
-      <div class="weightpills">
-        <span class="pill active">250g</span><span class="pill">500g</span><span class="pill">1kg</span><span class="pill">Gift Box</span>
+    <div class="pagehead">
+      <div class="wrap">
+        <div class="crumb"><a href="index.html">Home</a> / Shop</div>
+        <h1>Shop All Products</h1>
+        <p>
+          42 products across almonds, cashews, pistachios and curated gift packs
+        </p>
       </div>
     </div>
-    <div class="filterbox">
-      <h4>Dietary Tags</h4>
-      <label class="filteropt"><input type="checkbox"> 100% Organic</label>
-      <label class="filteropt"><input type="checkbox"> Unsalted</label>
-      <label class="filteropt"><input type="checkbox"> No Preservatives</label>
-    </div>
-    <button class="clearbtn">Clear all filters</button>
-  </aside>
 
-  <div>
-    <div class="activefilters">
-      <span class="chip">Almonds ✕</span>
-      <span class="chip">250g ✕</span>
-    </div>
-    <div class="toolbar">
-      <div class="count">Showing 1–9 of 42 products</div>
-      <div class="sortwrap">Sort by
-        <select><option>Best Selling</option><option>Price: Low to High</option><option>Price: High to Low</option><option>Newest</option><option>Highest Rated</option></select>
+    <div class="wrap shopgrid">
+      <aside>
+        <div class="filterbox">
+          <h4>Category</h4>
+          <label class="filteropt"
+            ><input type="checkbox" checked /> Almonds
+            <span class="cnt">14</span></label
+          >
+          <label class="filteropt"
+            ><input type="checkbox" /> Cashews
+            <span class="cnt">11</span></label
+          >
+          <label class="filteropt"
+            ><input type="checkbox" /> Pistachios
+            <span class="cnt">8</span></label
+          >
+          <label class="filteropt"
+            ><input type="checkbox" /> Walnuts <span class="cnt">5</span></label
+          >
+          <label class="filteropt"
+            ><input type="checkbox" /> Gift Packs
+            <span class="cnt">9</span></label
+          >
+          <label class="filteropt"
+            ><input type="checkbox" /> Dried Berries
+            <span class="cnt">4</span></label
+          >
+        </div>
+        <div class="filterbox">
+          <h4>Price Range</h4>
+          <div class="pricebar">
+            <div class="fill"></div>
+            <div class="knob" style="left: 12%"></div>
+            <div class="knob" style="left: 65%"></div>
+          </div>
+          <div class="pricelabels"><span>₹199</span><span>₹2,499</span></div>
+        </div>
+        <div class="filterbox">
+          <h4>Pack Size</h4>
+          <div class="weightpills">
+            <span class="pill active">250g</span><span class="pill">500g</span
+            ><span class="pill">1kg</span><span class="pill">Gift Box</span>
+          </div>
+        </div>
+        <div class="filterbox">
+          <h4>Dietary Tags</h4>
+          <label class="filteropt"
+            ><input type="checkbox" /> 100% Organic</label
+          >
+          <label class="filteropt"><input type="checkbox" /> Unsalted</label>
+          <label class="filteropt"
+            ><input type="checkbox" /> No Preservatives</label
+          >
+        </div>
+        <button class="clearbtn">Clear all filters</button>
+      </aside>
+
+      <div>
+        <div class="activefilters">
+          <span class="chip">Almonds ✕</span>
+          <span class="chip">250g ✕</span>
+        </div>
+        <div class="toolbar">
+          <div class="count">Showing 1–9 of 42 products</div>
+          <div class="sortwrap">
+            Sort by
+            <select>
+              <option>Best Selling</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Newest</option>
+              <option>Highest Rated</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="prod-grid">
+          <div class="prod-card">
+            <span class="badge">-15%</span>
+            <div class="wish">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                <path
+                  d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"
+                />
+              </svg>
+            </div>
+            <a href="product.html"
+              ><div
+                class="ph"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&h=400&fit=crop&auto=format&q=80&quot;);
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div
+            ></a>
+            <div class="prod-body">
+              <div class="stars">★★★★★ (412)</div>
+              <a href="product.html"><h4>Premium Mamra Almonds</h4></a>
+              <div class="wt">250g · 500g · 1kg</div>
+              <div class="pricerow">
+                <div class="price"><span class="old">₹649</span>₹549</div>
+                <a class="addbtn" href="product.html">Add</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card">
+            <div class="wish">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                <path
+                  d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"
+                />
+              </svg>
+            </div>
+            <a href="product.html"
+              ><div
+                class="ph"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&h=400&fit=crop&auto=format&q=80&quot;);
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div
+            ></a>
+            <div class="prod-body">
+              <div class="stars">★★★★☆ (298)</div>
+              <a href="product.html"><h4>Californian Almonds</h4></a>
+              <div class="wt">250g · 500g · 1kg</div>
+              <div class="pricerow">
+                <div class="price">₹389</div>
+                <a class="addbtn" href="product.html">Add</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card">
+            <span class="badge" style="background: var(--green-dark)"
+              >Organic</span
+            >
+            <div class="wish">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                <path
+                  d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"
+                />
+              </svg>
+            </div>
+            <a href="product.html"
+              ><div
+                class="ph"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&h=400&fit=crop&auto=format&q=80&quot;);
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div
+            ></a>
+            <div class="prod-body">
+              <div class="stars">★★★★★ (156)</div>
+              <a href="product.html"><h4>Sonora Organic Almonds</h4></a>
+              <div class="wt">250g · 500g</div>
+              <div class="pricerow">
+                <div class="price">₹459</div>
+                <a class="addbtn" href="product.html">Add</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card">
+            <div class="wish">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                <path
+                  d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"
+                />
+              </svg>
+            </div>
+            <a href="product.html"
+              ><div
+                class="ph"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&h=400&fit=crop&auto=format&q=80&quot;);
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div
+            ></a>
+            <div class="prod-body">
+              <div class="stars">★★★★☆ (89)</div>
+              <a href="product.html"><h4>Split Almonds (Baking Grade)</h4></a>
+              <div class="wt">500g · 1kg</div>
+              <div class="pricerow">
+                <div class="price">₹329</div>
+                <a class="addbtn" href="product.html">Add</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card">
+            <span class="badge">Bestseller</span>
+            <div class="wish">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                <path
+                  d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"
+                />
+              </svg>
+            </div>
+            <a href="product.html"
+              ><div
+                class="ph"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&h=400&fit=crop&auto=format&q=80&quot;);
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div
+            ></a>
+            <div class="prod-body">
+              <div class="stars">★★★★★ (521)</div>
+              <a href="product.html"><h4>Roasted & Salted Almonds</h4></a>
+              <div class="wt">250g · 500g</div>
+              <div class="pricerow">
+                <div class="price">₹399</div>
+                <a class="addbtn" href="product.html">Add</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card">
+            <div class="wish">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                <path
+                  d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"
+                />
+              </svg>
+            </div>
+            <a href="product.html"
+              ><div
+                class="ph"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&h=400&fit=crop&auto=format&q=80&quot;);
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div
+            ></a>
+            <div class="prod-body">
+              <div class="stars">★★★★☆ (74)</div>
+              <a href="product.html"><h4>Honey Glazed Almonds</h4></a>
+              <div class="wt">200g</div>
+              <div class="pricerow">
+                <div class="price">₹289</div>
+                <a class="addbtn" href="product.html">Add</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card">
+            <div class="wish">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                <path
+                  d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"
+                />
+              </svg>
+            </div>
+            <a href="product.html"
+              ><div
+                class="ph"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&h=400&fit=crop&auto=format&q=80&quot;);
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div
+            ></a>
+            <div class="prod-body">
+              <div class="stars">★★★★★ (203)</div>
+              <a href="product.html"><h4>Diamond Grade Almonds</h4></a>
+              <div class="wt">500g · 1kg</div>
+              <div class="pricerow">
+                <div class="price">₹509</div>
+                <a class="addbtn" href="product.html">Add</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card">
+            <span class="badge">-10%</span>
+            <div class="wish">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                <path
+                  d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"
+                />
+              </svg>
+            </div>
+            <a href="product.html"
+              ><div
+                class="ph"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1645291784298-8ef1f29d25f7?w=500&h=400&fit=crop&auto=format&q=80&quot;);
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div
+            ></a>
+            <div class="prod-body">
+              <div class="stars">★★★★★ (67)</div>
+              <a href="product.html"><h4>Almond Assortment Gift Box</h4></a>
+              <div class="wt">1kg mixed</div>
+              <div class="pricerow">
+                <div class="price"><span class="old">₹999</span>₹899</div>
+                <a class="addbtn" href="product.html">Add</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prod-card">
+            <div class="wish">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                <path
+                  d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"
+                />
+              </svg>
+            </div>
+            <a href="product.html"
+              ><div
+                class="ph"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1629738601425-494c3d6ba3e2?w=500&h=400&fit=crop&auto=format&q=80&quot;);
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div
+            ></a>
+            <div class="prod-body">
+              <div class="stars">★★★★☆ (112)</div>
+              <a href="product.html"><h4>Almond & Raisin Trail Mix</h4></a>
+              <div class="wt">300g</div>
+              <div class="pricerow">
+                <div class="price">₹349</div>
+                <a class="addbtn" href="product.html">Add</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <a href="#">‹</a><a href="#" class="active">1</a><a href="#">2</a
+          ><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">›</a>
+        </div>
       </div>
     </div>
 
-    <div class="prod-grid">
-      <div class="prod-card"><span class="badge">-15%</span><div class="wish"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div><a href="product.html"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&h=400&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div></a><div class="prod-body"><div class="stars">★★★★★ (412)</div><a href="product.html"><h4>Premium Mamra Almonds</h4></a><div class="wt">250g · 500g · 1kg</div><div class="pricerow"><div class="price"><span class="old">₹649</span>₹549</div><a class="addbtn" href="product.html">Add</a></div></div></div>
-
-      <div class="prod-card"><div class="wish"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div><a href="product.html"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&h=400&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div></a><div class="prod-body"><div class="stars">★★★★☆ (298)</div><a href="product.html"><h4>Californian Almonds</h4></a><div class="wt">250g · 500g · 1kg</div><div class="pricerow"><div class="price">₹389</div><a class="addbtn" href="product.html">Add</a></div></div></div>
-
-      <div class="prod-card"><span class="badge" style="background:var(--green-dark)">Organic</span><div class="wish"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div><a href="product.html"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&h=400&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div></a><div class="prod-body"><div class="stars">★★★★★ (156)</div><a href="product.html"><h4>Sonora Organic Almonds</h4></a><div class="wt">250g · 500g</div><div class="pricerow"><div class="price">₹459</div><a class="addbtn" href="product.html">Add</a></div></div></div>
-
-      <div class="prod-card"><div class="wish"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div><a href="product.html"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&h=400&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div></a><div class="prod-body"><div class="stars">★★★★☆ (89)</div><a href="product.html"><h4>Split Almonds (Baking Grade)</h4></a><div class="wt">500g · 1kg</div><div class="pricerow"><div class="price">₹329</div><a class="addbtn" href="product.html">Add</a></div></div></div>
-
-      <div class="prod-card"><span class="badge">Bestseller</span><div class="wish"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div><a href="product.html"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&h=400&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div></a><div class="prod-body"><div class="stars">★★★★★ (521)</div><a href="product.html"><h4>Roasted & Salted Almonds</h4></a><div class="wt">250g · 500g</div><div class="pricerow"><div class="price">₹399</div><a class="addbtn" href="product.html">Add</a></div></div></div>
-
-      <div class="prod-card"><div class="wish"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div><a href="product.html"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&h=400&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div></a><div class="prod-body"><div class="stars">★★★★☆ (74)</div><a href="product.html"><h4>Honey Glazed Almonds</h4></a><div class="wt">200g</div><div class="pricerow"><div class="price">₹289</div><a class="addbtn" href="product.html">Add</a></div></div></div>
-
-      <div class="prod-card"><div class="wish"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div><a href="product.html"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&h=400&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div></a><div class="prod-body"><div class="stars">★★★★★ (203)</div><a href="product.html"><h4>Diamond Grade Almonds</h4></a><div class="wt">500g · 1kg</div><div class="pricerow"><div class="price">₹509</div><a class="addbtn" href="product.html">Add</a></div></div></div>
-
-      <div class="prod-card"><span class="badge">-10%</span><div class="wish"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div><a href="product.html"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1645291784298-8ef1f29d25f7?w=500&h=400&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div></a><div class="prod-body"><div class="stars">★★★★★ (67)</div><a href="product.html"><h4>Almond Assortment Gift Box</h4></a><div class="wt">1kg mixed</div><div class="pricerow"><div class="price"><span class="old">₹999</span>₹899</div><a class="addbtn" href="product.html">Add</a></div></div></div>
-
-      <div class="prod-card"><div class="wish"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"/></svg></div><a href="product.html"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1629738601425-494c3d6ba3e2?w=500&h=400&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div></a><div class="prod-body"><div class="stars">★★★★☆ (112)</div><a href="product.html"><h4>Almond & Raisin Trail Mix</h4></a><div class="wt">300g</div><div class="pricerow"><div class="price">₹349</div><a class="addbtn" href="product.html">Add</a></div></div></div>
+    <div class="trustfoot">
+      <div class="wrap">
+        <div class="item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+            <path d="M5 12l5 5L20 7" /></svg
+          >Free shipping over ₹999
+        </div>
+        <div class="item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+            <path
+              d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"
+            /></svg
+          >FSSAI Certified
+        </div>
+        <div class="item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+            <path d="M3 6h13v9H3zM16 9h4l2 3v3h-6z" />
+            <circle cx="7" cy="18" r="1.6" />
+            <circle cx="18" cy="18" r="1.6" /></svg
+          >COD Available
+        </div>
+        <div class="item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+            <path d="M4 4v16h16M4 14l4-4 4 3 6-7" /></svg
+          >Bulk Pricing on 1kg+
+        </div>
+      </div>
     </div>
 
-    <div class="pagination">
-      <a href="#">‹</a><a href="#" class="active">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">›</a>
-    </div>
-  </div>
-</div>
-
-<div class="trustfoot">
-  <div class="wrap">
-    <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M5 12l5 5L20 7"/></svg>Free shipping over ₹999</div>
-    <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"/></svg>FSSAI Certified</div>
-    <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M3 6h13v9H3zM16 9h4l2 3v3h-6z"/><circle cx="7" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg>COD Available</div>
-    <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 4v16h16M4 14l4-4 4 3 6-7"/></svg>Bulk Pricing on 1kg+</div>
-  </div>
-</div>
-
-<footer>
-  <div class="wrap"><div>© 2026 DMC Nuts. All rights reserved. · <a href="homepage-variant-a.html" style="color:rgba(246,238,225,.65);text-decoration:underline;">Home</a> · <a href="blog.html" style="color:rgba(246,238,225,.65);text-decoration:underline;">Health Blog</a></div><div>Payments: UPI · Cards · COD · Razorpay</div></div>
-</footer>
-
-</body>
+    <footer>
+      <div class="wrap">
+        <div>
+          © 2026 DMC Nuts. All rights reserved. ·
+          <a
+            href="index.html"
+            style="color: rgba(246, 238, 225, 0.65); text-decoration: underline"
+            >Home</a
+          >
+          ·
+          <a
+            href="blog.html"
+            style="color: rgba(246, 238, 225, 0.65); text-decoration: underline"
+            >Health Blog</a
+          >
+        </div>
+        <div>Payments: UPI · Cards · COD · Razorpay</div>
+      </div>
+    </footer>
+  </body>
 </html>

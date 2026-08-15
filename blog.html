@@ -1,184 +1,546 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>DMC Nuts — Health Blog</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --espresso:#2B1810; --walnut:#6B4529; --gold:#C89B4C;
-    --green:#5C7A52; --green-dark:#3F5636; --green-pale:#E7EEE1;
-    --cream:#FBF7EF; --cream-2:#F1E6D3; --magenta:#93314F;
-    --ink:#241309; --line:rgba(43,24,16,.12); --maxw:1180px;
-  }
-  *{box-sizing:border-box;}
-  body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:#fff;}
-  h1,h2,h3{font-family:'Playfair Display',serif;}
-  a{color:inherit;text-decoration:none;}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
-  button{font-family:inherit;cursor:pointer;border:none;}
-  .ph{background:linear-gradient(135deg,var(--cream-2),#dfcda9);display:flex;align-items:center;justify-content:center;color:rgba(43,24,16,.4);font-size:12px;letter-spacing:.05em;text-transform:uppercase;font-weight:600;text-align:center;padding:8px;}
+  <head>
+    <meta charset="UTF-8" />
+    <title>DMC Nuts — Health Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --espresso: #2b1810;
+        --walnut: #6b4529;
+        --gold: #c89b4c;
+        --green: #5c7a52;
+        --green-dark: #3f5636;
+        --green-pale: #e7eee1;
+        --cream: #fbf7ef;
+        --cream-2: #f1e6d3;
+        --magenta: #93314f;
+        --ink: #241309;
+        --line: rgba(43, 24, 16, 0.12);
+        --maxw: 1180px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "DM Sans", sans-serif;
+        color: var(--ink);
+        background: #fff;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .wrap {
+        max-width: var(--maxw);
+        margin: 0 auto;
+        padding: 0 32px;
+      }
+      button {
+        font-family: inherit;
+        cursor: pointer;
+        border: none;
+      }
+      .ph {
+        background: linear-gradient(135deg, var(--cream-2), #dfcda9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(43, 24, 16, 0.4);
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: center;
+        padding: 8px;
+      }
 
-  header{background:#fff;border-bottom:1px solid var(--line);}
-  .navrow{display:flex;align-items:center;justify-content:space-between;padding:20px 0;}
-  .logo{font-size:24px;font-weight:800;}
-  .logo span{color:var(--walnut);}
-  nav.mainnav{display:flex;gap:32px;}
-  nav.mainnav a{font-weight:600;font-size:14px;}
-  .navicons{display:flex;gap:18px;align-items:center;}
-  .navicons svg{width:19px;height:19px;stroke:var(--ink);}
+      header {
+        background: #fff;
+        border-bottom: 1px solid var(--line);
+      }
+      .navrow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+      }
+      .logo {
+        font-size: 24px;
+        font-weight: 800;
+      }
+      .logo span {
+        color: var(--walnut);
+      }
+      nav.mainnav {
+        display: flex;
+        gap: 32px;
+      }
+      nav.mainnav a {
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .navicons {
+        display: flex;
+        gap: 18px;
+        align-items: center;
+      }
+      .navicons svg {
+        width: 19px;
+        height: 19px;
+        stroke: var(--ink);
+      }
 
-  .bloghero{background:var(--espresso);color:var(--cream);padding:64px 0 56px;text-align:center;}
-  .bloghero .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:14px;}
-  .bloghero h1{font-size:38px;margin:0 0 12px;}
-  .bloghero p{font-size:15px;color:rgba(246,238,225,.7);max-width:520px;margin:0 auto;}
+      .bloghero {
+        background: var(--espresso);
+        color: var(--cream);
+        padding: 64px 0 56px;
+        text-align: center;
+      }
+      .bloghero .eyebrow {
+        font-size: 12px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--gold);
+        font-weight: 700;
+        margin-bottom: 14px;
+      }
+      .bloghero h1 {
+        font-size: 38px;
+        margin: 0 0 12px;
+      }
+      .bloghero p {
+        font-size: 15px;
+        color: rgba(246, 238, 225, 0.7);
+        max-width: 520px;
+        margin: 0 auto;
+      }
 
-  .catpills{display:flex;justify-content:center;gap:12px;padding:28px 0;flex-wrap:wrap;border-bottom:1px solid var(--line);}
-  .catpill{padding:9px 18px;border-radius:20px;border:1px solid var(--line);font-size:13px;font-weight:700;}
-  .catpill.active{background:var(--espresso);color:#fff;border-color:var(--espresso);}
+      .catpills {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        padding: 28px 0;
+        flex-wrap: wrap;
+        border-bottom: 1px solid var(--line);
+      }
+      .catpill {
+        padding: 9px 18px;
+        border-radius: 20px;
+        border: 1px solid var(--line);
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .catpill.active {
+        background: var(--espresso);
+        color: #fff;
+        border-color: var(--espresso);
+      }
 
-  .featured{padding:50px 0 20px;}
-  .feat-card{display:grid;grid-template-columns:1.1fr .9fr;gap:0;border-radius:6px;overflow:hidden;box-shadow:0 14px 34px rgba(43,24,16,.08);}
-  .art-card{display:block;}
-  .feat-card .ph{height:340px;}
-  .feat-body{padding:38px;display:flex;flex-direction:column;justify-content:center;background:var(--cream);}
-  .tag{display:inline-block;background:var(--green-pale);color:var(--green-dark);font-size:11px;font-weight:700;padding:5px 11px;border-radius:2px;margin-bottom:14px;width:fit-content;}
-  .feat-body h2{font-size:26px;margin:0 0 12px;line-height:1.25;}
-  .feat-body p{font-size:14px;color:rgba(43,24,16,.65);line-height:1.65;margin:0 0 18px;}
-  .metarow{font-size:12px;color:rgba(43,24,16,.5);font-weight:600;}
+      .featured {
+        padding: 50px 0 20px;
+      }
+      .feat-card {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 0;
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 14px 34px rgba(43, 24, 16, 0.08);
+      }
+      .art-card {
+        display: block;
+      }
+      .feat-card .ph {
+        height: 340px;
+      }
+      .feat-body {
+        padding: 38px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--cream);
+      }
+      .tag {
+        display: inline-block;
+        background: var(--green-pale);
+        color: var(--green-dark);
+        font-size: 11px;
+        font-weight: 700;
+        padding: 5px 11px;
+        border-radius: 2px;
+        margin-bottom: 14px;
+        width: fit-content;
+      }
+      .feat-body h2 {
+        font-size: 26px;
+        margin: 0 0 12px;
+        line-height: 1.25;
+      }
+      .feat-body p {
+        font-size: 14px;
+        color: rgba(43, 24, 16, 0.65);
+        line-height: 1.65;
+        margin: 0 0 18px;
+      }
+      .metarow {
+        font-size: 12px;
+        color: rgba(43, 24, 16, 0.5);
+        font-weight: 600;
+      }
 
-  .artgrid{padding:50px 0 20px;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
-  .art-card .ph{height:190px;border-radius:4px;margin-bottom:16px;}
-  .art-card .tag{margin-bottom:12px;}
-  .art-card h3{font-size:17px;margin:0 0 10px;line-height:1.35;}
-  .art-card p{font-size:13px;color:rgba(43,24,16,.6);line-height:1.6;margin:0 0 14px;}
-  .art-card .metarow{border-top:1px solid var(--line);padding-top:14px;display:flex;justify-content:space-between;}
+      .artgrid {
+        padding: 50px 0 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+      }
+      .art-card .ph {
+        height: 190px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+      }
+      .art-card .tag {
+        margin-bottom: 12px;
+      }
+      .art-card h3 {
+        font-size: 17px;
+        margin: 0 0 10px;
+        line-height: 1.35;
+      }
+      .art-card p {
+        font-size: 13px;
+        color: rgba(43, 24, 16, 0.6);
+        line-height: 1.6;
+        margin: 0 0 14px;
+      }
+      .art-card .metarow {
+        border-top: 1px solid var(--line);
+        padding-top: 14px;
+        display: flex;
+        justify-content: space-between;
+      }
 
-  .newsletter{background:var(--green-pale);border-radius:6px;padding:44px;text-align:center;margin:50px 0;}
-  .newsletter h3{font-size:24px;margin:0 0 8px;}
-  .newsletter p{font-size:13.5px;color:rgba(43,24,16,.65);margin:0 0 20px;}
-  .nform{display:flex;gap:10px;justify-content:center;max-width:400px;margin:0 auto;}
-  .nform input{flex:1;padding:13px 16px;border:1px solid var(--line);border-radius:2px;font-family:inherit;}
-  .btn-dark{background:var(--espresso);color:#fff;padding:13px 22px;border-radius:2px;font-weight:700;font-size:13.5px;}
+      .newsletter {
+        background: var(--green-pale);
+        border-radius: 6px;
+        padding: 44px;
+        text-align: center;
+        margin: 50px 0;
+      }
+      .newsletter h3 {
+        font-size: 24px;
+        margin: 0 0 8px;
+      }
+      .newsletter p {
+        font-size: 13.5px;
+        color: rgba(43, 24, 16, 0.65);
+        margin: 0 0 20px;
+      }
+      .nform {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .nform input {
+        flex: 1;
+        padding: 13px 16px;
+        border: 1px solid var(--line);
+        border-radius: 2px;
+        font-family: inherit;
+      }
+      .btn-dark {
+        background: var(--espresso);
+        color: #fff;
+        padding: 13px 22px;
+        border-radius: 2px;
+        font-weight: 700;
+        font-size: 13.5px;
+      }
 
-  .pagination{display:flex;justify-content:center;gap:8px;margin:20px 0 70px;}
-  .pagination a{width:36px;height:36px;border:1px solid var(--line);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;}
-  .pagination a.active{background:var(--espresso);color:#fff;border-color:var(--espresso);}
+      .pagination {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin: 20px 0 70px;
+      }
+      .pagination a {
+        width: 36px;
+        height: 36px;
+        border: 1px solid var(--line);
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .pagination a.active {
+        background: var(--espresso);
+        color: #fff;
+        border-color: var(--espresso);
+      }
 
-  footer{background:var(--espresso);color:rgba(246,238,225,.65);padding:34px 0;font-size:12.5px;}
-  footer .wrap{display:flex;justify-content:space-between;}
+      footer {
+        background: var(--espresso);
+        color: rgba(246, 238, 225, 0.65);
+        padding: 34px 0;
+        font-size: 12.5px;
+      }
+      footer .wrap {
+        display: flex;
+        justify-content: space-between;
+      }
 
-  @media(max-width:900px){
-    .feat-card{grid-template-columns:1fr;}
-    .artgrid{grid-template-columns:1fr 1fr;}
-    nav.mainnav{display:none;}
-  }
-</style>
-</head>
-<body>
+      @media (max-width: 900px) {
+        .feat-card {
+          grid-template-columns: 1fr;
+        }
+        .artgrid {
+          grid-template-columns: 1fr 1fr;
+        }
+        nav.mainnav {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap navrow">
+        <a class="logo" href="index.html">DMC <span>Nuts</span></a>
+        <nav class="mainnav">
+          <a href="shop.html">Shop</a><a href="#">About</a
+          ><a href="blog.html">Health Blog</a><a href="#">Wholesale</a>
+        </nav>
+        <div class="navicons">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4.3-4.3" />
+          </svg>
+          <a href="shop.html"
+            ><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
+              <path d="M6 2l1 5h10l1-5" />
+              <path
+                d="M3 7h18l-1.6 11.2A2 2 0 0117.4 20H6.6a2 2 0 01-2-1.8L3 7z"
+              /></svg
+          ></a>
+        </div>
+      </div>
+    </header>
 
-<header>
-  <div class="wrap navrow">
-    <a class="logo" href="homepage-variant-a.html">DMC <span>Nuts</span></a>
-    <nav class="mainnav"><a href="shop.html">Shop</a><a href="#">About</a><a href="blog.html">Health Blog</a><a href="#">Wholesale</a></nav>
-    <div class="navicons">
-      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-      <a href="shop.html"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M6 2l1 5h10l1-5"/><path d="M3 7h18l-1.6 11.2A2 2 0 0117.4 20H6.6a2 2 0 01-2-1.8L3 7z"/></svg></a>
+    <div class="bloghero">
+      <div class="wrap">
+        <div class="eyebrow">DMC Health Hub</div>
+        <h1>Nutrition, recipes & orchard stories</h1>
+        <p>
+          Everything we know about dry fruits — backed by nutritionists, written
+          for real kitchens.
+        </p>
+      </div>
     </div>
-  </div>
-</header>
 
-<div class="bloghero">
-  <div class="wrap">
-    <div class="eyebrow">DMC Health Hub</div>
-    <h1>Nutrition, recipes & orchard stories</h1>
-    <p>Everything we know about dry fruits — backed by nutritionists, written for real kitchens.</p>
-  </div>
-</div>
-
-<div class="catpills">
-  <span class="catpill active">All</span>
-  <span class="catpill">Nutrition Articles</span>
-  <span class="catpill">Recipe Ideas</span>
-  <span class="catpill">Health Tips</span>
-  <span class="catpill">Almond Benefits</span>
-  <span class="catpill">Expert Columns</span>
-</div>
-
-<div class="wrap featured">
-  <a class="feat-card" href="blog-single.html">
-    <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=900&h=700&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div>
-    <div class="feat-body">
-      <span class="tag">Almond Benefits</span>
-      <h2>7 Science-Backed Reasons to Eat a Handful of Almonds Daily</h2>
-      <p>From heart health to glowing skin — a nutritionist breaks down exactly what one 30g serving of almonds does for your body, and why timing matters more than you'd think.</p>
-      <div class="metarow">By Dr. Neha Kapoor · 8 min read · Aug 10, 2026</div>
+    <div class="catpills">
+      <span class="catpill active">All</span>
+      <span class="catpill">Nutrition Articles</span>
+      <span class="catpill">Recipe Ideas</span>
+      <span class="catpill">Health Tips</span>
+      <span class="catpill">Almond Benefits</span>
+      <span class="catpill">Expert Columns</span>
     </div>
-  </a>
-</div>
 
-<div class="wrap artgrid">
-  <a class="art-card" href="blog-single.html">
-    <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1629738601425-494c3d6ba3e2?w=700&h=500&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div>
-    <span class="tag">Recipe Ideas</span>
-    <h3>5 Festive Recipes Using Cashews and Dates</h3>
-    <p>Simple, no-fry sweets for Diwali that swap refined sugar for dates and a handful of cashews.</p>
-    <div class="metarow"><span>Chef Aman Verma</span><span>6 min read</span></div>
-  </a>
-  <a class="art-card" href="blog-single.html">
-    <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1645291784298-8ef1f29d25f7?w=700&h=500&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div>
-    <span class="tag">Health Tips</span>
-    <h3>How to Store Nuts So They Never Go Rancid</h3>
-    <p>The exact temperature, container and shelf-life rules that keep your pantry nuts fresh for months.</p>
-    <div class="metarow"><span>Dr. Neha Kapoor</span><span>4 min read</span></div>
-  </a>
-  <a class="art-card" href="blog-single.html">
-    <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1610137512859-aa919f651a05?w=700&h=500&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div>
-    <span class="tag">Nutrition Articles</span>
-    <h3>Pistachios vs Cashews: Which Wins for Weight Management?</h3>
-    <p>We compare calories, protein and fibre per serving to settle the pantry debate for good.</p>
-    <div class="metarow"><span>Dr. Neha Kapoor</span><span>7 min read</span></div>
-  </a>
-  <a class="art-card" href="blog-single.html">
-    <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=700&h=500&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div>
-    <span class="tag">Expert Columns</span>
-    <h3>What "Mamra" Actually Means — and Why It Costs More</h3>
-    <p>A grading expert explains the difference between Mamra, Gurbandi and Californian almonds.</p>
-    <div class="metarow"><span>Guest: Rajesh Oberoi</span><span>5 min read</span></div>
-  </a>
-  <a class="art-card" href="blog-single.html">
-    <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=700&h=500&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div>
-    <span class="tag">Almond Benefits</span>
-    <h3>Almonds for Skin: Separating Myth from Evidence</h3>
-    <p>What the research actually says about almonds, vitamin E and skin health.</p>
-    <div class="metarow"><span>Dr. Neha Kapoor</span><span>6 min read</span></div>
-  </a>
-  <a class="art-card" href="blog-single.html">
-    <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1629738601425-494c3d6ba3e2?w=700&h=500&fit=crop&auto=format&q=80');background-size:cover;background-position:center;"></div>
-    <span class="tag">Recipe Ideas</span>
-    <h3>A 3-Ingredient Energy Ball Recipe for Busy Mornings</h3>
-    <p>Dates, almonds and a spoon of cocoa — no bake, no sugar, ready in ten minutes.</p>
-    <div class="metarow"><span>Chef Aman Verma</span><span>3 min read</span></div>
-  </a>
-</div>
+    <div class="wrap featured">
+      <a class="feat-card" href="blog-single.html">
+        <div
+          class="ph"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=900&h=700&fit=crop&auto=format&q=80&quot;);
+            background-size: cover;
+            background-position: center;
+          "
+        ></div>
+        <div class="feat-body">
+          <span class="tag">Almond Benefits</span>
+          <h2>7 Science-Backed Reasons to Eat a Handful of Almonds Daily</h2>
+          <p>
+            From heart health to glowing skin — a nutritionist breaks down
+            exactly what one 30g serving of almonds does for your body, and why
+            timing matters more than you'd think.
+          </p>
+          <div class="metarow">
+            By Dr. Neha Kapoor · 8 min read · Aug 10, 2026
+          </div>
+        </div>
+      </a>
+    </div>
 
-<div class="wrap">
-  <div class="newsletter">
-    <h3>Get one nutrition tip a week</h3>
-    <p>No spam — just short, practical reads from our nutrition team.</p>
-    <div class="nform"><input type="email" placeholder="Enter your email"><button class="btn-dark">Subscribe</button></div>
-  </div>
-</div>
+    <div class="wrap artgrid">
+      <a class="art-card" href="blog-single.html">
+        <div
+          class="ph"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1629738601425-494c3d6ba3e2?w=700&h=500&fit=crop&auto=format&q=80&quot;);
+            background-size: cover;
+            background-position: center;
+          "
+        ></div>
+        <span class="tag">Recipe Ideas</span>
+        <h3>5 Festive Recipes Using Cashews and Dates</h3>
+        <p>
+          Simple, no-fry sweets for Diwali that swap refined sugar for dates and
+          a handful of cashews.
+        </p>
+        <div class="metarow">
+          <span>Chef Aman Verma</span><span>6 min read</span>
+        </div>
+      </a>
+      <a class="art-card" href="blog-single.html">
+        <div
+          class="ph"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1645291784298-8ef1f29d25f7?w=700&h=500&fit=crop&auto=format&q=80&quot;);
+            background-size: cover;
+            background-position: center;
+          "
+        ></div>
+        <span class="tag">Health Tips</span>
+        <h3>How to Store Nuts So They Never Go Rancid</h3>
+        <p>
+          The exact temperature, container and shelf-life rules that keep your
+          pantry nuts fresh for months.
+        </p>
+        <div class="metarow">
+          <span>Dr. Neha Kapoor</span><span>4 min read</span>
+        </div>
+      </a>
+      <a class="art-card" href="blog-single.html">
+        <div
+          class="ph"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1610137512859-aa919f651a05?w=700&h=500&fit=crop&auto=format&q=80&quot;);
+            background-size: cover;
+            background-position: center;
+          "
+        ></div>
+        <span class="tag">Nutrition Articles</span>
+        <h3>Pistachios vs Cashews: Which Wins for Weight Management?</h3>
+        <p>
+          We compare calories, protein and fibre per serving to settle the
+          pantry debate for good.
+        </p>
+        <div class="metarow">
+          <span>Dr. Neha Kapoor</span><span>7 min read</span>
+        </div>
+      </a>
+      <a class="art-card" href="blog-single.html">
+        <div
+          class="ph"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=700&h=500&fit=crop&auto=format&q=80&quot;);
+            background-size: cover;
+            background-position: center;
+          "
+        ></div>
+        <span class="tag">Expert Columns</span>
+        <h3>What "Mamra" Actually Means — and Why It Costs More</h3>
+        <p>
+          A grading expert explains the difference between Mamra, Gurbandi and
+          Californian almonds.
+        </p>
+        <div class="metarow">
+          <span>Guest: Rajesh Oberoi</span><span>5 min read</span>
+        </div>
+      </a>
+      <a class="art-card" href="blog-single.html">
+        <div
+          class="ph"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=700&h=500&fit=crop&auto=format&q=80&quot;);
+            background-size: cover;
+            background-position: center;
+          "
+        ></div>
+        <span class="tag">Almond Benefits</span>
+        <h3>Almonds for Skin: Separating Myth from Evidence</h3>
+        <p>
+          What the research actually says about almonds, vitamin E and skin
+          health.
+        </p>
+        <div class="metarow">
+          <span>Dr. Neha Kapoor</span><span>6 min read</span>
+        </div>
+      </a>
+      <a class="art-card" href="blog-single.html">
+        <div
+          class="ph"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1629738601425-494c3d6ba3e2?w=700&h=500&fit=crop&auto=format&q=80&quot;);
+            background-size: cover;
+            background-position: center;
+          "
+        ></div>
+        <span class="tag">Recipe Ideas</span>
+        <h3>A 3-Ingredient Energy Ball Recipe for Busy Mornings</h3>
+        <p>
+          Dates, almonds and a spoon of cocoa — no bake, no sugar, ready in ten
+          minutes.
+        </p>
+        <div class="metarow">
+          <span>Chef Aman Verma</span><span>3 min read</span>
+        </div>
+      </a>
+    </div>
 
-<div class="pagination">
-  <a href="#">‹</a><a href="#" class="active">1</a><a href="#">2</a><a href="#">3</a><a href="#">›</a>
-</div>
+    <div class="wrap">
+      <div class="newsletter">
+        <h3>Get one nutrition tip a week</h3>
+        <p>No spam — just short, practical reads from our nutrition team.</p>
+        <div class="nform">
+          <input type="email" placeholder="Enter your email" /><button
+            class="btn-dark"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </div>
 
-<footer>
-  <div class="wrap"><div>© 2026 DMC Nuts. All rights reserved. · <a href="homepage-variant-a.html" style="color:rgba(246,238,225,.65);text-decoration:underline;">Home</a> · <a href="shop.html" style="color:rgba(246,238,225,.65);text-decoration:underline;">Shop</a></div><div>Payments: UPI · Cards · COD · Razorpay</div></div>
-</footer>
+    <div class="pagination">
+      <a href="#">‹</a><a href="#" class="active">1</a><a href="#">2</a
+      ><a href="#">3</a><a href="#">›</a>
+    </div>
 
-</body>
+    <footer>
+      <div class="wrap">
+        <div>
+          © 2026 DMC Nuts. All rights reserved. ·
+          <a
+            href="index.html"
+            style="color: rgba(246, 238, 225, 0.65); text-decoration: underline"
+            >Home</a
+          >
+          ·
+          <a
+            href="shop.html"
+            style="color: rgba(246, 238, 225, 0.65); text-decoration: underline"
+            >Shop</a
+          >
+        </div>
+        <div>Payments: UPI · Cards · COD · Razorpay</div>
+      </div>
+    </footer>
+  </body>
 </html>

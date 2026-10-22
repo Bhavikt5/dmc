@@ -1,0 +1,15 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "preferredVersions": { "php": "8.2", "wp": "latest" },
+  "features": { "networking": true },
+  "steps": [
+    { "step": "defineWpConfigConsts", "consts": { "WP_DEBUG": true, "WP_DEBUG_LOG": "/wordpress/wp-content/dmc-test/debug.log", "WP_DEBUG_DISPLAY": false, "WP_DISABLE_FATAL_ERROR_HANDLER": true } },
+    { "step": "login" },
+    { "step": "installTheme", "themeData": { "resource": "wordpress.org/themes", "slug": "hello-elementor" }, "options": { "activate": false } },
+    { "step": "installPlugin", "pluginData": { "resource": "wordpress.org/plugins", "slug": "woocommerce" }, "options": { "activate": false } },
+    { "step": "installPlugin", "pluginData": { "resource": "wordpress.org/plugins", "slug": "elementor" }, "options": { "activate": false } },
+    { "step": "runPHP", "code": "<?php include '/wordpress/wp-content/dmc-test/activate.php';" },
+    { "step": "runPHP", "code": "<?php include '/wordpress/wp-content/dmc-test/setup.php';" }
+  ]
+}

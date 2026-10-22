@@ -2,1625 +2,512 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>DMC Nuts — Homepage (Variant A: Espresso Luxe)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DMC Nuts | Premium Almond Wholesaler &amp; Exporter from India</title>
+    <meta name="description" content="DMC Nuts is a trusted almond wholesaler &amp; exporter, offering premium-quality almonds in bulk for retailers, distributors, &amp; global importers" />
+    <link rel="icon" href="assets/img/logo.webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --espresso: #2b1810;
-        --espresso-2: #3b2418;
-        --walnut: #6b4529;
-        --gold: #c89b4c;
-        --gold-light: #e8c77e;
-        --green: #5c7a52;
-        --green-dark: #3f5636;
-        --cream: #f6eee1;
-        --cream-2: #efe0c6;
-        --magenta: #93314f;
-        --ink: #241309;
-        --line: rgba(246, 238, 225, 0.14);
-        --line-dark: rgba(43, 24, 16, 0.12);
-        --maxw: 1240px;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        font-family: "DM Sans", sans-serif;
-        color: var(--ink);
-        background: var(--cream);
-      }
-      h1,
-      h2,
-      h3,
-      .display {
-        font-family: "Playfair Display", serif;
-      }
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-      img {
-        max-width: 100%;
-        display: block;
-      }
-      .wrap {
-        max-width: var(--maxw);
-        margin: 0 auto;
-        padding: 0 32px;
-      }
-      button {
-        font-family: inherit;
-        cursor: pointer;
-        border: none;
-      }
-
-      /* placeholder image blocks */
-      .ph {
-        background: linear-gradient(135deg, var(--walnut), var(--espresso-2));
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: rgba(246, 238, 225, 0.55);
-        font-size: 13px;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        font-weight: 600;
-        text-align: center;
-        padding: 12px;
-      }
-      .ph.light {
-        background: linear-gradient(135deg, var(--cream-2), #ddc9a3);
-        color: rgba(43, 24, 16, 0.45);
-      }
-
-      /* announcement bar */
-      .announce {
-        background: var(--espresso);
-        color: var(--gold-light);
-        font-size: 13px;
-        text-align: center;
-        padding: 9px 20px;
-        letter-spacing: 0.02em;
-      }
-      .announce b {
-        color: var(--cream);
-      }
-
-      /* header */
-      header {
-        background: var(--cream);
-        border-bottom: 1px solid var(--line-dark);
-        position: relative;
-        z-index: 40;
-      }
-      .navrow {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 18px 0;
-      }
-      .logo {
-        font-size: 26px;
-        font-weight: 800;
-        letter-spacing: 0.01em;
-      }
-      .logo span {
-        color: var(--walnut);
-      }
-      nav.mainnav {
-        display: flex;
-        gap: 34px;
-        align-items: center;
-      }
-      nav.mainnav > div {
-        position: relative;
-        padding: 6px 0;
-      }
-      nav.mainnav a.top {
-        font-weight: 600;
-        font-size: 14.5px;
-        letter-spacing: 0.02em;
-      }
-      .navicons {
-        display: flex;
-        gap: 20px;
-        align-items: center;
-      }
-      .navicons svg {
-        width: 20px;
-        height: 20px;
-        stroke: var(--ink);
-      }
-      .cartcount {
-        background: var(--magenta);
-        color: #fff;
-        font-size: 10px;
-        border-radius: 50%;
-        width: 16px;
-        height: 16px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        top: -9px;
-        left: -8px;
-        font-weight: 700;
-      }
-      .megamenu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: -40px;
-        background: #fff;
-        box-shadow: 0 18px 40px rgba(43, 24, 16, 0.16);
-        padding: 26px;
-        border-radius: 2px;
-        width: 520px;
-        gap: 30px;
-        grid-template-columns: repeat(3, 1fr);
-      }
-      nav.mainnav > div:hover .megamenu {
-        display: grid;
-      }
-      .megamenu h4 {
-        font-size: 11px;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: var(--walnut);
-        margin: 0 0 10px;
-        font-weight: 700;
-      }
-      .megamenu a {
-        display: block;
-        font-size: 14px;
-        padding: 5px 0;
-        color: var(--ink);
-        opacity: 0.85;
-      }
-      .megamenu a:hover {
-        color: var(--magenta);
-        opacity: 1;
-      }
-
-      /* hero */
-      .hero {
-        background: radial-gradient(
-          ellipse at 75% 30%,
-          #4a2c1a 0%,
-          var(--espresso) 60%
-        );
-        color: var(--cream);
-        position: relative;
-        overflow: hidden;
-      }
-      .hero .wrap {
-        display: grid;
-        grid-template-columns: 1.05fr 0.95fr;
-        gap: 56px;
-        align-items: center;
-        padding-top: 76px;
-        padding-bottom: 70px;
-      }
-      .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 12px;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--gold-light);
-        font-weight: 700;
-        margin-bottom: 22px;
-      }
-      .eyebrow::before {
-        content: "";
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background: var(--gold-light);
-      }
-      .hero h1 {
-        font-size: 52px;
-        line-height: 1.08;
-        margin: 0 0 22px;
-        font-weight: 700;
-      }
-      .hero h1 em {
-        font-style: italic;
-        color: var(--gold-light);
-      }
-      .hero p.lead {
-        font-size: 17px;
-        line-height: 1.65;
-        color: rgba(246, 238, 225, 0.78);
-        max-width: 460px;
-        margin: 0 0 32px;
-      }
-      .herobtns {
-        display: flex;
-        gap: 16px;
-        margin-bottom: 44px;
-      }
-      .btn {
-        padding: 15px 30px;
-        font-size: 14.5px;
-        font-weight: 700;
-        letter-spacing: 0.02em;
-        border-radius: 2px;
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-      }
-      .btn-gold {
-        background: var(--gold);
-        color: var(--espresso);
-      }
-      .btn-outline {
-        border: 1.5px solid rgba(246, 238, 225, 0.4);
-        color: var(--cream);
-        background: transparent;
-      }
-      .trustrow {
-        display: flex;
-        gap: 30px;
-        flex-wrap: wrap;
-      }
-      .trustrow .item {
-        display: flex;
-        align-items: center;
-        gap: 9px;
-        font-size: 12.5px;
-        color: rgba(246, 238, 225, 0.7);
-        font-weight: 600;
-      }
-      .trustrow svg {
-        width: 18px;
-        height: 18px;
-        stroke: var(--gold-light);
-        flex-shrink: 0;
-      }
-      .hero-visual {
-        position: relative;
-      }
-      .hero-visual .ph {
-        height: 460px;
-        border-radius: 3px;
-        border: 1px solid rgba(246, 238, 225, 0.14);
-      }
-      .hero-shellcard {
-        position: absolute;
-        bottom: -26px;
-        left: -30px;
-        background: var(--cream);
-        color: var(--ink);
-        padding: 16px 20px;
-        border-radius: 2px;
-        box-shadow: 0 18px 34px rgba(0, 0, 0, 0.28);
-        display: flex;
-        gap: 12px;
-        align-items: center;
-        width: 230px;
-      }
-      .hero-shellcard .num {
-        font-family: "Playfair Display", serif;
-        font-size: 26px;
-        font-weight: 700;
-        color: var(--walnut);
-      }
-      .hero-shellcard .txt {
-        font-size: 11.5px;
-        line-height: 1.3;
-        color: rgba(43, 24, 16, 0.65);
-        font-weight: 600;
-      }
-
-      /* signature shell-crack divider */
-      .shellcrack {
-        height: 64px;
-        background: var(--espresso);
-        position: relative;
-        overflow: hidden;
-      }
-      .shellcrack svg {
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        width: 100%;
-        height: 70px;
-      }
-
-      /* promise strip */
-      .promise {
-        background: var(--gold);
-        padding: 14px 0;
-      }
-      .promise .wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 14px;
-      }
-      .promise .item {
-        font-size: 13px;
-        font-weight: 700;
-        color: var(--espresso);
-        display: flex;
-        align-items: center;
-        gap: 8px;
-      }
-      .promise .item svg {
-        width: 16px;
-        height: 16px;
-        stroke: var(--espresso);
-      }
-      .promise .countdown {
-        background: var(--espresso);
-        color: var(--cream);
-        font-size: 12.5px;
-        font-weight: 700;
-        padding: 7px 16px;
-        border-radius: 2px;
-        display: flex;
-        gap: 6px;
-        letter-spacing: 0.03em;
-      }
-
-      section {
-        padding: 84px 0;
-      }
-      .sectionhead {
-        text-align: center;
-        max-width: 600px;
-        margin: 0 auto 52px;
-      }
-      .sectionhead .eyebrow {
-        color: var(--walnut);
-        justify-content: center;
-        display: flex;
-      }
-      .sectionhead .eyebrow::before {
-        background: var(--walnut);
-      }
-      .sectionhead h2 {
-        font-size: 36px;
-        margin: 0 0 12px;
-        color: var(--espresso);
-      }
-      .sectionhead p {
-        font-size: 15px;
-        color: rgba(43, 24, 16, 0.62);
-        line-height: 1.6;
-      }
-
-      /* categories */
-      .cat-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 22px;
-      }
-      .cat-card {
-        display: block;
-        background: #fff;
-        border-radius: 3px;
-        overflow: hidden;
-        box-shadow: 0 4px 18px rgba(43, 24, 16, 0.06);
-        transition: transform 0.2s;
-      }
-      .cat-card:hover {
-        transform: translateY(-5px);
-      }
-      .cat-card .ph.light {
-        height: 180px;
-      }
-      .cat-card .cat-body {
-        padding: 20px 20px 24px;
-      }
-      .cat-card h3 {
-        font-size: 19px;
-        margin: 0 0 6px;
-      }
-      .cat-card p {
-        font-size: 13px;
-        color: rgba(43, 24, 16, 0.6);
-        margin: 0 0 14px;
-      }
-      .cat-card .link {
-        font-size: 13px;
-        font-weight: 700;
-        color: var(--walnut);
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-      }
-
-      /* best sellers */
-      .best {
-        background: var(--cream-2);
-      }
-      .prod-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 22px;
-      }
-      .prod-card {
-        background: #fff;
-        border-radius: 3px;
-        overflow: hidden;
-        position: relative;
-      }
-      .prod-card .badge {
-        position: absolute;
-        top: 12px;
-        left: 12px;
-        background: var(--magenta);
-        color: #fff;
-        font-size: 10.5px;
-        font-weight: 700;
-        padding: 4px 9px;
-        border-radius: 2px;
-        letter-spacing: 0.03em;
-      }
-      .prod-card .wish {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: #fff;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .prod-card .wish svg {
-        width: 15px;
-        height: 15px;
-        stroke: var(--espresso);
-      }
-      .prod-card .ph.light {
-        height: 200px;
-      }
-      .prod-body {
-        padding: 18px 18px 20px;
-      }
-      .prod-body .stars {
-        color: var(--gold);
-        font-size: 12px;
-        margin-bottom: 6px;
-      }
-      .prod-body h4 {
-        font-size: 15.5px;
-        margin: 0 0 4px;
-        font-weight: 700;
-      }
-      .prod-body .wt {
-        font-size: 12px;
-        color: rgba(43, 24, 16, 0.55);
-        margin-bottom: 10px;
-      }
-      .prod-body .pricerow {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .prod-body .price {
-        font-weight: 700;
-        font-size: 16px;
-      }
-      .prod-body .price .old {
-        font-size: 12px;
-        color: rgba(43, 24, 16, 0.4);
-        text-decoration: line-through;
-        font-weight: 500;
-        margin-right: 6px;
-      }
-      .addbtn {
-        background: var(--espresso);
-        color: var(--cream);
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .addbtn svg {
-        width: 16px;
-        height: 16px;
-        stroke: var(--cream);
-      }
-
-      /* benefits */
-      .benefits-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 26px;
-      }
-      .benefit {
-        text-align: center;
-      }
-      .benefit .icon {
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        background: var(--cream-2);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 16px;
-      }
-      .benefit .icon svg {
-        width: 28px;
-        height: 28px;
-        stroke: var(--green-dark);
-      }
-      .benefit h4 {
-        font-size: 15.5px;
-        margin: 0 0 6px;
-      }
-      .benefit p {
-        font-size: 12.5px;
-        color: rgba(43, 24, 16, 0.58);
-        line-height: 1.5;
-        margin: 0;
-      }
-
-      /* story */
-      .story {
-        background: var(--espresso);
-        color: var(--cream);
-      }
-      .story .wrap {
-        display: grid;
-        grid-template-columns: 0.95fr 1.05fr;
-        gap: 60px;
-        align-items: center;
-      }
-      .story .ph {
-        height: 420px;
-        border-radius: 3px;
-      }
-      .story .eyebrow {
-        color: var(--gold-light);
-      }
-      .story h2 {
-        font-size: 34px;
-        margin: 0 0 18px;
-      }
-      .story p {
-        font-size: 15px;
-        line-height: 1.7;
-        color: rgba(246, 238, 225, 0.75);
-        margin: 0 0 26px;
-      }
-      .certrow {
-        display: flex;
-        gap: 14px;
-      }
-      .cert {
-        background: rgba(246, 238, 225, 0.08);
-        border: 1px solid rgba(246, 238, 225, 0.18);
-        padding: 12px 16px;
-        border-radius: 2px;
-        display: flex;
-        align-items: center;
-        gap: 9px;
-        font-size: 12px;
-        font-weight: 700;
-      }
-      .cert svg {
-        width: 17px;
-        height: 17px;
-        stroke: var(--gold-light);
-      }
-
-      /* reviews */
-      .rev-top {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        margin-bottom: 44px;
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-      .rev-agg {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-      }
-      .rev-agg .score {
-        font-family: "Playfair Display", serif;
-        font-size: 44px;
-        font-weight: 700;
-        color: var(--espresso);
-      }
-      .rev-agg .stars {
-        color: var(--gold);
-        font-size: 15px;
-      }
-      .rev-agg .sub {
-        font-size: 12px;
-        color: rgba(43, 24, 16, 0.55);
-      }
-      .rev-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 22px;
-      }
-      .rev-card {
-        background: #fff;
-        padding: 26px;
-        border-radius: 3px;
-        box-shadow: 0 4px 18px rgba(43, 24, 16, 0.05);
-      }
-      .rev-card .stars {
-        color: var(--gold);
-        font-size: 13px;
-        margin-bottom: 12px;
-      }
-      .rev-card p {
-        font-size: 14px;
-        line-height: 1.6;
-        color: rgba(43, 24, 16, 0.75);
-        margin: 0 0 16px;
-      }
-      .rev-who {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-      }
-      .rev-who .av {
-        width: 34px;
-        height: 34px;
-        border-radius: 50%;
-        background: var(--cream-2);
-      }
-      .rev-who .name {
-        font-size: 13px;
-        font-weight: 700;
-      }
-      .rev-who .loc {
-        font-size: 11.5px;
-        color: rgba(43, 24, 16, 0.5);
-      }
-
-      /* subscribe upsell */
-      .upsell {
-        background: linear-gradient(120deg, var(--green-dark), var(--green));
-        color: #fff;
-        border-radius: 4px;
-        padding: 44px 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 24px;
-        margin: 0 auto;
-        max-width: var(--maxw);
-      }
-      .upsell h3 {
-        font-size: 26px;
-        margin: 0 0 8px;
-      }
-      .upsell p {
-        font-size: 14px;
-        color: rgba(255, 255, 255, 0.82);
-        margin: 0;
-        max-width: 420px;
-      }
-      .btn-cream {
-        background: var(--cream);
-        color: var(--espresso);
-      }
-
-      /* footer */
-      footer {
-        background: var(--espresso);
-        color: rgba(246, 238, 225, 0.7);
-        padding-top: 70px;
-      }
-      .foot-news {
-        background: var(--gold-light);
-        color: var(--espresso);
-        text-align: center;
-        padding: 36px 20px;
-        margin-bottom: 60px;
-      }
-      .foot-news h3 {
-        font-size: 24px;
-        margin: 0 0 8px;
-      }
-      .foot-news p {
-        font-size: 13.5px;
-        margin: 0 0 20px;
-      }
-      .foot-form {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        max-width: 420px;
-        margin: 0 auto;
-      }
-      .foot-form input {
-        flex: 1;
-        padding: 13px 16px;
-        border: none;
-        border-radius: 2px;
-        font-family: inherit;
-        font-size: 14px;
-      }
-      .foot-cols {
-        display: grid;
-        grid-template-columns: 1.4fr repeat(3, 1fr);
-        gap: 40px;
-        padding-bottom: 50px;
-      }
-      .foot-cols h5 {
-        color: var(--cream);
-        font-size: 13px;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        margin: 0 0 18px;
-      }
-      .foot-cols a {
-        display: block;
-        font-size: 13.5px;
-        padding: 6px 0;
-        color: rgba(246, 238, 225, 0.65);
-      }
-      .foot-bottom {
-        border-top: 1px solid var(--line);
-        padding: 22px 0;
-        display: flex;
-        justify-content: space-between;
-        font-size: 12.5px;
-        color: rgba(246, 238, 225, 0.5);
-      }
-
-      /* whatsapp widget */
-      .wa {
-        position: fixed;
-        bottom: 26px;
-        right: 26px;
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
-        background: #3f5636;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.28);
-        z-index: 50;
-      }
-      .wa svg {
-        width: 26px;
-        height: 26px;
-        stroke: #fff;
-        fill: none;
-      }
-
-      /* ---- Minimal motion system ---- */
-      @media (prefers-reduced-motion: no-preference) {
-        .reveal {
-          opacity: 0;
-          transform: translateY(26px);
-          transition:
-            opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),
-            transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
-        }
-        .reveal.visible {
-          opacity: 1;
-          transform: translateY(0);
-        }
-        .cat-grid .reveal:nth-child(2),
-        .prod-grid .reveal:nth-child(2),
-        .benefits-grid .reveal:nth-child(2),
-        .rev-grid .reveal:nth-child(2) {
-          transition-delay: 0.08s;
-        }
-        .cat-grid .reveal:nth-child(3),
-        .prod-grid .reveal:nth-child(3),
-        .benefits-grid .reveal:nth-child(3),
-        .rev-grid .reveal:nth-child(3) {
-          transition-delay: 0.16s;
-        }
-        .cat-grid .reveal:nth-child(4),
-        .prod-grid .reveal:nth-child(4),
-        .benefits-grid .reveal:nth-child(4) {
-          transition-delay: 0.24s;
-        }
-
-        @keyframes fadeUp {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .hero-fade-1 {
-          animation: fadeUp 0.8s ease both;
-        }
-        .hero-fade-2 {
-          animation: fadeUp 0.8s ease 0.12s both;
-        }
-        .hero-fade-3 {
-          animation: fadeUp 0.8s ease 0.24s both;
-        }
-        .hero-fade-4 {
-          animation: fadeUp 0.8s ease 0.36s both;
-        }
-        .hero-fade-5 {
-          animation: fadeUp 0.9s ease 0.3s both;
-        }
-
-        .btn {
-          transition:
-            transform 0.2s ease,
-            box-shadow 0.2s ease,
-            opacity 0.2s ease;
-        }
-        .btn:hover {
-          transform: translateY(-2px);
-        }
-        .btn-gold:hover {
-          box-shadow: 0 10px 22px rgba(200, 155, 76, 0.35);
-        }
-        .btn-cream:hover {
-          box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
-        }
-        .prod-card {
-          transition:
-            transform 0.25s ease,
-            box-shadow 0.25s ease;
-        }
-        .prod-card:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 16px 30px rgba(43, 24, 16, 0.12);
-        }
-        .addbtn {
-          transition:
-            transform 0.2s ease,
-            background 0.2s ease;
-        }
-        .addbtn:hover {
-          transform: scale(1.08);
-          background: var(--walnut);
-        }
-        .cat-card .link {
-          transition: gap 0.2s ease;
-        }
-        .cat-card:hover .link {
-          gap: 10px;
-        }
-        .rev-card {
-          transition:
-            transform 0.25s ease,
-            box-shadow 0.25s ease;
-        }
-        .rev-card:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 14px 28px rgba(43, 24, 16, 0.08);
-        }
-        .benefit .icon {
-          transition:
-            transform 0.25s ease,
-            background 0.25s ease;
-        }
-        .benefit:hover .icon {
-          transform: scale(1.08);
-          background: var(--gold);
-        }
-        .benefit:hover .icon svg {
-          stroke: var(--espresso);
-        }
-      }
-      @media (prefers-reduced-motion: reduce) {
-        .reveal {
-          opacity: 1;
-          transform: none;
-        }
-      }
-
-      @media (max-width: 980px) {
-        .hero .wrap,
-        .story .wrap {
-          grid-template-columns: 1fr;
-        }
-        .cat-grid,
-        .prod-grid,
-        .benefits-grid {
-          grid-template-columns: repeat(2, 1fr);
-        }
-        .rev-grid {
-          grid-template-columns: 1fr;
-        }
-        .foot-cols {
-          grid-template-columns: 1fr 1fr;
-        }
-        nav.mainnav {
-          display: none;
-        }
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/dmc.css" />
   </head>
-  <body>
-    <div
-      style="
-        background: #1a0f08;
-        color: rgba(246, 238, 225, 0.55);
-        font-size: 11.5px;
-        text-align: center;
-        padding: 6px 20px;
-      "
-    >
-      Design demo — Variant A: Espresso Luxe ·
-      <a href="homepage-variant-b.html" style="color: #e8c77e; font-weight: 700"
-        >View Variant B →</a
-      >
-    </div>
-    <div class="announce">
-      🎁 Festive Gift Boxes now live — <b>Free shipping above ₹999</b> across
-      India
+  <body class="dmc-body">
+    <!-- ============ ANNOUNCEMENT ============ -->
+    <div class="dmc-announce dmc-marquee" aria-label="Announcements">
+      <div class="dmc-marquee__track" data-speed="40">
+        <span>Free shipping on bulk orders</span>
+        <span>Wholesale almonds · 15 Kg &amp; 30 Kg bags</span>
+        <span>Call or WhatsApp for today's rate: +91 79776 35556</span>
+        <span>Supplying retailers, distributors &amp; importers since 2018</span>
+      </div>
     </div>
 
-    <header>
-      <div class="wrap navrow">
-        <a class="logo" href="index.html">DMC <span>Nuts</span></a>
-        <nav class="mainnav">
-          <div>
-            <a class="top" href="shop.html">Shop</a>
-            <div class="megamenu">
-              <div>
-                <h4>By Nut</h4>
-                <a href="shop.html">Almonds</a><a href="shop.html">Cashews</a
-                ><a href="shop.html">Pistachios</a
-                ><a href="shop.html">Walnuts</a>
-              </div>
-              <div>
-                <h4>By Purpose</h4>
-                <a href="shop.html">Everyday Packs</a
-                ><a href="shop.html">Gift Boxes</a
-                ><a href="#">Wholesale / B2B</a>
-              </div>
-              <div>
-                <h4>Trending</h4>
-                <a href="shop.html">Best Sellers</a
-                ><a href="shop.html">Festive Collection</a
-                ><a href="shop.html">New Arrivals</a>
-              </div>
-            </div>
-          </div>
-          <a class="top" href="#">About</a>
-          <a class="top" href="blog.html">Health Blog</a>
-          <a class="top" href="#">Wholesale</a>
+    <!-- ============ HEADER ============ -->
+    <header class="dmc-header">
+      <div class="dmc-wrap dmc-header__row">
+        <a class="dmc-logo" href="index.html" aria-label="DMC Nuts home">
+          <img src="assets/img/logo.webp" alt="DMC Nuts" width="62" height="62" />
+          <span class="dmc-logo__text">DMC Nuts<small>Since 2018</small></span>
+        </a>
+        <nav class="dmc-nav" aria-label="Main">
+          <a href="index.html" class="is-current">Home</a>
+          <a href="shop.html">Varieties</a>
+          <a href="index.html#quote">Bulk Buy</a>
+          <a href="about.html">About Us</a>
+          <a href="#contact">Contact</a>
         </nav>
-        <div class="navicons">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
-            <circle cx="11" cy="11" r="7" />
-            <path d="M21 21l-4.3-4.3" />
-          </svg>
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
-            <path d="M20 21a8 8 0 10-16 0" />
-            <circle cx="12" cy="7" r="4" />
-          </svg>
-          <a style="position: relative" href="shop.html"
-            ><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
-              <path d="M6 2l1 5h10l1-5" />
-              <path
-                d="M3 7h18l-1.6 11.2A2 2 0 0117.4 20H6.6a2 2 0 01-2-1.8L3 7z"
-              /></svg
-            ><span class="cartcount">3</span></a
-          >
+        <div class="dmc-header__icons">
+          <a href="shop.html" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" /></svg></a>
+          <a href="tel:+917977635556" aria-label="Call us"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2" /></svg></a>
+          <a href="shop.html" aria-label="Enquiry list"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l-1.2 11.2a2 2 0 01-2 1.8H8.2a2 2 0 01-2-1.8z" /><path d="M9 7a3 3 0 016 0" /></svg><span class="dmc-cart-count">0</span></a>
+          <button class="dmc-burger" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 8h16M4 16h10" /></svg></button>
         </div>
       </div>
     </header>
+    <nav class="dmc-drawer" aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Varieties</a>
+      <a href="index.html#quote">Bulk Buy</a>
+      <a href="about.html">About Us</a>
+      <a href="#contact">Contact</a>
+      <div class="dmc-drawer__meta">+91 79776 35556 · deepakmangeandco@gmail.com</div>
+    </nav>
 
-    <section class="hero" style="padding-bottom: 0">
-      <div class="wrap">
-        <div>
-          <div class="eyebrow hero-fade-1">Farm to Pack · Since 1994</div>
-          <h1 class="hero-fade-2">
-            Premium nuts,<br /><em>packed</em> with purpose.
-          </h1>
-          <p class="lead hero-fade-3">
-            Hand-sorted almonds, cashews and pistachios sourced directly from
-            India's finest orchards — no additives, no shortcuts, just the nut
-            as nature intended.
-          </p>
-          <div class="herobtns hero-fade-4">
-            <a class="btn btn-gold" href="shop.html"
-              >Shop Bestsellers
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-              >
-                <path d="M5 12h14M13 5l7 7-7 7" />
+    <main>
+      <!-- ============ HERO ============ -->
+      <section class="dmc-hero">
+        <div class="dmc-wrap dmc-hero__grid">
+          <div class="dmc-hero__main">
+            <div data-dmc-nuts aria-hidden="true"></div>
+            <div class="dmc-hero__strip dmc-hero__strip--top dmc-marquee" aria-hidden="true">
+              <div class="dmc-marquee__track" data-speed="60">
+                <span>Best quality products</span><span>✦</span><span>Imported from USA · Australia · Middle East</span><span>✦</span><span>Graded · Sorted · Hygienically packed</span><span>✦</span>
+              </div>
+            </div>
+            <div class="dmc-hero__content">
+              <div class="dmc-eyebrow" data-reveal="fade">Best Quality Products</div>
+              <h1 class="dmc-h1" data-split>Supplying the World with the <em class="dmc-accent">Finest</em> Almonds</h1>
+              <p class="dmc-lead" data-reveal>We specialize in premium wholesale almonds sourced directly from trusted farms. With unmatched freshness, rich taste, and global supply capabilities, we ensure your business receives only the best—straight from the orchards to your doorstep.</p>
+              <div class="dmc-hero__ctas" data-reveal>
+                <a class="dmc-btn" href="shop.html" data-magnetic>Explore Varieties <svg class="dmc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+                <a class="dmc-btn dmc-btn--ghost" href="#quote" data-magnetic>Get Bulk Quote</a>
+              </div>
+              <div class="dmc-hero__trust" data-reveal>
+                <div><strong>2018</strong><br />Incorporated</div>
+                <span class="sep"></span>
+                <div><strong>9</strong><br />Almond grades</div>
+                <span class="sep"></span>
+                <div><strong>3</strong><br />Sourcing regions</div>
+              </div>
+            </div>
+            <a class="dmc-hero__badge" href="shop.html" aria-label="Shop varieties">
+              <svg class="ring" viewBox="0 0 120 120" aria-hidden="true">
+                <defs><path id="dmcCircle" d="M60,60 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0" /></defs>
+                <text font-family="DM Sans, sans-serif" font-size="11" font-weight="700" letter-spacing="3.2" fill="#4e2320"><textPath href="#dmcCircle">WHOLESALE ALMONDS • DMC NUTS • </textPath></text>
               </svg>
+              <span class="core"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M8 7h9v9" /></svg></span>
             </a>
-            <a class="btn btn-outline" href="#">Our Story</a>
           </div>
-          <div class="trustrow hero-fade-4">
-            <div class="item">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
-                <path
-                  d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"
-                /></svg
-              >FSSAI Certified
-            </div>
-            <div class="item">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
-                <path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z" /></svg
-              >ISO 22000
-            </div>
-            <div class="item">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
-                <circle cx="12" cy="12" r="9" />
-                <path d="M8 12l2.5 2.5L16 9" /></svg
-              >100% Organic
-            </div>
-          </div>
-        </div>
-        <div class="hero-visual hero-fade-5">
-          <div
-            class="ph"
-            style="
-              height: 460px;
-              background-image: url(&quot;https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=1000&amp;h=920&amp;fit=crop&amp;auto=format&amp;q=80&quot;);
-              background-size: cover;
-              background-position: center;
-            "
-          ></div>
-          <div class="hero-shellcard">
-            <div class="num">30+</div>
-            <div class="txt">Years sourcing directly from Indian orchards</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="shellcrack">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
-        <path
-          d="M0,40 C240,90 380,0 620,30 C860,60 1000,10 1200,40 C1320,55 1400,35 1440,40 L1440,80 L0,80 Z"
-          fill="#F6EEE1"
-        />
-      </svg>
-    </div>
-
-    <div class="promise">
-      <div class="wrap">
-        <div class="item">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
-            <path d="M5 12l5 5L20 7" /></svg
-          >Free shipping over ₹999
-        </div>
-        <div class="item">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
-            <path d="M3 6h18M3 12h18M3 18h18" /></svg
-          >Bulk pricing on 1kg+ packs
-        </div>
-        <div class="countdown">⏱ Diwali Gift Sale ends in 02d : 14h : 08m</div>
-      </div>
-    </div>
-
-    <section>
-      <div class="wrap">
-        <div class="sectionhead reveal">
-          <div class="eyebrow">Shop by Category</div>
-          <h2>Every nut, at its peak</h2>
-          <p>
-            Four core ranges, sorted and graded for size, moisture and taste
-            consistency in every batch.
-          </p>
-        </div>
-        <div class="cat-grid">
-          <a class="cat-card reveal" href="shop.html">
-            <div
-              class="ph light"
-              style="
-                height: 180px;
-                background-image: url(&quot;https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&amp;h=360&amp;fit=crop&amp;auto=format&amp;q=80&quot;);
-                background-size: cover;
-                background-position: center;
-              "
-            ></div>
-            <div class="cat-body">
-              <h3>Almonds</h3>
-              <p>Mamra & Californian, whole or split</p>
-              <span class="link">Shop Almonds →</span>
-            </div>
-          </a>
-          <a class="cat-card reveal" href="shop.html">
-            <div
-              class="ph light"
-              style="
-                height: 180px;
-                background-image: url(&quot;https://images.unsplash.com/photo-1723466998040-78d7e2ef6d72?w=500&amp;h=360&amp;fit=crop&amp;auto=format&amp;q=80&quot;);
-                background-size: cover;
-                background-position: center;
-              "
-            ></div>
-            <div class="cat-body">
-              <h3>Cashews</h3>
-              <p>W180, W240 grades, roasted & raw</p>
-              <span class="link">Shop Cashews →</span>
-            </div>
-          </a>
-          <a class="cat-card reveal" href="shop.html">
-            <div
-              class="ph light"
-              style="
-                height: 180px;
-                background-image: url(&quot;https://images.unsplash.com/photo-1610137512859-aa919f651a05?w=500&amp;h=360&amp;fit=crop&amp;auto=format&amp;q=80&quot;);
-                background-size: cover;
-                background-position: center;
-              "
-            ></div>
-            <div class="cat-body">
-              <h3>Pistachios</h3>
-              <p>Iranian & Californian, salted options</p>
-              <span class="link">Shop Pistachios →</span>
-            </div>
-          </a>
-          <a class="cat-card reveal" href="shop.html">
-            <div
-              class="ph light"
-              style="
-                height: 180px;
-                background-image: url(&quot;https://images.unsplash.com/photo-1645291784298-8ef1f29d25f7?w=500&amp;h=360&amp;fit=crop&amp;auto=format&amp;q=80&quot;);
-                background-size: cover;
-                background-position: center;
-              "
-            ></div>
-            <div class="cat-body">
-              <h3>Gift Packs</h3>
-              <p>Curated boxes for festivals & corporates</p>
-              <span class="link">Shop Gift Packs →</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="best">
-      <div class="wrap">
-        <div class="sectionhead reveal">
-          <div class="eyebrow">Most Loved</div>
-          <h2>Our bestsellers</h2>
-          <p>The packs our customers reorder most — rated 4.7★ and above.</p>
-        </div>
-        <div class="prod-grid">
-          <div class="prod-card reveal">
-            <span class="badge">Bestseller</span>
-            <div class="wish">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
-                <path
-                  d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"
-                />
-              </svg>
-            </div>
-            <a href="product.html"
-              ><div
-                class="ph light"
-                style="
-                  height: 200px;
-                  background-image: url(&quot;https://images.unsplash.com/photo-1772986799909-81bc27fd99ce?w=500&amp;h=400&amp;fit=crop&amp;auto=format&amp;q=80&quot;);
-                  background-size: cover;
-                  background-position: center;
-                "
-              ></div
-            ></a>
-            <div class="prod-body">
-              <div class="stars">★★★★★</div>
-              <a href="product.html"><h4>Premium Mamra Almonds</h4></a>
-              <div class="wt">250g · 500g · 1kg</div>
-              <div class="pricerow">
-                <div class="price"><span class="old">₹649</span>₹549</div>
-                <a class="addbtn" href="product.html"
-                  ><svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path d="M12 5v14M5 12h14" /></svg
-                ></a>
+          <div class="dmc-hero__side">
+            <a class="dmc-promo dmc-promo--green" href="#quote" data-reveal="right">
+              <div>
+                <div class="tag">Deal of the day</div>
+                <h3>Discount on Bulk Orders</h3>
               </div>
-            </div>
-          </div>
-          <div class="prod-card reveal">
-            <div class="wish">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
-                <path
-                  d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"
-                />
-              </svg>
-            </div>
-            <a href="product.html"
-              ><div
-                class="ph light"
-                style="
-                  height: 200px;
-                  background-image: url(&quot;https://images.unsplash.com/photo-1723466998040-78d7e2ef6d72?w=500&amp;h=400&amp;fit=crop&amp;auto=format&amp;q=80&quot;);
-                  background-size: cover;
-                  background-position: center;
-                "
-              ></div
-            ></a>
-            <div class="prod-body">
-              <div class="stars">★★★★★</div>
-              <a href="product.html"><h4>Whole W240 Cashews</h4></a>
-              <div class="wt">250g · 500g · 1kg</div>
-              <div class="pricerow">
-                <div class="price">₹499</div>
-                <a class="addbtn" href="product.html"
-                  ><svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path d="M12 5v14M5 12h14" /></svg
-                ></a>
+              <span class="dmc-btn dmc-btn--light dmc-btn--sm">Request rate</span>
+              <img src="assets/img/products/golden-bag-cutout.png" alt="" loading="eager" />
+            </a>
+            <a class="dmc-promo dmc-promo--brown" href="product.html" data-reveal="right" data-delay="0.15">
+              <div>
+                <div class="tag">Bestseller</div>
+                <h3>Orange Bag · 15 Kg</h3>
               </div>
-            </div>
+              <span class="dmc-btn dmc-btn--light dmc-btn--sm">View grade</span>
+              <img src="assets/img/products/orange-bag-cutout.png" alt="" loading="eager" />
+            </a>
           </div>
-          <div class="prod-card reveal">
-            <span class="badge" style="background: var(--green-dark)">New</span>
-            <div class="wish">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
-                <path
-                  d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"
-                />
-              </svg>
-            </div>
-            <a href="product.html"
-              ><div
-                class="ph light"
-                style="
-                  height: 200px;
-                  background-image: url(&quot;https://images.unsplash.com/photo-1610137512859-aa919f651a05?w=500&amp;h=400&amp;fit=crop&amp;auto=format&amp;q=80&quot;);
-                  background-size: cover;
-                  background-position: center;
-                "
-              ></div
-            ></a>
-            <div class="prod-body">
-              <div class="stars">★★★★☆</div>
-              <a href="product.html"><h4>Roasted & Salted Pistachios</h4></a>
-              <div class="wt">250g · 500g</div>
-              <div class="pricerow">
-                <div class="price">₹729</div>
-                <a class="addbtn" href="product.html"
-                  ><svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path d="M12 5v14M5 12h14" /></svg
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="prod-card reveal">
-            <div class="wish">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
-                <path
-                  d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0112 6a5.5 5.5 0 019.5 6c-2.5 4.5-9.5 9-9.5 9z"
-                />
-              </svg>
-            </div>
-            <a href="product.html"
-              ><div
-                class="ph light"
-                style="
-                  height: 200px;
-                  background-image: url(&quot;https://images.unsplash.com/photo-1645291784298-8ef1f29d25f7?w=500&amp;h=400&amp;fit=crop&amp;auto=format&amp;q=80&quot;);
-                  background-size: cover;
-                  background-position: center;
-                "
-              ></div
-            ></a>
-            <div class="prod-body">
-              <div class="stars">★★★★★</div>
-              <a href="product.html"><h4>Diwali Assorted Gift Box</h4></a>
-              <div class="wt">1kg mixed</div>
-              <div class="pricerow">
-                <div class="price">₹1,299</div>
-                <a class="addbtn" href="product.html"
-                  ><svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path d="M12 5v14M5 12h14" /></svg
-                ></a>
-              </div>
-            </div>
-          </div>
+        </div>
+      </section>
+
+      <!-- ============ USP TICKER ============ -->
+      <div class="dmc-ticker dmc-marquee" aria-label="Why buy from us">
+        <div class="dmc-marquee__track" data-speed="34">
+          <span class="dmc-pill dmc-pill--1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z" /><circle cx="7" cy="18" r="1.6" /><circle cx="17" cy="18" r="1.6" /></svg>Free Shipping · For Bulk Buy</span>
+          <span class="dmc-pill dmc-pill--2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z" /><path d="M9 12l2 2 4-4" /></svg>FSSAI Licensed</span>
+          <span class="dmc-pill dmc-pill--3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 11-3-6.2" /><path d="M20 4v5h-5" /></svg>Easy Returns</span>
+          <span class="dmc-pill dmc-pill--4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" /></svg>Huge Savings · Lowest Price</span>
+          <span class="dmc-pill dmc-pill--1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" /></svg>Direct Import · USA, Australia, Middle East</span>
+          <span class="dmc-pill dmc-pill--2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M7 12h10M10 18h4" /></svg>Sorted &amp; Graded</span>
+          <span class="dmc-pill dmc-pill--3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11V7a5 5 0 0110 0v4" /><rect x="4" y="11" width="16" height="10" rx="2" /></svg>Hygienic, Hands-free Packing</span>
         </div>
       </div>
-    </section>
 
-    <section>
-      <div class="wrap">
-        <div class="sectionhead reveal">
-          <div class="eyebrow">Why Nuts, Daily</div>
-          <h2>Small handful, real benefits</h2>
-        </div>
-        <div class="benefits-grid">
-          <div class="benefit reveal">
-            <div class="icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
-                <path
-                  d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 10-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 000-7.8z"
-                />
-              </svg>
-            </div>
-            <h4>Heart Health</h4>
-            <p>
-              Rich in monounsaturated fats that support cardiovascular wellness
-            </p>
-          </div>
-          <div class="benefit reveal">
-            <div class="icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
-                <path d="M13 2L4 14h7l-1 8 9-12h-7z" />
-              </svg>
-            </div>
-            <h4>Sustained Energy</h4>
-            <p>A steady source of fuel for long workdays and workouts</p>
-          </div>
-          <div class="benefit reveal">
-            <div class="icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
-                <path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z" />
-              </svg>
-            </div>
-            <h4>Immunity Support</h4>
-            <p>Vitamin E and zinc that help the body stay resilient</p>
-          </div>
-          <div class="benefit reveal">
-            <div class="icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
-                <circle cx="12" cy="12" r="9" />
-                <path d="M12 7v5l3 3" />
-              </svg>
-            </div>
-            <h4>Protein-Rich</h4>
-            <p>A natural, plant-based protein boost in every serving</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="story">
-      <div class="wrap">
-        <div
-          class="ph reveal"
-          style="
-            height: 420px;
-            background-image: url(&quot;https://images.unsplash.com/photo-1757270828839-9b9d252d5627?w=900&amp;h=840&amp;fit=crop&amp;auto=format&amp;q=80&quot;);
-            background-size: cover;
-            background-position: center;
-          "
-        ></div>
-        <div class="reveal">
-          <div class="eyebrow">Our Story</div>
-          <h2>From Rajasthan's orchards to your kitchen shelf</h2>
-          <p>
-            For three decades, DMC Nuts has worked directly with growers across
-            Rajasthan and Kashmir — sorting, grading and packing every batch
-            within days of harvest, so what reaches you is as close to
-            fresh-picked as a nut can be.
-          </p>
-          <div class="certrow">
-            <div class="cert">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
-                <path
-                  d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"
-                /></svg
-              >FSSAI
-            </div>
-            <div class="cert">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
-                <path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z" /></svg
-              >ISO 22000
-            </div>
-            <div class="cert">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
-                <circle cx="12" cy="12" r="9" />
-                <path d="M8 12l2.5 2.5L16 9" /></svg
-              >Organic Certified
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="rev-top reveal">
-          <div>
-            <div class="eyebrow">Customer Love</div>
-            <h2 style="font-size: 32px; margin: 0">What our customers say</h2>
-          </div>
-          <div class="rev-agg">
-            <div class="score">4.8</div>
+      <!-- ============ SHOP BY GRADE ============ -->
+      <section class="dmc-section dmc-section--tight">
+        <div class="dmc-wrap">
+          <div class="dmc-head">
             <div>
-              <div class="stars">★★★★★</div>
-              <div class="sub">from 3,240+ Google reviews</div>
+              <div class="dmc-eyebrow">Choose your preferred bag</div>
+              <h2 class="dmc-h2" data-split>Shop by <em class="dmc-accent">grade</em></h2>
             </div>
+            <a class="dmc-link" href="shop.html">View all varieties <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </div>
+          <div class="dmc-cats" data-stagger>
+            <a class="dmc-cat" href="product.html"><span class="dmc-cat__img"><img src="assets/img/products/orange-bag.jpg" alt="Orange Bag almonds" loading="lazy" /></span><span class="dmc-cat__name">Orange Bag<span class="dmc-cat__count">Count 29–30</span></span></a>
+            <a class="dmc-cat" href="product.html"><span class="dmc-cat__img"><img src="assets/img/products/white-bag.jpg" alt="White Bag American 3D almonds" loading="lazy" /></span><span class="dmc-cat__name">White Bag<span class="dmc-cat__count">Count 27–28</span></span></a>
+            <a class="dmc-cat" href="product.html"><span class="dmc-cat__img"><img src="assets/img/products/yellow-bag.jpg" alt="Yellow Bag almonds" loading="lazy" /></span><span class="dmc-cat__name">Yellow Bag<span class="dmc-cat__count">Count 26–27</span></span></a>
+            <a class="dmc-cat" href="product.html"><span class="dmc-cat__img"><img src="assets/img/products/pink-bag.jpg" alt="Pink Bag almonds" loading="lazy" /></span><span class="dmc-cat__name">Pink Bag<span class="dmc-cat__count">Count 24–25</span></span></a>
+            <a class="dmc-cat" href="product.html"><span class="dmc-cat__img"><img src="assets/img/products/purple-bag.jpg" alt="Purple Bag almonds" loading="lazy" /></span><span class="dmc-cat__name">Purple Bag<span class="dmc-cat__count">Count 23–24</span></span></a>
+            <a class="dmc-cat" href="product.html"><span class="dmc-cat__img"><img src="assets/img/products/blue-bag.jpg" alt="Blue Bag almonds" loading="lazy" /></span><span class="dmc-cat__name">Blue Bag<span class="dmc-cat__count">Count 21–22</span></span></a>
+            <a class="dmc-cat" href="product.html"><span class="dmc-cat__img"><img src="assets/img/products/golden-bag.jpg" alt="Golden Bag almonds" loading="lazy" /></span><span class="dmc-cat__name">Golden Bag<span class="dmc-cat__count">Count 19–21</span></span></a>
+            <a class="dmc-cat" href="product.html"><span class="dmc-cat__img"><img src="assets/img/products/independent-3d-bag.jpg" alt="Independent 3D Bag almonds" loading="lazy" /></span><span class="dmc-cat__name">Independent 3D<span class="dmc-cat__count">Count 24–25</span></span></a>
+            <a class="dmc-cat" href="product.html"><span class="dmc-cat__img"><img src="assets/img/products/independent-bag.jpg" alt="Independent Bag almonds" loading="lazy" /></span><span class="dmc-cat__name">Independent<span class="dmc-cat__count">30 Kg bag</span></span></a>
           </div>
         </div>
-        <div class="rev-grid">
-          <div class="rev-card reveal">
-            <div class="stars">★★★★★</div>
-            <p>
-              "The Mamra almonds taste nothing like what I get in stores —
-              genuinely fresh, and the packaging keeps them crisp for months."
-            </p>
-            <div class="rev-who">
-              <div class="av"></div>
-              <div>
-                <div class="name">Aditi R.</div>
-                <div class="loc">Mumbai</div>
-              </div>
+      </section>
+
+      <!-- ============ FARM FRESH STORY ============ -->
+      <section class="dmc-section dmc-bg-white">
+        <div class="dmc-wrap dmc-split">
+          <div class="dmc-media" data-img-reveal>
+            <img src="assets/img/almond-bowl.jpg" alt="A bowl of premium almonds on a wooden table" data-parallax="0.08" loading="lazy" />
+            <div class="dmc-media__float" data-reveal="up">
+              <strong>100%</strong>
+              <span>Sun-dried &amp;<br />packed fresh</span>
             </div>
           </div>
-          <div class="rev-card reveal">
-            <div class="stars">★★★★★</div>
-            <p>
-              "Ordered a gift box for Diwali and every recipient asked where it
-              was from. Premium look, premium taste."
-            </p>
-            <div class="rev-who">
-              <div class="av"></div>
-              <div>
-                <div class="name">Karan M.</div>
-                <div class="loc">Delhi</div>
-              </div>
+          <div>
+            <div class="dmc-eyebrow">Farm fresh almond</div>
+            <h2 class="dmc-h2" data-split>Handpicked for <em class="dmc-accent">premium</em> quality</h2>
+            <p class="dmc-lead" style="margin-top: 22px" data-reveal>Sourced from the finest farms, our almonds are carefully handpicked to ensure premium quality. Rich in protein, fiber, and essential nutrients, they make the perfect choice for a healthy lifestyle.</p>
+            <ul class="dmc-checks" data-stagger>
+              <li>Each almond is naturally sun-dried, preserving its authentic taste and crunch.</li>
+              <li>Packed fresh to seal in flavor and goodness for longer shelf life.</li>
+              <li>The perfect blend of health, taste, and energy in every bite.</li>
+            </ul>
+            <a class="dmc-btn" href="shop.html" data-magnetic>Shop Now <svg class="dmc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ BESTSELLERS ============ -->
+      <section class="dmc-section" data-chip-scope>
+        <div class="dmc-wrap">
+          <div class="dmc-head">
+            <div>
+              <div class="dmc-eyebrow">Our bestsellers</div>
+              <h2 class="dmc-h2" data-split>Wholesale bags, <em class="dmc-accent">graded</em> for every need</h2>
+            </div>
+            <div class="dmc-chips" role="tablist">
+              <button class="dmc-chip is-active" data-chip="all">All grades</button>
+              <button class="dmc-chip" data-chip="type:classic">Classic</button>
+              <button class="dmc-chip" data-chip="type:3d">3D</button>
+              <button class="dmc-chip" data-chip="type:independent">Independent</button>
             </div>
           </div>
-          <div class="rev-card reveal">
-            <div class="stars">★★★★☆</div>
-            <p>
-              "Been buying cashews here for two years — consistent size grading
-              every single time. That's rare."
-            </p>
-            <div class="rev-who">
-              <div class="av"></div>
-              <div>
-                <div class="name">Priya S.</div>
-                <div class="loc">Bengaluru</div>
+          <div class="dmc-grid" data-stagger>
+            <article class="dmc-card" data-type="classic" data-tilt>
+              <a class="dmc-card__media" href="product.html"><img src="assets/img/products/orange-bag.jpg" alt="Orange Bag almonds 15 Kg" loading="lazy" /><img src="assets/img/almond-bowl.jpg" alt="" loading="lazy" /><span class="dmc-card__swatch" style="--c: #f39233"></span></a>
+              <div class="dmc-card__tags"><span class="dmc-tag dmc-tag--brown">Bestseller</span></div>
+              
+              <div class="dmc-card__body">
+                <span class="dmc-card__cat">15 Kg · Classic</span>
+                <h3 class="dmc-card__title"><a href="product.html">Orange Bag Almonds</a></h3>
+                <div class="dmc-card__specs"><span>Grain 100–105</span><span>Count 29–30</span></div>
+                <div class="dmc-card__foot"><span class="dmc-card__price">Price on request</span><a class="dmc-add" href="product.html">Enquire</a></div>
               </div>
+            </article>
+            <article class="dmc-card" data-type="3d" data-tilt>
+              <a class="dmc-card__media" href="product.html"><img src="assets/img/products/white-bag.jpg" alt="White Bag American 3D almonds 15 Kg" loading="lazy" /><img src="assets/img/almond-bowl.jpg" alt="" loading="lazy" /><span class="dmc-card__swatch" style="--c: #ededed"></span></a>
+              <div class="dmc-card__tags"><span class="dmc-tag">American 3D</span></div>
+              
+              <div class="dmc-card__body">
+                <span class="dmc-card__cat">15 Kg · 3D</span>
+                <h3 class="dmc-card__title"><a href="product.html">White Bag (American 3D)</a></h3>
+                <div class="dmc-card__specs"><span>Grain 95–98</span><span>Count 27–28</span></div>
+                <div class="dmc-card__foot"><span class="dmc-card__price">Price on request</span><a class="dmc-add" href="product.html">Enquire</a></div>
+              </div>
+            </article>
+            <article class="dmc-card" data-type="classic" data-tilt>
+              <a class="dmc-card__media" href="product.html"><img src="assets/img/products/yellow-bag.jpg" alt="Yellow Bag almonds 15 Kg" loading="lazy" /><img src="assets/img/almond-bowl.jpg" alt="" loading="lazy" /><span class="dmc-card__swatch" style="--c: #f2cc0e"></span></a>
+              
+              <div class="dmc-card__body">
+                <span class="dmc-card__cat">15 Kg · Classic</span>
+                <h3 class="dmc-card__title"><a href="product.html">Yellow Bag Almonds</a></h3>
+                <div class="dmc-card__specs"><span>Grain 92–95</span><span>Count 26–27</span></div>
+                <div class="dmc-card__foot"><span class="dmc-card__price">Price on request</span><a class="dmc-add" href="product.html">Enquire</a></div>
+              </div>
+            </article>
+            <article class="dmc-card" data-type="classic" data-tilt>
+              <a class="dmc-card__media" href="product.html"><img src="assets/img/products/pink-bag.jpg" alt="Pink Bag almonds 15 Kg" loading="lazy" /><img src="assets/img/almond-bowl.jpg" alt="" loading="lazy" /><span class="dmc-card__swatch" style="--c: #e2138c"></span></a>
+              <div class="dmc-card__tags"><span class="dmc-tag dmc-tag--almond">Popular</span></div>
+              
+              <div class="dmc-card__body">
+                <span class="dmc-card__cat">15 Kg · Classic</span>
+                <h3 class="dmc-card__title"><a href="product.html">Pink Bag Almonds</a></h3>
+                <div class="dmc-card__specs"><span>Grain 85–88</span><span>Count 24–25</span></div>
+                <div class="dmc-card__foot"><span class="dmc-card__price">Price on request</span><a class="dmc-add" href="product.html">Enquire</a></div>
+              </div>
+            </article>
+            <article class="dmc-card" data-type="classic" data-tilt>
+              <a class="dmc-card__media" href="product.html"><img src="assets/img/products/purple-bag.jpg" alt="Purple Bag almonds 15 Kg" loading="lazy" /><img src="assets/img/almond-bowl.jpg" alt="" loading="lazy" /><span class="dmc-card__swatch" style="--c: #8e3f8e"></span></a>
+              <div class="dmc-card__tags"><span class="dmc-tag dmc-tag--almond">Popular</span></div>
+              
+              <div class="dmc-card__body">
+                <span class="dmc-card__cat">15 Kg · Classic</span>
+                <h3 class="dmc-card__title"><a href="product.html">Purple Bag Almonds</a></h3>
+                <div class="dmc-card__specs"><span>Grain 80–83</span><span>Count 23–24</span></div>
+                <div class="dmc-card__foot"><span class="dmc-card__price">Price on request</span><a class="dmc-add" href="product.html">Enquire</a></div>
+              </div>
+            </article>
+            <article class="dmc-card" data-type="classic" data-tilt>
+              <a class="dmc-card__media" href="product.html"><img src="assets/img/products/blue-bag.jpg" alt="Blue Bag almonds 15 Kg" loading="lazy" /><img src="assets/img/almond-bowl.jpg" alt="" loading="lazy" /><span class="dmc-card__swatch" style="--c: #4a4595"></span></a>
+              
+              <div class="dmc-card__body">
+                <span class="dmc-card__cat">15 Kg · Classic</span>
+                <h3 class="dmc-card__title"><a href="product.html">Blue Bag Almonds</a></h3>
+                <div class="dmc-card__specs"><span>Grain 75–78</span><span>Count 21–22</span></div>
+                <div class="dmc-card__foot"><span class="dmc-card__price">Price on request</span><a class="dmc-add" href="product.html">Enquire</a></div>
+              </div>
+            </article>
+            <article class="dmc-card" data-type="3d independent" data-tilt>
+              <a class="dmc-card__media" href="product.html"><img src="assets/img/products/independent-3d-bag.jpg" alt="Independent 3D Bag almonds 15 Kg" loading="lazy" /><img src="assets/img/almond-bowl.jpg" alt="" loading="lazy" /><span class="dmc-card__swatch" style="--c: #e0303c"></span></a>
+              
+              <div class="dmc-card__body">
+                <span class="dmc-card__cat">15 Kg · 3D</span>
+                <h3 class="dmc-card__title"><a href="product.html">Independent 3D Bag</a></h3>
+                <div class="dmc-card__specs"><span>Grain 85–88</span><span>Count 24–25</span></div>
+                <div class="dmc-card__foot"><span class="dmc-card__price">Price on request</span><a class="dmc-add" href="product.html">Enquire</a></div>
+              </div>
+            </article>
+            <article class="dmc-card" data-type="independent" data-tilt>
+              <a class="dmc-card__media" href="product.html"><img src="assets/img/products/independent-bag.jpg" alt="Independent Bag almonds 30 Kg" loading="lazy" /><img src="assets/img/almond-bowl.jpg" alt="" loading="lazy" /><span class="dmc-card__swatch" style="--c: #d02030"></span></a>
+              <div class="dmc-card__tags"><span class="dmc-tag">30 Kg</span></div>
+              
+              <div class="dmc-card__body">
+                <span class="dmc-card__cat">30 Kg · Independent</span>
+                <h3 class="dmc-card__title"><a href="product.html">Independent Bag</a></h3>
+                <div class="dmc-card__specs"><span>Grain 95–100</span><span>Count 27–28</span></div>
+                <div class="dmc-card__foot"><span class="dmc-card__price">Price on request</span><a class="dmc-add" href="product.html">Enquire</a></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ GRADE GUIDE ============ -->
+      <section class="dmc-section dmc-bg-cream2">
+        <div class="dmc-wrap">
+          <div class="dmc-head dmc-head--center">
+            <div class="dmc-eyebrow dmc-eyebrow--center">Grade guide</div>
+            <h2 class="dmc-h2" data-split>Find the right bag, <em class="dmc-accent">at a glance</em></h2>
+            <p class="dmc-lead">Every DMC bag is sorted and graded so your stock stays consistent, delivery after delivery. Compare grain and count across all nine varieties.</p>
+          </div>
+          <div class="dmc-grades" data-reveal>
+            <div class="dmc-grades__head"><span></span><span>Variety</span><span>Count scale</span><span>Grain</span><span>Count</span></div>
+            <a class="dmc-grade" href="product.html"><span class="dmc-grade__dot" style="--c: #f39233"></span><span class="dmc-grade__name">Orange Bag<small>15 Kg</small></span><span class="dmc-grade__bar"><span data-bar="100"></span></span><span class="dmc-grade__val">100–105</span><span class="dmc-grade__val">29–30</span></a>
+            <a class="dmc-grade" href="product.html"><span class="dmc-grade__dot" style="--c: #ededed"></span><span class="dmc-grade__name">White Bag (American 3D)<small>15 Kg</small></span><span class="dmc-grade__bar"><span data-bar="93"></span></span><span class="dmc-grade__val">95–98</span><span class="dmc-grade__val">27–28</span></a>
+            <a class="dmc-grade" href="product.html"><span class="dmc-grade__dot" style="--c: #d02030"></span><span class="dmc-grade__name">Independent Bag<small>30 Kg</small></span><span class="dmc-grade__bar"><span data-bar="93"></span></span><span class="dmc-grade__val">95–100</span><span class="dmc-grade__val">27–28</span></a>
+            <a class="dmc-grade" href="product.html"><span class="dmc-grade__dot" style="--c: #f2cc0e"></span><span class="dmc-grade__name">Yellow Bag<small>15 Kg</small></span><span class="dmc-grade__bar"><span data-bar="90"></span></span><span class="dmc-grade__val">92–95</span><span class="dmc-grade__val">26–27</span></a>
+            <a class="dmc-grade" href="product.html"><span class="dmc-grade__dot" style="--c: #e2138c"></span><span class="dmc-grade__name">Pink Bag<small>15 Kg</small></span><span class="dmc-grade__bar"><span data-bar="83"></span></span><span class="dmc-grade__val">85–88</span><span class="dmc-grade__val">24–25</span></a>
+            <a class="dmc-grade" href="product.html"><span class="dmc-grade__dot" style="--c: #e0303c"></span><span class="dmc-grade__name">Independent 3D Bag<small>15 Kg</small></span><span class="dmc-grade__bar"><span data-bar="83"></span></span><span class="dmc-grade__val">85–88</span><span class="dmc-grade__val">24–25</span></a>
+            <a class="dmc-grade" href="product.html"><span class="dmc-grade__dot" style="--c: #8e3f8e"></span><span class="dmc-grade__name">Purple Bag<small>15 Kg</small></span><span class="dmc-grade__bar"><span data-bar="80"></span></span><span class="dmc-grade__val">80–83</span><span class="dmc-grade__val">23–24</span></a>
+            <a class="dmc-grade" href="product.html"><span class="dmc-grade__dot" style="--c: #4a4595"></span><span class="dmc-grade__name">Blue Bag<small>15 Kg</small></span><span class="dmc-grade__bar"><span data-bar="73"></span></span><span class="dmc-grade__val">75–78</span><span class="dmc-grade__val">21–22</span></a>
+            <a class="dmc-grade" href="product.html"><span class="dmc-grade__dot" style="--c: #d9b877"></span><span class="dmc-grade__name">Golden Bag<small>15 Kg</small></span><span class="dmc-grade__bar"><span data-bar="70"></span></span><span class="dmc-grade__val">68–74</span><span class="dmc-grade__val">19–21</span></a>
+            <p class="dmc-grades__note">Grain and count as listed per bag. Need a full spec sheet for a grade? <a class="dmc-link" href="#quote">Ask our team</a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ WHY CHOOSE ============ -->
+      <section class="dmc-section dmc-bg-dark dmc-why">
+        <div class="dmc-wrap">
+          <div class="dmc-head">
+            <div>
+              <div class="dmc-eyebrow">Why choose DMC almonds?</div>
+              <h2 class="dmc-h2" data-split>Wholesale excellence for <em class="dmc-accent" style="color: #9bd27d">global</em> markets</h2>
             </div>
+            <p class="dmc-lead">At DMC, we bring you premium quality almonds sourced directly from trusted farms. Known for their rich taste, superior crunch, and natural freshness, our almonds are supplied in bulk to businesses across India and global markets.</p>
+          </div>
+          <div class="dmc-why__grid" data-stagger>
+            <div class="dmc-feature">
+              <span class="dmc-feature__num">01</span>
+              <div class="dmc-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18" /></svg></div>
+              <h3>Direct import</h3>
+              <p>Direct sourcing from international markets including the USA, Australia, and the Middle East.</p>
+            </div>
+            <div class="dmc-feature">
+              <span class="dmc-feature__num">02</span>
+              <div class="dmc-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M7 12h10M10 18h4" /></svg></div>
+              <h3>Sorted &amp; graded</h3>
+              <p>Advanced sorting, grading, and hygienic packaging to deliver top-quality products.</p>
+            </div>
+            <div class="dmc-feature">
+              <span class="dmc-feature__num">03</span>
+              <div class="dmc-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z" /><path d="M9 12l2 2 4-4" /></svg></div>
+              <h3>Food-safe processing</h3>
+              <p>FSSAI-compliant units with sanitized, hands-free processing and regular quality testing.</p>
+            </div>
+            <div class="dmc-feature">
+              <span class="dmc-feature__num">04</span>
+              <div class="dmc-feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z" /><circle cx="7" cy="18" r="1.6" /><circle cx="17" cy="18" r="1.6" /></svg></div>
+              <h3>Seamless supply</h3>
+              <p>Efficient procurement, storage, and logistics from Navi Mumbai's APMC Market.</p>
+            </div>
+          </div>
+          <div class="dmc-stats" style="margin-top: clamp(48px, 6vw, 80px)">
+            <div class="dmc-stat"><strong>2018</strong><span>Incorporated</span></div>
+            <div class="dmc-stat"><strong data-countup="9">9</strong><span>Graded almond varieties</span></div>
+            <div class="dmc-stat"><strong data-countup="3">3</strong><span>Sourcing regions</span></div>
+            <div class="dmc-stat"><strong><span data-countup="30" style="display: inline; margin: 0; font-size: inherit; color: inherit">30</span> Kg</strong><span>Largest bag size</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ BIG QUOTE MARQUEE ============ -->
+      <section class="dmc-section--tight" aria-label="Our commitment">
+        <div class="dmc-bigtype dmc-marquee" aria-hidden="true">
+          <div class="dmc-marquee__track" data-speed="38">
+            <span>Quality</span><span>Commitment</span><span>Freshness</span><span>Consistency</span>
+          </div>
+        </div>
+        <div class="dmc-wrap" style="text-align: center; margin-top: 28px">
+          <p style="font-family: var(--dmc-serif); font-style: italic; font-size: clamp(22px, 2.6vw, 36px); line-height: 1.35; color: var(--dmc-brown-900); max-width: 900px; margin: 0 auto" data-reveal>“Quality is not an act, it’s our commitment. DMC Almonds — Wholesale excellence for global markets.”</p>
+        </div>
+      </section>
+
+      <!-- ============ COMPARISON ============ -->
+      <section class="dmc-section">
+        <div class="dmc-wrap">
+          <div class="dmc-head dmc-head--center">
+            <div class="dmc-eyebrow dmc-eyebrow--center">The DMC difference</div>
+            <h2 class="dmc-h2" data-split>Why buyers <em class="dmc-accent">switch</em> to DMC</h2>
+          </div>
+          <div class="dmc-compare" data-reveal="scale">
+            <table>
+              <thead>
+                <tr><th>What you get</th><th>Loose market stock</th><th class="us">DMC Nuts</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Graded by grain &amp; count</td><td><span class="dmc-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg></span></td><td class="us"><span class="dmc-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7" /></svg></span></td></tr>
+                <tr><td>Direct import sourcing</td><td><span class="dmc-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg></span></td><td class="us"><span class="dmc-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7" /></svg></span></td></tr>
+                <tr><td>Hygienic, hands-free packing</td><td><span class="dmc-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg></span></td><td class="us"><span class="dmc-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7" /></svg></span></td></tr>
+                <tr><td>Colour-coded bags for easy inventory</td><td><span class="dmc-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg></span></td><td class="us"><span class="dmc-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7" /></svg></span></td></tr>
+                <tr><td>Free shipping on bulk orders</td><td><span class="dmc-no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg></span></td><td class="us"><span class="dmc-yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7" /></svg></span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CERTIFICATIONS ============ -->
+      <section class="dmc-section--tight dmc-bg-white" style="border-block: 1px solid var(--dmc-line)">
+        <div class="dmc-wrap">
+          <div class="dmc-head dmc-head--center" style="margin-bottom: 32px">
+            <div class="dmc-eyebrow dmc-eyebrow--center">Globally certified</div>
+            <h2 class="dmc-h3">Quality you can trust</h2>
+          </div>
+          <div class="dmc-certs" data-stagger>
+            <div class="dmc-cert"><img src="https://dmcnuts.com/wp-content/uploads/2025/09/iso.jpg" alt="ISO certified" loading="lazy" /><div><strong>ISO</strong><span>Quality management</span></div></div>
+            <div class="dmc-cert"><img src="https://dmcnuts.com/wp-content/uploads/2025/09/gmp.jpg" alt="GMP certified" loading="lazy" /><div><strong>GMP</strong><span>Good manufacturing practice</span></div></div>
+            <div class="dmc-cert"><img src="https://dmcnuts.com/wp-content/uploads/2025/09/fssi.jpg" alt="FSSAI licensed" loading="lazy" /><div><strong>FSSAI</strong><span>Food safety &amp; standards</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TESTIMONIALS ============ -->
+      <section class="dmc-section">
+        <div class="dmc-wrap">
+          <div class="dmc-head">
+            <div>
+              <div class="dmc-eyebrow">Customer reviews</div>
+              <h2 class="dmc-h2" data-split>Trusted by <em class="dmc-accent">retailers</em> &amp; distributors</h2>
+            </div>
+          </div>
+          <div class="dmc-voices" data-stagger>
+            <figure class="dmc-voice" style="margin: 0">
+              <span class="dmc-stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z" /></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z" /></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z" /></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z" /></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z" /></svg></span>
+              <p>We have been sourcing almonds from this company for over a year now, and the Orange Bag almonds are our best-sellers. The consistency in taste, crunch, and freshness is unmatched.</p>
+              <figcaption class="dmc-quote__who"><span class="dmc-avatar">RP</span><div>Ramesh Patel<span>Retail Store Owner, Ahmedabad</span></div></figcaption>
+            </figure>
+            <figure class="dmc-voice" style="margin: 0">
+              <span class="dmc-stars" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z" /></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z" /></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z" /></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z" /></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z" /></svg></span>
+              <p>The Purple and Pink Bag almonds are absolutely loved by our health-conscious clients. The packaging is not just vibrant but also makes inventory management easier for us.</p>
+              <figcaption class="dmc-quote__who"><span class="dmc-avatar">NS</span><div>Nidhi Sharma<span>Distributor, Delhi NCR</span></div></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ BULK QUOTE CTA ============ -->
+      <section class="dmc-section" id="quote" style="padding-top: 0">
+        <div class="dmc-wrap">
+          <div class="dmc-cta" data-reveal="scale">
+            <div>
+              <div class="dmc-eyebrow" style="color: #b8e39c">Bulk purchase request</div>
+              <h2 class="dmc-h2" data-split>Get today's wholesale rate in minutes</h2>
+              <p>Tell us the grade and quantity you need. Our team replies on WhatsApp with current pricing and dispatch timelines.</p>
+            </div>
+            <form class="dmc-qform" data-wa-form>
+              <input name="Name" placeholder="Full name *" required autocomplete="name" />
+              <input name="Mobile" placeholder="Mobile number *" required inputmode="tel" autocomplete="tel" />
+              <input class="full" name="Company" placeholder="Company name" autocomplete="organization" />
+              <select name="Interested in" required>
+                <option value="">Interested in *</option>
+                <option>Orange Bag</option>
+                <option>White Bag (American 3D)</option>
+                <option>Yellow Bag</option>
+                <option>Pink Bag</option>
+                <option>Purple Bag</option>
+                <option>Blue Bag</option>
+                <option>Golden Bag</option>
+                <option>Independent Bag</option>
+                <option>Independent 3D</option>
+                <option>Touch</option>
+                <option>Super Touch</option>
+              </select>
+              <input name="Minimum quantity" placeholder="Quantity (bags)" inputmode="numeric" />
+              <button class="dmc-btn dmc-btn--light full" type="submit">Send enquiry on WhatsApp <svg class="dmc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg></button>
+              <small>Opens WhatsApp with your details pre-filled. Nothing is stored on this site.</small>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="dmc-footer" id="contact">
+      <div class="dmc-wrap">
+        <div class="dmc-footer__top">
+          <div class="dmc-footer__brand">
+            <a class="dmc-logo" href="index.html"><img src="assets/img/logo.webp" alt="DMC Nuts" width="62" height="62" /><span class="dmc-logo__text">DMC Nuts<small>Deepak Mange &amp; Co.</small></span></a>
+            <p>Premium almond wholesaler &amp; exporter from India — supplying retailers, distributors and global importers from Navi Mumbai's APMC Market.</p>
+            <div class="dmc-social">
+              <a href="https://www.instagram.com/dmc.nuts" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" /></svg></a>
+              <a href="https://wa.me/917977635556" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M4 20l1.3-4A8 8 0 1112 20a8 8 0 01-4-1z" /><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a3.5 3.5 0 01-2-2l1-1-1-2z" /></svg></a>
+              <a href="https://maps.app.goo.gl/W9XjvdCmkQWjnR6T6" target="_blank" rel="noopener" aria-label="Google Maps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z" /><circle cx="12" cy="10" r="2.5" /></svg></a>
+            </div>
+          </div>
+          <div>
+            <h4>Shop</h4>
+            <ul>
+              <li><a href="shop.html">All varieties</a></li>
+              <li><a href="product.html">Orange Bag</a></li>
+              <li><a href="shop.html">3D grades</a></li>
+              <li><a href="shop.html">30 Kg bags</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="index.html#quote">Bulk buy</a></li>
+              <li><a href="#contact">Contact us</a></li>
+              <li><a href="#">Terms &amp; conditions</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Reach us</h4>
+            <ul class="dmc-footer__contact">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z" /><circle cx="12" cy="10" r="2.5" /></svg><span>L-41, Phase-2, APMC Market, Turbhe, Vashi, Navi Mumbai 400703</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2" /></svg><a href="tel:+917977635556">+91 79776 35556</a></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" /></svg><a href="mailto:deepakmangeandco@gmail.com">deepakmangeandco@gmail.com</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
-
-    <section style="padding-top: 0">
-      <div class="upsell reveal">
-        <div>
-          <h3>Never run out again</h3>
-          <p>
-            Subscribe to your favourite pack and save 12% on every delivery,
-            with free rescheduling anytime.
-          </p>
-        </div>
-        <a class="btn btn-cream" href="shop.html">Build a Subscription</a>
-      </div>
-    </section>
-
-    <footer>
-      <div class="wrap">
-        <div class="foot-news reveal">
-          <h3>Get ₹100 off your first order</h3>
-          <p>
-            Join our list for early access to festive drops and orchard stories.
-          </p>
-          <div class="foot-form">
-            <input type="email" placeholder="Enter your email" /><button
-              class="btn btn-gold"
-              style="padding: 13px 22px"
-            >
-              Subscribe
-            </button>
-          </div>
-        </div>
-        <div class="foot-cols">
-          <div>
-            <a
-              class="logo"
-              style="
-                color: var(--cream);
-                margin-bottom: 14px;
-                display: inline-block;
-              "
-              href="index.html"
-              >DMC <span style="color: var(--gold-light)">Nuts</span></a
-            >
-            <p style="font-size: 13px; line-height: 1.6; max-width: 260px">
-              Premium dry fruits, sourced direct from Indian orchards since
-              1994.
-            </p>
-          </div>
-          <div>
-            <h5>Shop</h5>
-            <a href="shop.html">Almonds</a><a href="shop.html">Cashews</a
-            ><a href="shop.html">Pistachios</a
-            ><a href="shop.html">Gift Packs</a>
-          </div>
-          <div>
-            <h5>Company</h5>
-            <a href="#">Our Story</a><a href="#">Wholesale</a
-            ><a href="blog.html">Health Blog</a><a href="#">Contact</a>
-          </div>
-          <div>
-            <h5>Support</h5>
-            <a href="#">Shipping Policy</a><a href="#">Returns</a
-            ><a href="#">FAQ</a><a href="#">Track Order</a>
-          </div>
-        </div>
-        <div class="foot-bottom">
-          <div>© 2026 DMC Nuts. All rights reserved.</div>
-          <div>Payments: UPI · Cards · COD · Razorpay</div>
-        </div>
+      <div class="dmc-footer__word" aria-hidden="true">DMC NUTS</div>
+      <div class="dmc-wrap dmc-footer__bottom">
+        <span>©2026 DMC Nuts · Deepak Mange &amp; Co. All rights reserved.</span>
+        <span>Wholesale almonds · Navi Mumbai, India</span>
       </div>
     </footer>
 
-    <div class="wa">
-      <svg viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
-        <path
-          d="M3 21l1.6-4.8A8.5 8.5 0 1112 20.5a8.4 8.4 0 01-4.3-1.2L3 21z"
-        />
-      </svg>
-    </div>
-
-    <script>
-      (function () {
-        var reduce = window.matchMedia(
-          "(prefers-reduced-motion: reduce)",
-        ).matches;
-        var els = document.querySelectorAll(".reveal");
-        if (reduce || !("IntersectionObserver" in window)) {
-          els.forEach(function (el) {
-            el.classList.add("visible");
-          });
-          return;
-        }
-        var obs = new IntersectionObserver(
-          function (entries) {
-            entries.forEach(function (entry) {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                obs.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.15, rootMargin: "0px 0px -40px 0px" },
-        );
-        els.forEach(function (el) {
-          obs.observe(el);
-        });
-      })();
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
+    <script src="assets/js/dmc.js"></script>
+    <script src="assets/js/dmc-three.js"></script>
   </body>
 </html>

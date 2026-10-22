@@ -1,0 +1,783 @@
+{
+  "_meta": {
+    "source": "https://dmcnuts.com/",
+    "scraped": "2026-10-21",
+    "method": "WooCommerce Store API, WP REST API, rendered HTML of home/about/contact/varieties/bulk-buy/product pages",
+    "notes": [
+      "The real product catalogue lives on the Varieties page (9 almond bag grades, all 'Call for Prices'). WooCommerce holds only 4 placeholder products with demo clothing copy and $250 USD prices (see woocommerce_store_products).",
+      "Image URLs are full-size originals (WordPress size suffix removed; each verified HTTP 200)."
+    ]
+  },
+  "site": {
+    "brand_name": "DMC Nuts",
+    "legal_name": "Deepak Mange & Co.",
+    "site_title": "DMC Nuts | Premium Almond Wholesaler & Exporter from India",
+    "tagline": "Premium Almond Wholesaler & Exporter from India",
+    "meta_description": "DMC Nuts is a trusted almond wholesaler & exporter, offering premium-quality almonds in bulk for retailers, distributors, & global importers",
+    "phone": "7977635556",
+    "phone_e164": "+917977635556",
+    "email": "deepakmangeandco@gmail.com",
+    "address": "L-41, Phase-2, APMC Market, Turbhe, Vashi, Navi Mumbai, 400703",
+    "google_maps": "https://maps.app.goo.gl/W9XjvdCmkQWjnR6T6",
+    "whatsapp": "https://wa.me/917977635556",
+    "social": {
+      "instagram": "https://www.instagram.com/dmc.nuts?igsh=MTF0d3kzejlrdXd4aw%3D%3D",
+      "google": "https://maps.app.goo.gl/W9XjvdCmkQWjnR6T6"
+    },
+    "logo": {
+      "primary": "https://dmcnuts.com/wp-content/uploads/2025/09/logo2-1.png",
+      "leaf_mark_og_image": "https://dmcnuts.com/wp-content/uploads/2025/09/logo-leaf-new.png"
+    },
+    "certifications": [
+      {
+        "name": "ISO",
+        "image": "https://dmcnuts.com/wp-content/uploads/2025/09/iso.jpg"
+      },
+      {
+        "name": "GMP",
+        "image": "https://dmcnuts.com/wp-content/uploads/2025/09/gmp.jpg"
+      },
+      {
+        "name": "FSSAI",
+        "image": "https://dmcnuts.com/wp-content/uploads/2025/09/fssi.jpg"
+      }
+    ],
+    "claims": [
+      "Incorporated in 2018",
+      "Strategic presence in Navi Mumbai's APMC Market",
+      "Direct sourcing from the USA, Australia and the Middle East",
+      "Globally Certified Quality You Can Trust",
+      "Certified Organic – 100% Guarantee (home USP; not substantiated elsewhere)",
+      "Supplies businesses across India and global markets"
+    ],
+    "copyright": "©2025. DMC NUTS. All Rights Reserved.",
+    "footer_links": [
+      {
+        "label": "Sitemap",
+        "url": "#"
+      },
+      {
+        "label": "Terms & Conditions",
+        "url": "#"
+      },
+      {
+        "label": "Policy",
+        "url": "#"
+      }
+    ]
+  },
+  "nav": [
+    {
+      "label": "Home",
+      "url": "https://dmcnuts.com/"
+    },
+    {
+      "label": "Varieties",
+      "url": "https://dmcnuts.com/varieties/"
+    },
+    {
+      "label": "Bulk Buy",
+      "url": "https://dmcnuts.com/bulk-buy/"
+    },
+    {
+      "label": "About Us",
+      "url": "https://dmcnuts.com/about-us/"
+    },
+    {
+      "label": "Contact Us",
+      "url": "https://dmcnuts.com/contact-us/"
+    }
+  ],
+  "home": {
+    "url": "https://dmcnuts.com/",
+    "h1": "Home",
+    "hero": {
+      "eyebrow": "Best Quality Products",
+      "headline": "Supplying the World with the Finest Almonds",
+      "body": "We specialize in premium wholesale almonds sourced directly from trusted farms. With unmatched freshness, rich taste, and global supply capabilities, we ensure your business receives only the best—straight from the orchards to your doorstep",
+      "cta": "Shop Now",
+      "images": [
+        "https://dmcnuts.com/wp-content/uploads/2025/09/logo-leaf-new.png",
+        "https://dmcnuts.com/wp-content/uploads/2025/11/alomnd4.png"
+      ]
+    },
+    "usps": [
+      {
+        "title": "Free Shipping",
+        "text": "For Bulk Buy Only"
+      },
+      {
+        "title": "Certified Organic",
+        "text": "100% Guarantee"
+      },
+      {
+        "title": "Huge Savings",
+        "text": "At Lowest Price"
+      },
+      {
+        "title": "Easy Returns",
+        "text": "No Questions Asked"
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Farm Fresh Almond",
+        "image": "https://dmcnuts.com/wp-content/uploads/2025/11/alomond.png",
+        "cta": "Shop Now",
+        "body": "Sourced from the finest farms, our almonds are carefully handpicked to ensure premium quality. Rich in protein, fiber, and essential nutrients, they make the perfect choice for a healthy lifestyle. Each almond is naturally sun-dried, preserving its authentic taste and crunch. Packed fresh to seal in flavor and goodness for longer shelf life. Enjoy the perfect blend of health, taste, and energy in every bite."
+      },
+      {
+        "type": "quote banner",
+        "heading": "“Quality is not an act, it’s our commitment. DMC Almonds — Wholesale excellence for global markets.”",
+        "image": "https://dmcnuts.com/wp-content/uploads/2025/11/alomond5.png"
+      },
+      {
+        "type": "banner",
+        "heading": "Try It For Free. No Registration Needed."
+      },
+      {
+        "type": "product image strip",
+        "heading": "Our Bestseller's",
+        "cta": "Shop Now",
+        "images": [
+          "https://dmcnuts.com/wp-content/uploads/2025/11/alomond3.png",
+          "https://dmcnuts.com/wp-content/uploads/2025/11/9-4.png",
+          "https://dmcnuts.com/wp-content/uploads/2025/11/4.png",
+          "https://dmcnuts.com/wp-content/uploads/2025/11/7-1.png",
+          "https://dmcnuts.com/wp-content/uploads/2025/11/8-1.png"
+        ]
+      },
+      {
+        "heading": "Deal Of The Day, Discount on Bulk Orders",
+        "cta": "Shop Now",
+        "body": "We specialize in premium wholesale almonds sourced directly from trusted farms. With unmatched freshness, rich taste, and global supply capabilities"
+      },
+      {
+        "heading": "Why Choose DMC Almonds?",
+        "image": "https://dmcnuts.com/wp-content/uploads/2025/09/ChatGPT-Image-Sep-20-2025-09_32_56-PM.png",
+        "body": "At DMC, we bring you premium quality almonds sourced directly from trusted farms. Known for their rich taste, superior crunch, and natural freshness, our almonds are supplied in bulk to businesses across India and global markets."
+      },
+      {
+        "heading": "Globally Certified Quality You Can Trust",
+        "images": [
+          "https://dmcnuts.com/wp-content/uploads/2025/09/iso.jpg",
+          "https://dmcnuts.com/wp-content/uploads/2025/09/gmp.jpg",
+          "https://dmcnuts.com/wp-content/uploads/2025/09/fssi.jpg"
+        ]
+      },
+      {
+        "type": "contact form (name/email/message)",
+        "heading": "Quick Contact Us"
+      }
+    ],
+    "testimonials_heading": "Customers Reviews",
+    "testimonials": [
+      {
+        "rating": 5,
+        "quote": "We have been sourcing almonds from this company for over a year now, and the Orange Bag almonds are our best-sellers. The consistency in taste, crunch, and freshness is unmatched.",
+        "author": "Ramesh Patel",
+        "role": "Retail Store Owner",
+        "location": "Ahmedabad",
+        "image": "https://dmcnuts.com/wp-content/uploads/2025/11/IMG-20251105-WA0051.jpg"
+      },
+      {
+        "rating": 5,
+        "quote": "The Purple and Pink Bag almonds are absolutely loved by our health-conscious clients. The packaging is not just vibrant but also makes inventory management easier for us.",
+        "author": "Nidhi Sharma",
+        "role": "Distributor",
+        "location": "Delhi NCR",
+        "image": "https://dmcnuts.com/wp-content/uploads/2025/11/IMG-20251105-WA0051-1.jpg"
+      }
+    ],
+    "stats": [],
+    "footer_subscribe": {
+      "heading": "Subscribe",
+      "fields": [
+        "Name",
+        "Email"
+      ]
+    }
+  },
+  "about": {
+    "url": "https://dmcnuts.com/about-us/",
+    "intro": [
+      "Deepak Mange & Co. is a well-established food processing and trading firm specializing in the import, processing, and distribution of premium edible nuts, with a strong focus on almonds. Since our incorporation in 2018, we have earned a reputation for sourcing the finest dry fruits, maintaining strict quality standards, and ensuring efficient distribution across India and beyond.",
+      "With our strategic presence in Navi Mumbai’s APMC Market, we have emerged as a trusted name in the dry fruit and agro-commodity sector. Our success is driven by our commitment to quality, innovation, and customer satisfaction."
+    ],
+    "expertise_heading": "Our Expertise",
+    "expertise": [
+      "Dry Fruit Import & Trade: Direct sourcing from international markets including the USA, Australia, and the Middle East.",
+      "Processing & Quality Control: Advanced sorting, grading, and hygienic packaging to deliver top-quality products.",
+      "Market Expansion: A strong domestic presence complemented by growing international trade relations.",
+      "Supply Chain Management: Efficient procurement, storage, and logistics for seamless distribution."
+    ],
+    "quality_commitment": {
+      "heading": "Quality Commitment",
+      "intro": "At Deepak Mange & Co., we place quality at the core of everything we do. Our processes are built on:",
+      "points": [
+        "FSSAI Certification ensuring compliance with India’s food safety and hygiene standards.",
+        "Hygienic Processing Practices through sanitized units and hands-free technology.",
+        "Regular Quality Testing to guarantee that every product meets stringent industry benchmarks."
+      ]
+    },
+    "founder": {
+      "heading": "Leadership",
+      "name": "Deepak Arjan Mange",
+      "title": "Founder",
+      "bio": "Deepak Arjan Mange, the founder of Deepak Mange & Co., is a seasoned entrepreneur with deep expertise in the global dry fruit trade. His strong network of suppliers and distributors, combined with a vision for growth and sustainability, drives the company forward as a leading player in India’s dry fruit industry.",
+      "image": "https://dmcnuts.com/wp-content/uploads/2025/11/3-1ZP21GP1K4.jpg"
+    },
+    "mission": null,
+    "vision": {
+      "heading": "Our Vision",
+      "intro": "We are continuously working to expand and diversify our operations to meet evolving consumer needs. Our future goals include:",
+      "points": [
+        "Expanding processing facilities with modern automation.",
+        "Launching value-added dry fruit products for the retail and wholesale markets.",
+        "Strengthening e-commerce and digital trade channels.",
+        "Investing in eco-friendly and sustainable processing practices."
+      ]
+    },
+    "images": [
+      "https://dmcnuts.com/wp-content/uploads/2025/11/trust-life.png",
+      "https://dmcnuts.com/wp-content/uploads/2025/11/ChatGPT-Image-Nov-10-2025-10_28_18-AM.png",
+      "https://dmcnuts.com/wp-content/uploads/2025/11/3-1ZP21GP1K4.jpg"
+    ],
+    "copy_issues": [
+      "Stray text 'dry fruit industry.' is appended to several paragraphs on the live page (removed above)",
+      "'Our Expertise' section appears twice on the page",
+      "No separate mission statement"
+    ]
+  },
+  "contact": {
+    "url": "https://dmcnuts.com/contact-us/",
+    "banner_image": "https://dmcnuts.com/wp-content/uploads/2025/09/Brown-Simple-Almond-Facts-Social-Media-Post-Website-1.png",
+    "headlines": [
+      "From the finest orchards to your shelves",
+      "Experience purity, freshness, and reliability with every almond"
+    ],
+    "section_heading": "Reach Us Anytime",
+    "form_heading": "Contact Info:",
+    "form_fields": [
+      "Full Name *",
+      "Email Address *",
+      "Message *"
+    ]
+  },
+  "bulk_buy": {
+    "url": "https://dmcnuts.com/bulk-buy/",
+    "heading": "Bulk Purchase Request",
+    "images": [
+      "https://dmcnuts.com/wp-content/uploads/2025/09/Brown-Simple-Almond-Facts-Social-Media-Post-Website-1.png",
+      "https://dmcnuts.com/wp-content/uploads/2025/09/alomnd2.png"
+    ],
+    "form_fields": [
+      "First Name *",
+      "Last Name *",
+      "Mobile Number * (including country code)",
+      "Email *",
+      "Company Name",
+      "Minimum Quantity",
+      "Interested In * (multi-select)",
+      "Additional Message",
+      "How Did You Hear From Us"
+    ],
+    "interested_in_options": [
+      "Orange Bag",
+      "White Bag (American 3D)",
+      "Yellow Bag",
+      "Pink Bag",
+      "Purple Bag",
+      "Blue Bag",
+      "Golden Bag",
+      "Independent Bag",
+      "Independent 3D",
+      "Touch",
+      "Super Touch"
+    ],
+    "heard_from_options": [
+      "Social Media",
+      "Friend/Colleague",
+      "Advertisement",
+      "Search Engine",
+      "Other"
+    ]
+  },
+  "varieties_page": {
+    "url": "https://dmcnuts.com/varieties/",
+    "heading": "Choose Your Preferred Bag",
+    "image": "https://dmcnuts.com/wp-content/uploads/2025/09/alomnd2.png",
+    "note": "Grain and Count listed per bag; every variety shows 'Call for Prices'. 'Touch' and 'Super Touch' appear only as Bulk Buy form options, with no specs or images."
+  },
+  "categories": [
+    {
+      "name": "Groceries",
+      "slug": "groceries",
+      "description": "",
+      "image": null,
+      "product_count": 4,
+      "permalink": "https://dmcnuts.com/product-category/groceries/",
+      "note": "Only WooCommerce category; holds the 4 placeholder products."
+    },
+    {
+      "name": "Almonds",
+      "slug": "almonds",
+      "description": "Implied category for the 9 bag varieties on the Varieties page (not a WooCommerce category).",
+      "image": null,
+      "product_count": 9,
+      "permalink": null
+    }
+  ],
+  "products": [
+    {
+      "name": "Orange Bag - 15 Kg",
+      "source": "https://dmcnuts.com/varieties/ (Elementor page, not a WooCommerce product)",
+      "slug": "orange-bag-15-kg",
+      "permalink": null,
+      "product_type": "Almonds (bulk wholesale bag)",
+      "pack_weight": "15 Kg",
+      "attributes": {
+        "grain": "100 – 105",
+        "count": "29 – 30"
+      },
+      "prices": {
+        "display": "Call for Prices",
+        "regular": null,
+        "sale": null,
+        "currency": "INR (implied; not published)"
+      },
+      "variations": [],
+      "short_description": null,
+      "description": "At DMC, we bring you premium quality almonds sourced directly from trusted farms. Known for their rich taste, superior crunch, and natural freshness, our almonds are supplied in bulk to businesses across India and global markets. Whether it’s snacking, gifting, or industrial use, our colorful bag varieties ensure consistency, trust, and excellence with every delivery.",
+      "description_note": "Generic brand text taken from the WooCommerce product descriptions; not variety-specific.",
+      "categories": [
+        "Almonds"
+      ],
+      "images": [
+        "https://dmcnuts.com/wp-content/uploads/2025/11/1-3.png"
+      ],
+      "image_alt": "",
+      "rating": null,
+      "review_count": 0,
+      "stock_status": "unknown (enquiry-based)",
+      "nutrition_benefits": null
+    },
+    {
+      "name": "White Bag (American 3D) - 15 Kg",
+      "source": "https://dmcnuts.com/varieties/ (Elementor page, not a WooCommerce product)",
+      "slug": "white-bag-american-3d-15-kg",
+      "permalink": null,
+      "product_type": "Almonds (bulk wholesale bag)",
+      "pack_weight": "15 Kg",
+      "attributes": {
+        "grain": "95 – 98",
+        "count": "27 – 28"
+      },
+      "prices": {
+        "display": "Call for Prices",
+        "regular": null,
+        "sale": null,
+        "currency": "INR (implied; not published)"
+      },
+      "variations": [],
+      "short_description": null,
+      "description": "At DMC, we bring you premium quality almonds sourced directly from trusted farms. Known for their rich taste, superior crunch, and natural freshness, our almonds are supplied in bulk to businesses across India and global markets. Whether it’s snacking, gifting, or industrial use, our colorful bag varieties ensure consistency, trust, and excellence with every delivery.",
+      "description_note": "Generic brand text taken from the WooCommerce product descriptions; not variety-specific.",
+      "categories": [
+        "Almonds"
+      ],
+      "images": [
+        "https://dmcnuts.com/wp-content/uploads/2025/11/3-4.png"
+      ],
+      "image_alt": "",
+      "rating": null,
+      "review_count": 0,
+      "stock_status": "unknown (enquiry-based)",
+      "nutrition_benefits": null
+    },
+    {
+      "name": "Yellow Bag - 15 Kg",
+      "source": "https://dmcnuts.com/varieties/ (Elementor page, not a WooCommerce product)",
+      "slug": "yellow-bag-15-kg",
+      "permalink": null,
+      "product_type": "Almonds (bulk wholesale bag)",
+      "pack_weight": "15 Kg",
+      "attributes": {
+        "grain": "92 – 95",
+        "count": "26 – 27"
+      },
+      "prices": {
+        "display": "Call for Prices",
+        "regular": null,
+        "sale": null,
+        "currency": "INR (implied; not published)"
+      },
+      "variations": [],
+      "short_description": null,
+      "description": "At DMC, we bring you premium quality almonds sourced directly from trusted farms. Known for their rich taste, superior crunch, and natural freshness, our almonds are supplied in bulk to businesses across India and global markets. Whether it’s snacking, gifting, or industrial use, our colorful bag varieties ensure consistency, trust, and excellence with every delivery.",
+      "description_note": "Generic brand text taken from the WooCommerce product descriptions; not variety-specific.",
+      "categories": [
+        "Almonds"
+      ],
+      "images": [
+        "https://dmcnuts.com/wp-content/uploads/2025/11/4.png"
+      ],
+      "image_alt": "Yellow almond bag",
+      "rating": null,
+      "review_count": 0,
+      "stock_status": "unknown (enquiry-based)",
+      "nutrition_benefits": null
+    },
+    {
+      "name": "Pink Bag - 15 Kg",
+      "source": "https://dmcnuts.com/varieties/ (Elementor page, not a WooCommerce product)",
+      "slug": "pink-bag-15-kg",
+      "permalink": null,
+      "product_type": "Almonds (bulk wholesale bag)",
+      "pack_weight": "15 Kg",
+      "attributes": {
+        "grain": "85 – 88",
+        "count": "24 – 25"
+      },
+      "prices": {
+        "display": "Call for Prices",
+        "regular": null,
+        "sale": null,
+        "currency": "INR (implied; not published)"
+      },
+      "variations": [],
+      "short_description": null,
+      "description": "At DMC, we bring you premium quality almonds sourced directly from trusted farms. Known for their rich taste, superior crunch, and natural freshness, our almonds are supplied in bulk to businesses across India and global markets. Whether it’s snacking, gifting, or industrial use, our colorful bag varieties ensure consistency, trust, and excellence with every delivery.",
+      "description_note": "Generic brand text taken from the WooCommerce product descriptions; not variety-specific.",
+      "categories": [
+        "Almonds"
+      ],
+      "images": [
+        "https://dmcnuts.com/wp-content/uploads/2025/11/7-1.png"
+      ],
+      "image_alt": "",
+      "rating": null,
+      "review_count": 0,
+      "stock_status": "unknown (enquiry-based)",
+      "nutrition_benefits": null
+    },
+    {
+      "name": "Purple Bag - 15 Kg",
+      "source": "https://dmcnuts.com/varieties/ (Elementor page, not a WooCommerce product)",
+      "slug": "purple-bag-15-kg",
+      "permalink": null,
+      "product_type": "Almonds (bulk wholesale bag)",
+      "pack_weight": "15 Kg",
+      "attributes": {
+        "grain": "80 – 83",
+        "count": "23 – 24"
+      },
+      "prices": {
+        "display": "Call for Prices",
+        "regular": null,
+        "sale": null,
+        "currency": "INR (implied; not published)"
+      },
+      "variations": [],
+      "short_description": null,
+      "description": "At DMC, we bring you premium quality almonds sourced directly from trusted farms. Known for their rich taste, superior crunch, and natural freshness, our almonds are supplied in bulk to businesses across India and global markets. Whether it’s snacking, gifting, or industrial use, our colorful bag varieties ensure consistency, trust, and excellence with every delivery.",
+      "description_note": "Generic brand text taken from the WooCommerce product descriptions; not variety-specific.",
+      "categories": [
+        "Almonds"
+      ],
+      "images": [
+        "https://dmcnuts.com/wp-content/uploads/2025/11/6-1.png"
+      ],
+      "image_alt": "",
+      "rating": null,
+      "review_count": 0,
+      "stock_status": "unknown (enquiry-based)",
+      "nutrition_benefits": null
+    },
+    {
+      "name": "Blue Bag - 15 Kg",
+      "source": "https://dmcnuts.com/varieties/ (Elementor page, not a WooCommerce product)",
+      "slug": "blue-bag-15-kg",
+      "permalink": null,
+      "product_type": "Almonds (bulk wholesale bag)",
+      "pack_weight": "15 Kg",
+      "attributes": {
+        "grain": "75 – 78",
+        "count": "21 – 22"
+      },
+      "prices": {
+        "display": "Call for Prices",
+        "regular": null,
+        "sale": null,
+        "currency": "INR (implied; not published)"
+      },
+      "variations": [],
+      "short_description": null,
+      "description": "At DMC, we bring you premium quality almonds sourced directly from trusted farms. Known for their rich taste, superior crunch, and natural freshness, our almonds are supplied in bulk to businesses across India and global markets. Whether it’s snacking, gifting, or industrial use, our colorful bag varieties ensure consistency, trust, and excellence with every delivery.",
+      "description_note": "Generic brand text taken from the WooCommerce product descriptions; not variety-specific.",
+      "categories": [
+        "Almonds"
+      ],
+      "images": [
+        "https://dmcnuts.com/wp-content/uploads/2025/11/9-4.png"
+      ],
+      "image_alt": "",
+      "rating": null,
+      "review_count": 0,
+      "stock_status": "unknown (enquiry-based)",
+      "nutrition_benefits": null
+    },
+    {
+      "name": "Golden Bag - 15 Kg",
+      "source": "https://dmcnuts.com/varieties/ (Elementor page, not a WooCommerce product)",
+      "slug": "golden-bag-15-kg",
+      "permalink": null,
+      "product_type": "Almonds (bulk wholesale bag)",
+      "pack_weight": "15 Kg",
+      "attributes": {
+        "grain": "68 – 74",
+        "count": "19 – 21"
+      },
+      "prices": {
+        "display": "Call for Prices",
+        "regular": null,
+        "sale": null,
+        "currency": "INR (implied; not published)"
+      },
+      "variations": [],
+      "short_description": null,
+      "description": "At DMC, we bring you premium quality almonds sourced directly from trusted farms. Known for their rich taste, superior crunch, and natural freshness, our almonds are supplied in bulk to businesses across India and global markets. Whether it’s snacking, gifting, or industrial use, our colorful bag varieties ensure consistency, trust, and excellence with every delivery.",
+      "description_note": "Generic brand text taken from the WooCommerce product descriptions; not variety-specific.",
+      "categories": [
+        "Almonds"
+      ],
+      "images": [
+        "https://dmcnuts.com/wp-content/uploads/2025/11/10-3.png"
+      ],
+      "image_alt": "",
+      "rating": null,
+      "review_count": 0,
+      "stock_status": "unknown (enquiry-based)",
+      "nutrition_benefits": null
+    },
+    {
+      "name": "Independent 3D Bag - 15 Kg",
+      "source": "https://dmcnuts.com/varieties/ (Elementor page, not a WooCommerce product)",
+      "slug": "independent-3d-bag-15-kg",
+      "permalink": null,
+      "product_type": "Almonds (bulk wholesale bag)",
+      "pack_weight": "15 Kg",
+      "attributes": {
+        "grain": "85 – 88",
+        "count": "24 – 25"
+      },
+      "prices": {
+        "display": "Call for Prices",
+        "regular": null,
+        "sale": null,
+        "currency": "INR (implied; not published)"
+      },
+      "variations": [],
+      "short_description": null,
+      "description": "At DMC, we bring you premium quality almonds sourced directly from trusted farms. Known for their rich taste, superior crunch, and natural freshness, our almonds are supplied in bulk to businesses across India and global markets. Whether it’s snacking, gifting, or industrial use, our colorful bag varieties ensure consistency, trust, and excellence with every delivery.",
+      "description_note": "Generic brand text taken from the WooCommerce product descriptions; not variety-specific.",
+      "categories": [
+        "Almonds"
+      ],
+      "images": [
+        "https://dmcnuts.com/wp-content/uploads/2025/11/8-1.png"
+      ],
+      "image_alt": "Red Almond bag",
+      "rating": null,
+      "review_count": 0,
+      "stock_status": "unknown (enquiry-based)",
+      "nutrition_benefits": null
+    },
+    {
+      "name": "Independent Bag - 30 Kg",
+      "source": "https://dmcnuts.com/varieties/ (Elementor page, not a WooCommerce product)",
+      "slug": "independent-bag-30-kg",
+      "permalink": null,
+      "product_type": "Almonds (bulk wholesale bag)",
+      "pack_weight": "30 Kg",
+      "attributes": {
+        "grain": "95 – 100",
+        "count": "27 – 28"
+      },
+      "prices": {
+        "display": "Call for Prices",
+        "regular": null,
+        "sale": null,
+        "currency": "INR (implied; not published)"
+      },
+      "variations": [],
+      "short_description": null,
+      "description": "At DMC, we bring you premium quality almonds sourced directly from trusted farms. Known for their rich taste, superior crunch, and natural freshness, our almonds are supplied in bulk to businesses across India and global markets. Whether it’s snacking, gifting, or industrial use, our colorful bag varieties ensure consistency, trust, and excellence with every delivery.",
+      "description_note": "Generic brand text taken from the WooCommerce product descriptions; not variety-specific.",
+      "categories": [
+        "Almonds"
+      ],
+      "images": [
+        "https://dmcnuts.com/wp-content/uploads/2025/11/9-2.png"
+      ],
+      "image_alt": "",
+      "rating": null,
+      "review_count": 0,
+      "stock_status": "unknown (enquiry-based)",
+      "nutrition_benefits": null
+    }
+  ],
+  "woocommerce_store_products": [
+    {
+      "id": 189,
+      "name": "GOLDEN BAG – 15KG",
+      "slug": "bohemian-rhapsody-attire",
+      "permalink": "https://dmcnuts.com/product/bohemian-rhapsody-attire/",
+      "type": "simple",
+      "prices": {
+        "price": 250.0,
+        "regular": 250.0,
+        "sale": 250.0,
+        "currency": "USD"
+      },
+      "short_description": "From the office to high-powered meetings, our Bohemian Rhapsody Attire is more than clothing; it’s a statement of strength, ambition, and unwavering elegance, ensuring you stride into any professional setting with unparalleled grace and authority.",
+      "description": "At DMC, we bring you premium quality almonds sourced directly from trusted farms. Known for their rich taste, superior crunch, and natural freshness, our almonds are supplied in bulk to businesses across India and global markets. Whether it’s snacking, gifting, or industrial use, our colorful bag varieties ensure consistency, trust, and excellence with every delivery.",
+      "categories": [
+        "Groceries"
+      ],
+      "images": [
+        "https://dmcnuts.com/wp-content/uploads/2025/09/2-3.jpg"
+      ],
+      "rating": 0.0,
+      "review_count": 0,
+      "stock_status": "in_stock",
+      "attributes": {},
+      "data_quality_note": "Placeholder/demo data: slug, short description and size/color attributes come from a clothing theme demo; $250.00 USD is a placeholder price. Do not reuse."
+    },
+    {
+      "id": 187,
+      "name": "PINK BAG – 15KG",
+      "slug": "midnight-gala-maxi-dress",
+      "permalink": "https://dmcnuts.com/product/midnight-gala-maxi-dress/",
+      "type": "simple",
+      "prices": {
+        "price": 250.0,
+        "regular": 250.0,
+        "sale": 250.0,
+        "currency": "USD"
+      },
+      "short_description": "The deep midnight hue, combined with subtle detailing and a touch of glamour, creates a look that is both timeless and captivating. Whether you’re attending a gala, a wedding, or a special event, the Midnight Gala Maxi Dress ensures you’ll be the epitome of sophistication, leaving a trail of enchantment wherever you go.",
+      "description": "At DMC, we bring you premium quality almonds sourced directly from trusted farms. Known for their rich taste, superior crunch, and natural freshness, our almonds are supplied in bulk to businesses across India and global markets. Whether it’s snacking, gifting, or industrial use, our colorful bag varieties ensure consistency, trust, and excellence with every delivery.",
+      "categories": [
+        "Groceries"
+      ],
+      "images": [
+        "https://dmcnuts.com/wp-content/uploads/2025/09/2-2-1.jpg"
+      ],
+      "rating": 0.0,
+      "review_count": 0,
+      "stock_status": "in_stock",
+      "attributes": {
+        "size": [
+          "L",
+          "M",
+          "S",
+          "XS"
+        ],
+        "color": [
+          "Black",
+          "Green",
+          "Red",
+          "White"
+        ]
+      },
+      "data_quality_note": "Placeholder/demo data: slug, short description and size/color attributes come from a clothing theme demo; $250.00 USD is a placeholder price. Do not reuse."
+    },
+    {
+      "id": 177,
+      "name": "BLUE BAG – 15KG",
+      "slug": "relaxed-fit-joggers",
+      "permalink": "https://dmcnuts.com/product/relaxed-fit-joggers/",
+      "type": "simple",
+      "prices": {
+        "price": 250.0,
+        "regular": 250.0,
+        "sale": 250.0,
+        "currency": "USD"
+      },
+      "short_description": "The soft, breathable fabric and relaxed silhouette provide an unmatched level of ease, making them perfect for lounging at home or stepping out for an on-the-go adventure. Versatile and effortlessly cool, our Relaxed Fit Joggers seamlessly combine comfort and fashion, ensuring you feel relaxed and look effortlessly stylish no matter the occasion.",
+      "description": "At DMC, we bring you premium quality almonds sourced directly from trusted farms. Known for their rich taste, superior crunch, and natural freshness, our almonds are supplied in bulk to businesses across India and global markets. Whether it’s snacking, gifting, or industrial use, our colorful bag varieties ensure consistency, trust, and excellence with every delivery.",
+      "categories": [
+        "Groceries"
+      ],
+      "images": [
+        "https://dmcnuts.com/wp-content/uploads/2025/09/4-1.jpg"
+      ],
+      "rating": 0.0,
+      "review_count": 0,
+      "stock_status": "in_stock",
+      "attributes": {},
+      "data_quality_note": "Placeholder/demo data: slug, short description and size/color attributes come from a clothing theme demo; $250.00 USD is a placeholder price. Do not reuse."
+    },
+    {
+      "id": 159,
+      "name": "Red Bag 15kg",
+      "slug": "red-bag-15kg",
+      "permalink": "https://dmcnuts.com/product/red-bag-15kg/",
+      "type": "simple",
+      "prices": {
+        "price": 250.0,
+        "regular": 250.0,
+        "sale": 250.0,
+        "currency": "USD"
+      },
+      "short_description": "Whether you’re leading a meeting or making a statement at a professional event, our Power Suit Ensemble effortlessly blends professionalism with contemporary flair, ensuring you exude confidence and leave a lasting impression wherever your ambitions take you.",
+      "description": "At DMC, we bring you premium quality almonds sourced directly from trusted farms. Known for their rich taste, superior crunch, and natural freshness, our almonds are supplied in bulk to businesses across India and global markets. Whether it’s snacking, gifting, or industrial use, our colorful bag varieties ensure consistency, trust, and excellence with every delivery.",
+      "categories": [
+        "Groceries"
+      ],
+      "images": [
+        "https://dmcnuts.com/wp-content/uploads/2025/09/1-3.jpg"
+      ],
+      "rating": 0.0,
+      "review_count": 0,
+      "stock_status": "in_stock",
+      "attributes": {
+        "size": [
+          "L",
+          "M",
+          "S",
+          "XL",
+          "XS"
+        ],
+        "color": [
+          "Black",
+          "Green",
+          "Red",
+          "White"
+        ]
+      },
+      "data_quality_note": "Placeholder/demo data: slug, short description and size/color attributes come from a clothing theme demo; $250.00 USD is a placeholder price. Do not reuse."
+    }
+  ],
+  "faqs": [],
+  "policies": {
+    "shipping": null,
+    "returns": null,
+    "terms": null,
+    "privacy": null,
+    "note": "No FAQ or policy pages exist; footer Terms/Policy/Sitemap links point to '#'. Only related lines are home USPs: 'Free Shipping - For Bulk Buy Only', 'Easy Returns - No Questions Asked'."
+  },
+  "other_pages": {
+    "posts": [
+      "hello-world (default WP post)",
+      "hello-world-2"
+    ],
+    "woocommerce_pages": [
+      "shop (no content)",
+      "cart",
+      "checkout",
+      "my-account"
+    ]
+  }
+}

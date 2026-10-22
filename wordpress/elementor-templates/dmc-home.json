@@ -1,0 +1,695 @@
+{
+ "version": "0.4",
+ "title": "DMC — Home",
+ "type": "page",
+ "page_settings": {
+  "template": "elementor_full_width",
+  "hide_title": "yes"
+ },
+ "content": [
+  {
+   "id": "0dc5ce5",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "HERO",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "923fde3",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "6085443",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"dmc-hero\">\n        <div class=\"dmc-wrap dmc-hero__grid\">\n          <div class=\"dmc-hero__main\">\n            <div data-dmc-nuts aria-hidden=\"true\"></div>\n            <div class=\"dmc-hero__strip dmc-hero__strip--top dmc-marquee\" aria-hidden=\"true\">\n              <div class=\"dmc-marquee__track\" data-speed=\"60\">\n                <span>Best quality products</span><span>✦</span><span>Imported from USA · Australia · Middle East</span><span>✦</span><span>Graded · Sorted · Hygienically packed</span><span>✦</span>\n              </div>\n            </div>\n            <div class=\"dmc-hero__content\">\n              <div class=\"dmc-eyebrow\" data-reveal=\"fade\">Best Quality Products</div>\n              <h1 class=\"dmc-h1\" data-split>Supplying the World with the <em class=\"dmc-accent\">Finest</em> Almonds</h1>\n              <p class=\"dmc-lead\" data-reveal>We specialize in premium wholesale almonds sourced directly from trusted farms. With unmatched freshness, rich taste, and global supply capabilities, we ensure your business receives only the best—straight from the orchards to your doorstep.</p>\n              <div class=\"dmc-hero__ctas\" data-reveal>\n                <a class=\"dmc-btn\" href=\"/shop/\" data-magnetic>Explore Varieties <svg class=\"dmc-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\" /></svg></a>\n                <a class=\"dmc-btn dmc-btn--ghost\" href=\"#quote\" data-magnetic>Get Bulk Quote</a>\n              </div>\n              <div class=\"dmc-hero__trust\" data-reveal>\n                <div><strong>2018</strong><br />Incorporated</div>\n                <span class=\"sep\"></span>\n                <div><strong>9</strong><br />Almond grades</div>\n                <span class=\"sep\"></span>\n                <div><strong>3</strong><br />Sourcing regions</div>\n              </div>\n            </div>\n            <a class=\"dmc-hero__badge\" href=\"/shop/\" aria-label=\"Shop varieties\">\n              <svg class=\"ring\" viewBox=\"0 0 120 120\" aria-hidden=\"true\">\n                <defs><path id=\"dmcCircle\" d=\"M60,60 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0\" /></defs>\n                <text font-family=\"DM Sans, sans-serif\" font-size=\"11\" font-weight=\"700\" letter-spacing=\"3.2\" fill=\"#4e2320\"><textPath href=\"#dmcCircle\">WHOLESALE ALMONDS • DMC NUTS • </textPath></text>\n              </svg>\n              <span class=\"core\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M7 17L17 7M8 7h9v9\" /></svg></span>\n            </a>\n          </div>\n          <div class=\"dmc-hero__side\">\n            <a class=\"dmc-promo dmc-promo--green\" href=\"#quote\" data-reveal=\"right\">\n              <div>\n                <div class=\"tag\">Deal of the day</div>\n                <h3>Discount on Bulk Orders</h3>\n              </div>\n              <span class=\"dmc-btn dmc-btn--light dmc-btn--sm\">Request rate</span>\n              <img src=\"/wp-content/plugins/dmc-revamp/assets/img/products/golden-bag-cutout.png\" alt=\"\" loading=\"eager\" />\n            </a>\n            <a class=\"dmc-promo dmc-promo--brown\" href=\"/product/orange-bag-almonds/\" data-reveal=\"right\" data-delay=\"0.15\">\n              <div>\n                <div class=\"tag\">Bestseller</div>\n                <h3>Orange Bag · 15 Kg</h3>\n              </div>\n              <span class=\"dmc-btn dmc-btn--light dmc-btn--sm\">View grade</span>\n              <img src=\"/wp-content/plugins/dmc-revamp/assets/img/products/orange-bag-cutout.png\" alt=\"\" loading=\"eager\" />\n            </a>\n          </div>\n        </div>\n      </section>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a633f14",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "USP TICKER",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "b326d1e",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "824e787",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<div class=\"dmc-ticker dmc-marquee\" aria-label=\"Why buy from us\">\n        <div class=\"dmc-marquee__track\" data-speed=\"34\">\n          <span class=\"dmc-pill dmc-pill--1\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 7h11v9H3zM14 10h4l3 3v3h-7z\" /><circle cx=\"7\" cy=\"18\" r=\"1.6\" /><circle cx=\"17\" cy=\"18\" r=\"1.6\" /></svg>Free Shipping · For Bulk Buy</span>\n          <span class=\"dmc-pill dmc-pill--2\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z\" /><path d=\"M9 12l2 2 4-4\" /></svg>FSSAI Licensed</span>\n          <span class=\"dmc-pill dmc-pill--3\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 12a8 8 0 11-3-6.2\" /><path d=\"M20 4v5h-5\" /></svg>Easy Returns</span>\n          <span class=\"dmc-pill dmc-pill--4\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6\" /></svg>Huge Savings · Lowest Price</span>\n          <span class=\"dmc-pill dmc-pill--1\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\" /><path d=\"M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18\" /></svg>Direct Import · USA, Australia, Middle East</span>\n          <span class=\"dmc-pill dmc-pill--2\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 6h16M7 12h10M10 18h4\" /></svg>Sorted &amp; Graded</span>\n          <span class=\"dmc-pill dmc-pill--3\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M7 11V7a5 5 0 0110 0v4\" /><rect x=\"4\" y=\"11\" width=\"16\" height=\"10\" rx=\"2\" /></svg>Hygienic, Hands-free Packing</span>\n        </div>\n      </div>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d941c58",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "SHOP BY GRADE",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "be0b234",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "bb78881",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[dmc_grade_circles]"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d345197",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "FARM FRESH STORY",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "012f0f7",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "39cfdde",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"dmc-section dmc-bg-white\">\n        <div class=\"dmc-wrap dmc-split\">\n          <div class=\"dmc-media\" data-img-reveal>\n            <img src=\"/wp-content/plugins/dmc-revamp/assets/img/almond-bowl.jpg\" alt=\"A bowl of premium almonds on a wooden table\" data-parallax=\"0.08\" loading=\"lazy\" />\n            <div class=\"dmc-media__float\" data-reveal=\"up\">\n              <strong>100%</strong>\n              <span>Sun-dried &amp;<br />packed fresh</span>\n            </div>\n          </div>\n          <div>\n            <div class=\"dmc-eyebrow\">Farm fresh almond</div>\n            <h2 class=\"dmc-h2\" data-split>Handpicked for <em class=\"dmc-accent\">premium</em> quality</h2>\n            <p class=\"dmc-lead\" style=\"margin-top: 22px\" data-reveal>Sourced from the finest farms, our almonds are carefully handpicked to ensure premium quality. Rich in protein, fiber, and essential nutrients, they make the perfect choice for a healthy lifestyle.</p>\n            <ul class=\"dmc-checks\" data-stagger>\n              <li>Each almond is naturally sun-dried, preserving its authentic taste and crunch.</li>\n              <li>Packed fresh to seal in flavor and goodness for longer shelf life.</li>\n              <li>The perfect blend of health, taste, and energy in every bite.</li>\n            </ul>\n            <a class=\"dmc-btn\" href=\"/shop/\" data-magnetic>Shop Now <svg class=\"dmc-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\" /></svg></a>\n          </div>\n        </div>\n      </section>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "64e0553",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "BESTSELLERS",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "405142b",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "b3f7256",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[dmc_product_grid limit=\"8\"]"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bdb0533",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "GRADE GUIDE",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "6db22a0",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "3e71d82",
+       "elType": "widget",
+       "widgetType": "shortcode",
+       "settings": {
+        "shortcode": "[dmc_grade_chart]"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "e4156ec",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "WHY CHOOSE",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "ffa20e7",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "b3d6d04",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"dmc-section dmc-bg-dark dmc-why\">\n        <div class=\"dmc-wrap\">\n          <div class=\"dmc-head\">\n            <div>\n              <div class=\"dmc-eyebrow\">Why choose DMC almonds?</div>\n              <h2 class=\"dmc-h2\" data-split>Wholesale excellence for <em class=\"dmc-accent\" style=\"color: #9bd27d\">global</em> markets</h2>\n            </div>\n            <p class=\"dmc-lead\">At DMC, we bring you premium quality almonds sourced directly from trusted farms. Known for their rich taste, superior crunch, and natural freshness, our almonds are supplied in bulk to businesses across India and global markets.</p>\n          </div>\n          <div class=\"dmc-why__grid\" data-stagger>\n            <div class=\"dmc-feature\">\n              <span class=\"dmc-feature__num\">01</span>\n              <div class=\"dmc-feature__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\" /><path d=\"M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18\" /></svg></div>\n              <h3>Direct import</h3>\n              <p>Direct sourcing from international markets including the USA, Australia, and the Middle East.</p>\n            </div>\n            <div class=\"dmc-feature\">\n              <span class=\"dmc-feature__num\">02</span>\n              <div class=\"dmc-feature__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 6h16M7 12h10M10 18h4\" /></svg></div>\n              <h3>Sorted &amp; graded</h3>\n              <p>Advanced sorting, grading, and hygienic packaging to deliver top-quality products.</p>\n            </div>\n            <div class=\"dmc-feature\">\n              <span class=\"dmc-feature__num\">03</span>\n              <div class=\"dmc-feature__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z\" /><path d=\"M9 12l2 2 4-4\" /></svg></div>\n              <h3>Food-safe processing</h3>\n              <p>FSSAI-compliant units with sanitized, hands-free processing and regular quality testing.</p>\n            </div>\n            <div class=\"dmc-feature\">\n              <span class=\"dmc-feature__num\">04</span>\n              <div class=\"dmc-feature__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 7h11v9H3zM14 10h4l3 3v3h-7z\" /><circle cx=\"7\" cy=\"18\" r=\"1.6\" /><circle cx=\"17\" cy=\"18\" r=\"1.6\" /></svg></div>\n              <h3>Seamless supply</h3>\n              <p>Efficient procurement, storage, and logistics from Navi Mumbai's APMC Market.</p>\n            </div>\n          </div>\n          <div class=\"dmc-stats\" style=\"margin-top: clamp(48px, 6vw, 80px)\">\n            <div class=\"dmc-stat\"><strong>2018</strong><span>Incorporated</span></div>\n            <div class=\"dmc-stat\"><strong data-countup=\"9\">9</strong><span>Graded almond varieties</span></div>\n            <div class=\"dmc-stat\"><strong data-countup=\"3\">3</strong><span>Sourcing regions</span></div>\n            <div class=\"dmc-stat\"><strong><span data-countup=\"30\" style=\"display: inline; margin: 0; font-size: inherit; color: inherit\">30</span> Kg</strong><span>Largest bag size</span></div>\n          </div>\n        </div>\n      </section>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ca7ecc1",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "BIG QUOTE MARQUEE",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "fcf76e8",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "bac48a4",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"dmc-section--tight\" aria-label=\"Our commitment\">\n        <div class=\"dmc-bigtype dmc-marquee\" aria-hidden=\"true\">\n          <div class=\"dmc-marquee__track\" data-speed=\"38\">\n            <span>Quality</span><span>Commitment</span><span>Freshness</span><span>Consistency</span>\n          </div>\n        </div>\n        <div class=\"dmc-wrap\" style=\"text-align: center; margin-top: 28px\">\n          <p style=\"font-family: var(--dmc-serif); font-style: italic; font-size: clamp(22px, 2.6vw, 36px); line-height: 1.35; color: var(--dmc-brown-900); max-width: 900px; margin: 0 auto\" data-reveal>“Quality is not an act, it’s our commitment. DMC Almonds — Wholesale excellence for global markets.”</p>\n        </div>\n      </section>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ac41a9e",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "COMPARISON",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "5a279cb",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "0cdeaff",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"dmc-section\">\n        <div class=\"dmc-wrap\">\n          <div class=\"dmc-head dmc-head--center\">\n            <div class=\"dmc-eyebrow dmc-eyebrow--center\">The DMC difference</div>\n            <h2 class=\"dmc-h2\" data-split>Why buyers <em class=\"dmc-accent\">switch</em> to DMC</h2>\n          </div>\n          <div class=\"dmc-compare\" data-reveal=\"scale\">\n            <table>\n              <thead>\n                <tr><th>What you get</th><th>Loose market stock</th><th class=\"us\">DMC Nuts</th></tr>\n              </thead>\n              <tbody>\n                <tr><td>Graded by grain &amp; count</td><td><span class=\"dmc-no\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"><path d=\"M6 6l12 12M18 6L6 18\" /></svg></span></td><td class=\"us\"><span class=\"dmc-yes\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12.5l4.5 4.5L19 7\" /></svg></span></td></tr>\n                <tr><td>Direct import sourcing</td><td><span class=\"dmc-no\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"><path d=\"M6 6l12 12M18 6L6 18\" /></svg></span></td><td class=\"us\"><span class=\"dmc-yes\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12.5l4.5 4.5L19 7\" /></svg></span></td></tr>\n                <tr><td>Hygienic, hands-free packing</td><td><span class=\"dmc-no\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"><path d=\"M6 6l12 12M18 6L6 18\" /></svg></span></td><td class=\"us\"><span class=\"dmc-yes\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12.5l4.5 4.5L19 7\" /></svg></span></td></tr>\n                <tr><td>Colour-coded bags for easy inventory</td><td><span class=\"dmc-no\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"><path d=\"M6 6l12 12M18 6L6 18\" /></svg></span></td><td class=\"us\"><span class=\"dmc-yes\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12.5l4.5 4.5L19 7\" /></svg></span></td></tr>\n                <tr><td>Free shipping on bulk orders</td><td><span class=\"dmc-no\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"><path d=\"M6 6l12 12M18 6L6 18\" /></svg></span></td><td class=\"us\"><span class=\"dmc-yes\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12.5l4.5 4.5L19 7\" /></svg></span></td></tr>\n              </tbody>\n            </table>\n          </div>\n        </div>\n      </section>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "015b063",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "CERTIFICATIONS",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "544e779",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "547644e",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"dmc-section--tight dmc-bg-white\" style=\"border-block: 1px solid var(--dmc-line)\">\n        <div class=\"dmc-wrap\">\n          <div class=\"dmc-head dmc-head--center\" style=\"margin-bottom: 32px\">\n            <div class=\"dmc-eyebrow dmc-eyebrow--center\">Globally certified</div>\n            <h2 class=\"dmc-h3\">Quality you can trust</h2>\n          </div>\n          <div class=\"dmc-certs\" data-stagger>\n            <div class=\"dmc-cert\"><img src=\"https://dmcnuts.com/wp-content/uploads/2025/09/iso.jpg\" alt=\"ISO certified\" loading=\"lazy\" /><div><strong>ISO</strong><span>Quality management</span></div></div>\n            <div class=\"dmc-cert\"><img src=\"https://dmcnuts.com/wp-content/uploads/2025/09/gmp.jpg\" alt=\"GMP certified\" loading=\"lazy\" /><div><strong>GMP</strong><span>Good manufacturing practice</span></div></div>\n            <div class=\"dmc-cert\"><img src=\"https://dmcnuts.com/wp-content/uploads/2025/09/fssi.jpg\" alt=\"FSSAI licensed\" loading=\"lazy\" /><div><strong>FSSAI</strong><span>Food safety &amp; standards</span></div></div>\n          </div>\n        </div>\n      </section>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "400b8c3",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "TESTIMONIALS",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "57f03ff",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "8d947d5",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"dmc-section\">\n        <div class=\"dmc-wrap\">\n          <div class=\"dmc-head\">\n            <div>\n              <div class=\"dmc-eyebrow\">Customer reviews</div>\n              <h2 class=\"dmc-h2\" data-split>Trusted by <em class=\"dmc-accent\">retailers</em> &amp; distributors</h2>\n            </div>\n          </div>\n          <div class=\"dmc-voices\" data-stagger>\n            <figure class=\"dmc-voice\" style=\"margin: 0\">\n              <span class=\"dmc-stars\" aria-label=\"5 out of 5 stars\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z\" /></svg><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z\" /></svg><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z\" /></svg><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z\" /></svg><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z\" /></svg></span>\n              <p>We have been sourcing almonds from this company for over a year now, and the Orange Bag almonds are our best-sellers. The consistency in taste, crunch, and freshness is unmatched.</p>\n              <figcaption class=\"dmc-quote__who\"><span class=\"dmc-avatar\">RP</span><div>Ramesh Patel<span>Retail Store Owner, Ahmedabad</span></div></figcaption>\n            </figure>\n            <figure class=\"dmc-voice\" style=\"margin: 0\">\n              <span class=\"dmc-stars\" aria-label=\"5 out of 5 stars\"><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z\" /></svg><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z\" /></svg><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z\" /></svg><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z\" /></svg><svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 2l3 6.5 7 .8-5.2 4.8 1.4 7L12 17.6 5.8 21.1l1.4-7L2 9.3l7-.8z\" /></svg></span>\n              <p>The Purple and Pink Bag almonds are absolutely loved by our health-conscious clients. The packaging is not just vibrant but also makes inventory management easier for us.</p>\n              <figcaption class=\"dmc-quote__who\"><span class=\"dmc-avatar\">NS</span><div>Nidhi Sharma<span>Distributor, Delhi NCR</span></div></figcaption>\n            </figure>\n          </div>\n        </div>\n      </section>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "3186d17",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "BULK QUOTE CTA",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "eb2396f",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "15b7ddd",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"dmc-section\" id=\"quote\" style=\"padding-top: 0\">\n        <div class=\"dmc-wrap\">\n          <div class=\"dmc-cta\" data-reveal=\"scale\">\n            <div>\n              <div class=\"dmc-eyebrow\" style=\"color: #b8e39c\">Bulk purchase request</div>\n              <h2 class=\"dmc-h2\" data-split>Get today's wholesale rate in minutes</h2>\n              <p>Tell us the grade and quantity you need. Our team replies on WhatsApp with current pricing and dispatch timelines.</p>\n            </div>\n            <form class=\"dmc-qform\" data-wa-form>\n              <input name=\"Name\" placeholder=\"Full name *\" required autocomplete=\"name\" />\n              <input name=\"Mobile\" placeholder=\"Mobile number *\" required inputmode=\"tel\" autocomplete=\"tel\" />\n              <input class=\"full\" name=\"Company\" placeholder=\"Company name\" autocomplete=\"organization\" />\n              <select name=\"Interested in\" required>\n                <option value=\"\">Interested in *</option>\n                <option>Orange Bag</option>\n                <option>White Bag (American 3D)</option>\n                <option>Yellow Bag</option>\n                <option>Pink Bag</option>\n                <option>Purple Bag</option>\n                <option>Blue Bag</option>\n                <option>Golden Bag</option>\n                <option>Independent Bag</option>\n                <option>Independent 3D</option>\n                <option>Touch</option>\n                <option>Super Touch</option>\n              </select>\n              <input name=\"Minimum quantity\" placeholder=\"Quantity (bags)\" inputmode=\"numeric\" />\n              <button class=\"dmc-btn dmc-btn--light full\" type=\"submit\">Send enquiry on WhatsApp <svg class=\"dmc-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\" /></svg></button>\n              <small>Opens WhatsApp with your details pre-filled. Nothing is stored on this site.</small>\n            </form>\n          </div>\n        </div>\n      </section>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

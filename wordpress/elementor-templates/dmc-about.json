@@ -1,0 +1,467 @@
+{
+ "version": "0.4",
+ "title": "DMC — About Us",
+ "type": "page",
+ "page_settings": {
+  "template": "elementor_full_width",
+  "hide_title": "yes"
+ },
+ "content": [
+  {
+   "id": "d58169b",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "PAGE HERO (particles)",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "78f9a98",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "f011c56",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"dmc-page-hero dmc-page-hero--dark dmc-bg-dark\">\n        <div data-dmc-particles aria-hidden=\"true\"></div>\n        <div class=\"dmc-wrap\">\n          <nav class=\"dmc-crumbs\" aria-label=\"Breadcrumb\"><a href=\"/\">Home</a><span aria-hidden=\"true\">/</span><span>About Us</span></nav>\n          <div class=\"dmc-about-hero__grid\">\n            <div>\n              <div class=\"dmc-eyebrow\" data-reveal=\"fade\">Deepak Mange &amp; Co.</div>\n              <h1 class=\"dmc-h1\" data-split>From the finest orchards to <em class=\"dmc-accent\" style=\"color: #9bd27d\">your shelves</em></h1>\n            </div>\n            <p class=\"dmc-lead\" data-reveal>Experience purity, freshness, and reliability with every almond. Since 2018 we have imported, processed and distributed premium edible nuts across India and beyond.</p>\n          </div>\n          <div class=\"dmc-stats\" style=\"margin-top: clamp(48px, 7vw, 96px)\">\n            <div class=\"dmc-stat\"><strong>2018</strong><span>Incorporated</span></div>\n            <div class=\"dmc-stat\"><strong data-countup=\"3\">3</strong><span>Sourcing regions — USA, Australia, Middle East</span></div>\n            <div class=\"dmc-stat\"><strong data-countup=\"9\">9</strong><span>Graded almond varieties</span></div>\n            <div class=\"dmc-stat\"><strong>APMC</strong><span>Navi Mumbai base</span></div>\n          </div>\n        </div>\n      </section>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "552a930",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "WHO WE ARE",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "39e3a37",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "c6a6f45",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"dmc-section\">\n        <div class=\"dmc-wrap dmc-split\">\n          <div class=\"dmc-collage\">\n            <div data-img-reveal><img src=\"/wp-content/plugins/dmc-revamp/assets/img/almond-bowl.jpg\" alt=\"Premium almonds in a bowl\" loading=\"lazy\" /></div>\n            <div data-img-reveal style=\"background: #fff; display: grid; place-items: center\"><img src=\"/wp-content/plugins/dmc-revamp/assets/img/products/orange-bag.jpg\" alt=\"DMC Nuts Orange Bag\" style=\"object-fit: contain; padding: 14px\" loading=\"lazy\" /></div>\n            <div data-img-reveal style=\"background: #fff; display: grid; place-items: center\"><img src=\"/wp-content/plugins/dmc-revamp/assets/img/products/purple-bag.jpg\" alt=\"DMC Nuts Purple Bag\" style=\"object-fit: contain; padding: 14px\" loading=\"lazy\" /></div>\n          </div>\n          <div>\n            <div class=\"dmc-eyebrow\">Who we are</div>\n            <h2 class=\"dmc-h2\" data-split>A trusted name in <em class=\"dmc-accent\">dry fruit</em> &amp; agro-commodity trade</h2>\n            <p class=\"dmc-lead\" style=\"margin-top: 22px\" data-reveal>Deepak Mange &amp; Co. is a well-established food processing and trading firm specializing in the import, processing, and distribution of premium edible nuts, with a strong focus on almonds.</p>\n            <p style=\"margin-top: 16px; color: var(--dmc-brown-700)\" data-reveal>Since our incorporation in 2018, we have earned a reputation for sourcing the finest dry fruits, maintaining strict quality standards, and ensuring efficient distribution across India and beyond. With our strategic presence in Navi Mumbai’s APMC Market, our success is driven by our commitment to quality, innovation, and customer satisfaction.</p>\n            <div style=\"margin-top: 34px; display: flex; gap: 12px; flex-wrap: wrap\">\n              <a class=\"dmc-btn\" href=\"/shop/\" data-magnetic>Explore Varieties <svg class=\"dmc-arrow\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M5 12h14M13 6l6 6-6 6\" /></svg></a>\n              <a class=\"dmc-btn dmc-btn--ghost\" href=\"/#quote\" data-magnetic>Bulk Enquiry</a>\n            </div>\n          </div>\n        </div>\n      </section>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "4c160e4",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "EXPERTISE",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "54b5c82",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "1f610dc",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"dmc-section\" style=\"padding-top: 0\">\n        <div class=\"dmc-wrap\">\n          <div class=\"dmc-head\">\n            <div>\n              <div class=\"dmc-eyebrow\">Our expertise</div>\n              <h2 class=\"dmc-h2\" data-split>Built on <em class=\"dmc-accent\">four</em> strengths</h2>\n            </div>\n            <p class=\"dmc-lead\">From international sourcing to the last mile, every step is handled in-house so the almonds you receive are exactly the grade you ordered.</p>\n          </div>\n          <div class=\"dmc-why__grid\" data-stagger>\n            <div class=\"dmc-value\">\n              <div class=\"dmc-feature__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\" /><path d=\"M3 12h18M12 3a14 14 0 010 18M12 3a14 14 0 000 18\" /></svg></div>\n              <h3>Dry fruit import &amp; trade</h3>\n              <p>Direct sourcing from international markets including the USA, Australia, and the Middle East.</p>\n            </div>\n            <div class=\"dmc-value\">\n              <div class=\"dmc-feature__icon\" style=\"background: linear-gradient(145deg, #5aa83a, var(--dmc-green-700))\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 6h16M7 12h10M10 18h4\" /></svg></div>\n              <h3>Processing &amp; quality control</h3>\n              <p>Advanced sorting, grading, and hygienic packaging to deliver top-quality products.</p>\n            </div>\n            <div class=\"dmc-value\">\n              <div class=\"dmc-feature__icon\" style=\"background: linear-gradient(145deg, #f3e6cc, #d9bf8e); color: var(--dmc-brown)\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 17l6-6 4 4 8-8\" /><path d=\"M14 7h7v7\" /></svg></div>\n              <h3>Market expansion</h3>\n              <p>A strong domestic presence complemented by growing international trade relations.</p>\n            </div>\n            <div class=\"dmc-value\">\n              <div class=\"dmc-feature__icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 7h11v9H3zM14 10h4l3 3v3h-7z\" /><circle cx=\"7\" cy=\"18\" r=\"1.6\" /><circle cx=\"17\" cy=\"18\" r=\"1.6\" /></svg></div>\n              <h3>Supply chain management</h3>\n              <p>Efficient procurement, storage, and logistics for seamless distribution.</p>\n            </div>\n          </div>\n        </div>\n      </section>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "14b4bf5",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "PROCESS (pinned horizontal scroll)",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "beed6a4",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "46bf28c",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"dmc-bg-dark dmc-hscroll\" style=\"padding: clamp(64px, 9vw, 120px) 0\">\n        <div class=\"dmc-hscroll__track\">\n          <div class=\"dmc-step dmc-step--intro\">\n            <div class=\"dmc-eyebrow\">How we work</div>\n            <h2 class=\"dmc-h2\">Orchard to <em class=\"dmc-accent\" style=\"color: #9bd27d\">doorstep</em></h2>\n            <p class=\"dmc-lead\" style=\"margin-top: 18px\">Scroll through the four stages every DMC bag goes through.</p>\n          </div>\n          <div class=\"dmc-step\">\n            <span class=\"dmc-step__num\">01</span>\n            <h3>Source</h3>\n            <p>Almonds are bought directly from trusted growers and exporters in the USA, Australia and the Middle East.</p>\n          </div>\n          <div class=\"dmc-step\">\n            <span class=\"dmc-step__num\">02</span>\n            <h3>Sort &amp; grade</h3>\n            <p>Every lot is sorted and graded by grain and count, then assigned to its colour-coded bag.</p>\n          </div>\n          <div class=\"dmc-step dmc-step--accent\">\n            <span class=\"dmc-step__num\">03</span>\n            <h3>Pack hygienically</h3>\n            <p>Sanitized units and hands-free technology keep the almonds clean, crisp and sealed for freshness.</p>\n          </div>\n          <div class=\"dmc-step\">\n            <span class=\"dmc-step__num\">04</span>\n            <h3>Distribute</h3>\n            <p>Efficient storage and logistics from the APMC Market deliver bulk orders across India and abroad.</p>\n          </div>\n        </div>\n      </section>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5583b66",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "QUALITY COMMITMENT",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "85ce308",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "dfe9199",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"dmc-section\">\n        <div class=\"dmc-wrap dmc-split dmc-split--rev\">\n          <div class=\"dmc-media dmc-media--wide\" data-img-reveal>\n            <img src=\"/wp-content/plugins/dmc-revamp/assets/img/almond-bowl.jpg\" alt=\"Almonds in a wooden spoon and bowl\" style=\"object-position: 15% 50%\" data-parallax=\"0.08\" loading=\"lazy\" />\n          </div>\n          <div>\n            <div class=\"dmc-eyebrow\">Quality commitment</div>\n            <h2 class=\"dmc-h2\" data-split>Quality at the <em class=\"dmc-accent\">core</em> of everything</h2>\n            <p class=\"dmc-lead\" style=\"margin-top: 22px\" data-reveal>At Deepak Mange &amp; Co., we place quality at the core of everything we do. Our processes are built on:</p>\n            <ul class=\"dmc-checks\" data-stagger>\n              <li><span><strong>FSSAI Certification</strong> ensuring compliance with India’s food safety and hygiene standards.</span></li>\n              <li><span><strong>Hygienic Processing Practices</strong> through sanitized units and hands-free technology.</span></li>\n              <li><span><strong>Regular Quality Testing</strong> to guarantee that every product meets stringent industry benchmarks.</span></li>\n            </ul>\n            <div class=\"dmc-certs\" style=\"justify-content: flex-start; gap: 12px\">\n              <div class=\"dmc-cert\" style=\"padding-right: 20px\"><img src=\"https://dmcnuts.com/wp-content/uploads/2025/09/iso.jpg\" alt=\"ISO\" loading=\"lazy\" style=\"width: 48px; height: 48px\" /><strong>ISO</strong></div>\n              <div class=\"dmc-cert\" style=\"padding-right: 20px\"><img src=\"https://dmcnuts.com/wp-content/uploads/2025/09/gmp.jpg\" alt=\"GMP\" loading=\"lazy\" style=\"width: 48px; height: 48px\" /><strong>GMP</strong></div>\n              <div class=\"dmc-cert\" style=\"padding-right: 20px\"><img src=\"https://dmcnuts.com/wp-content/uploads/2025/09/fssi.jpg\" alt=\"FSSAI\" loading=\"lazy\" style=\"width: 48px; height: 48px\" /><strong>FSSAI</strong></div>\n            </div>\n          </div>\n        </div>\n      </section>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f3a2e55",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "LEADERSHIP",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "6dfef30",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "15e72cb",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"dmc-section dmc-bg-cream2\">\n        <div class=\"dmc-wrap dmc-founder\">\n          <div class=\"dmc-founder__card\" data-reveal=\"scale\">\n            <img src=\"/wp-content/plugins/dmc-revamp/assets/img/logo.webp\" alt=\"\" loading=\"lazy\" />\n            <strong>Deepak Arjan Mange</strong>\n            <span>Founder</span>\n          </div>\n          <div>\n            <div class=\"dmc-eyebrow\">Leadership</div>\n            <blockquote data-reveal>A seasoned entrepreneur with deep expertise in the global dry fruit trade.</blockquote>\n            <p style=\"margin-top: 22px; color: var(--dmc-brown-700); max-width: 640px\" data-reveal>Deepak Arjan Mange, the founder of Deepak Mange &amp; Co., brings a strong network of suppliers and distributors, combined with a vision for growth and sustainability, that drives the company forward as a leading player in India’s dry fruit industry.</p>\n          </div>\n        </div>\n      </section>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "bd0c489",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "VISION",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "d4c6303",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "1b92184",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"dmc-section\">\n        <div class=\"dmc-wrap\">\n          <div class=\"dmc-head\">\n            <div>\n              <div class=\"dmc-eyebrow\">Our vision</div>\n              <h2 class=\"dmc-h2\" data-split>Growing with <em class=\"dmc-accent\">purpose</em></h2>\n            </div>\n            <p class=\"dmc-lead\">We are continuously working to expand and diversify our operations to meet evolving consumer needs. Our future goals include:</p>\n          </div>\n          <div class=\"dmc-vision\" data-stagger>\n            <div><b>01</b><h3>Modern automation</h3><p>Expanding processing facilities with modern automation.</p></div>\n            <div><b>02</b><h3>Value-added range</h3><p>Launching value-added dry fruit products for the retail and wholesale markets.</p></div>\n            <div><b>03</b><h3>Digital trade</h3><p>Strengthening e-commerce and digital trade channels.</p></div>\n            <div><b>04</b><h3>Sustainability</h3><p>Investing in eco-friendly and sustainable processing practices.</p></div>\n          </div>\n        </div>\n      </section>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "a3aa3f0",
+   "elType": "section",
+   "isInner": false,
+   "settings": {
+    "layout": "full_width",
+    "gap": "no",
+    "css_classes": "dmc-el",
+    "_title": "CTA",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    },
+    "margin": {
+     "unit": "px",
+     "top": "0",
+     "right": 0,
+     "bottom": "0",
+     "left": 0,
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "3e3b314",
+     "elType": "column",
+     "isInner": false,
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": null,
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "0",
+       "left": "0",
+       "isLinked": true
+      }
+     },
+     "elements": [
+      {
+       "id": "36e865f",
+       "elType": "widget",
+       "widgetType": "html",
+       "settings": {
+        "html": "<section class=\"dmc-section\" style=\"padding-top: 0\">\n        <div class=\"dmc-wrap\">\n          <div class=\"dmc-cta\" data-reveal=\"scale\">\n            <div>\n              <div class=\"dmc-eyebrow\" style=\"color: #b8e39c\">Reach us anytime</div>\n              <h2 class=\"dmc-h2\" data-split>Let's talk about your next bulk order</h2>\n              <p>Visit us at L-41, Phase-2, APMC Market, Turbhe, Vashi, Navi Mumbai — or message us for today's rates.</p>\n            </div>\n            <div style=\"display: flex; flex-direction: column; gap: 12px\">\n              <a class=\"dmc-btn dmc-btn--light dmc-btn--block\" href=\"https://wa.me/917977635556\" target=\"_blank\" rel=\"noopener\" data-magnetic>WhatsApp +91 79776 35556</a>\n              <a class=\"dmc-btn dmc-btn--almond dmc-btn--block\" href=\"mailto:deepakmangeandco@gmail.com\" data-magnetic>deepakmangeandco@gmail.com</a>\n              <a class=\"dmc-btn dmc-btn--ghost dmc-btn--block\" style=\"--fg: #fff; box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.5)\" href=\"https://maps.app.goo.gl/W9XjvdCmkQWjnR6T6\" target=\"_blank\" rel=\"noopener\">Get directions</a>\n            </div>\n          </div>\n        </div>\n      </section>"
+       },
+       "elements": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
